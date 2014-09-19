@@ -137,6 +137,7 @@ typedef struct {
 %token  OPTIONAL
 %token  POINTER
 %token  SAVE
+%token  IMPLICIT_SAVE
 %token  TARGET
 %token  DUMMY
 %token  COMMON
@@ -574,6 +575,7 @@ bit_attribute : ALLOCATABLE
               | OPTIONAL
               | POINTER
               | SAVE
+              | IMPLICIT_SAVE
               | TARGET
               | DUMMY
               | COMMON
@@ -589,6 +591,7 @@ bit_attribute : ALLOCATABLE
               | SAVED_COMMON
               | SEQUENCE
               | ELEMENTAL
+              | UNKNOWN
               | PURE
               | RECURSIVE
 		{ $<itype>$ = $<itype>1; }

@@ -219,6 +219,7 @@ EXTERNAL	{ yylval.itype = EXTERNAL; return EXTERNAL; }
 INTRINSIC	{ yylval.itype = INTRINSIC; return INTRINSIC; }
 OPTIONAL	{ yylval.itype = OPTIONAL; return OPTIONAL; }
 POINTER		{ yylval.itype = POINTER; return POINTER; }
+IMPLICIT-SAVE	{ yylval.itype = IMPLICIT_SAVE; return IMPLICIT_SAVE; }
 SAVE		{ yylval.itype = SAVE; return SAVE; }
 TARGET		{ yylval.itype = TARGET; return TARGET; }
 DUMMY		{ yylval.itype = DUMMY; return DUMMY; }
