@@ -1,0 +1,354 @@
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = receive
+        symtree: recv_double  Ambig 0
+        symbol recv_double (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS MODULE-PROC SUBROUTINE)
+        Formal arglist: d err
+
+        symtree: recv_complex  Ambig 0
+        symbol recv_complex (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS MODULE-PROC SUBROUTINE)
+        Formal arglist: c err
+
+        symtree: ikind1  Ambig 0
+        symbol ikind1 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC IMPLICIT-TYPE)
+        value: 1
+
+        symtree: receive  Ambig 0
+        symbol receive (UNKNOWN 0)(MODULE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: recv_complex_dbl  Ambig 0
+        symbol recv_complex_dbl (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS MODULE-PROC SUBROUTINE)
+        Formal arglist: c err
+
+        symtree: recv_int1  Ambig 0
+        symbol recv_int1 (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS MODULE-PROC SUBROUTINE)
+        Formal arglist: i err
+
+        symtree: recv_int  Ambig 0
+        symbol recv_int (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS MODULE-PROC SUBROUTINE)
+        Formal arglist: i err
+
+        symtree: recv_logical  Ambig 0
+        symbol recv_logical (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS MODULE-PROC SUBROUTINE)
+        Formal arglist: l_t l_f err
+
+        symtree: recv_int_array_1d  Ambig 0
+        symbol recv_int_array_1d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS MODULE-PROC SUBROUTINE)
+        Formal arglist: a err
+
+        symtree: recv_void  Ambig 0
+        symbol recv_void (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS MODULE-PROC SUBROUTINE)
+
+        symtree: recv_mixed  Ambig 0
+        symbol recv_mixed (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS MODULE-PROC SUBROUTINE)
+        Formal arglist: i str r a c err
+
+        symtree: recv_real  Ambig 0
+        symbol recv_real (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS MODULE-PROC SUBROUTINE)
+        Formal arglist: r err
+
+        symtree: recv_string  Ambig 0
+        symbol recv_string (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS MODULE-PROC SUBROUTINE)
+        Formal arglist: str err
+
+
+
+        CONTAINS
+
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = recv_mixed
+          symtree: err  Ambig 0
+          symbol err (INTEGER 4)(VARIABLE OUT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+          symtree: c  Ambig 0
+          symbol c (COMPLEX 4)(VARIABLE IN UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+          symtree: a  Ambig 0
+          symbol a (INTEGER 4)(VARIABLE IN UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION DUMMY)
+          Array spec:(1 AS_ASSUMED_SHAPE 1 () )
+
+          symtree: i  Ambig 0
+          symbol i (INTEGER 4)(VARIABLE IN UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+          symtree: recv_mixed  Ambig 0 from namespace receive
+          symtree: r  Ambig 0
+          symbol r (REAL 4)(VARIABLE IN UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+          symtree: str  Ambig 0
+          symbol str (CHARACTER ())(VARIABLE IN UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+
+      ASSIGN err 0
+      IF (<> i -54321)
+        WRITE UNIT=6 FMT=-1
+        TRANSFER 'ERROR, Receive::recv_int i /= -54321 = '
+        TRANSFER i
+        DT_END
+        ASSIGN err 1
+      ENDIF
+      IF (<> str '<bobby_socks.h>')
+        WRITE UNIT=6 FMT=-1
+        TRANSFER 'ERROR, Receive::recv_string str /= ''Hello, world!'' = '
+        TRANSFER str
+        DT_END
+        ASSIGN err 1
+      ENDIF
+      IF (<> r -0.5512345e2)
+        WRITE UNIT=6 FMT=-1
+        TRANSFER 'ERROR, Receive::recv_real r /= -55.12345 = '
+        TRANSFER r
+        DT_END
+        ASSIGN err 1
+      ENDIF
+      IF (AND (<> a(1) 56789) (<> a(4) -98765))
+        WRITE UNIT=6 FMT=-1
+        TRANSFER 'ERROR, Receive::recv_int_array a(1) /= 56789 = '
+        TRANSFER a(1)
+        DT_END
+        WRITE UNIT=6 FMT=-1
+        TRANSFER 'ERROR, Receive::recv_int_array a(4) /= -98765 = '
+        TRANSFER a(4)
+        DT_END
+        ASSIGN err 1
+      ENDIF
+      IF (<> c (complex -0.1515151515e5 0.5151515151e5))
+        WRITE UNIT=6 FMT=-1
+        TRANSFER 'ERROR, Receive::recv_complex c /= (-15151.51515, 51515.15151) = '
+        TRANSFER c
+        DT_END
+        ASSIGN err 1
+      ENDIF
+
+
+        CONTAINS
+
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = recv_int_array_1d
+          symtree: recv_int_array_1d  Ambig 0 from namespace receive
+          symtree: err  Ambig 0
+          symbol err (INTEGER 4)(VARIABLE OUT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+          symtree: a  Ambig 0
+          symbol a (INTEGER 4)(VARIABLE IN UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION DUMMY)
+          Array spec:(1 AS_ASSUMED_SHAPE 1 () )
+
+
+      ASSIGN err 0
+      IF (AND (<> a(1) -999) (<> a(4) 3))
+        WRITE UNIT=6 FMT=-1
+        TRANSFER 'ERROR, Receive::recv_int_array a(1) /= -999 = '
+        TRANSFER a(1)
+        DT_END
+        WRITE UNIT=6 FMT=-1
+        TRANSFER 'ERROR, Receive::recv_int_array a(4) /= 3 = '
+        TRANSFER a(4)
+        DT_END
+        ASSIGN err 1
+      ENDIF
+
+
+        CONTAINS
+
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = recv_string
+          symtree: str  Ambig 0
+          symbol str (CHARACTER ())(VARIABLE IN UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+          symtree: err  Ambig 0
+          symbol err (INTEGER 4)(VARIABLE OUT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+          symtree: recv_string  Ambig 0 from namespace receive
+
+      ASSIGN err 0
+      IF (<> str 'Hello, world!')
+        WRITE UNIT=6 FMT=-1
+        TRANSFER 'ERROR, Receive::recv_string str /= ''Hello, world!'' = '
+        TRANSFER str
+        DT_END
+        ASSIGN err 1
+      ENDIF
+
+
+        CONTAINS
+
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = recv_complex_dbl
+          symtree: err  Ambig 0
+          symbol err (INTEGER 4)(VARIABLE OUT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+          symtree: c  Ambig 0
+          symbol c (COMPLEX 8)(VARIABLE IN UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+          symtree: kind  Ambig 0
+          symbol kind (INTEGER 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC FUNCTION IMPLICIT-TYPE)
+          result: kind
+
+          symtree: recv_complex_dbl  Ambig 0 from namespace receive
+
+      ASSIGN err 0
+      IF (<> c (complex 0.1e1_8 -0.1e1_8))
+        WRITE UNIT=6 FMT=-1
+        TRANSFER 'ERROR, Receive::recv_complex_dbl c /= (1.0, -1.0) = '
+        TRANSFER c
+        DT_END
+        ASSIGN err 1
+      ENDIF
+
+
+        CONTAINS
+
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = recv_complex
+          symtree: err  Ambig 0
+          symbol err (INTEGER 4)(VARIABLE OUT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+          symtree: c  Ambig 0
+          symbol c (COMPLEX 4)(VARIABLE IN UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+          symtree: recv_complex  Ambig 0 from namespace receive
+
+      ASSIGN err 0
+      IF (<> c (complex 0.3e1 0.4e1))
+        WRITE UNIT=6 FMT=-1
+        TRANSFER 'ERROR, Receive::recv_complex c /= (3.0, 4.0) = '
+        TRANSFER c
+        DT_END
+        ASSIGN err 1
+      ENDIF
+
+
+        CONTAINS
+
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = recv_double
+          symtree: kind  Ambig 0
+          symbol kind (INTEGER 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC FUNCTION IMPLICIT-TYPE)
+          result: kind
+
+          symtree: abs  Ambig 0
+          symbol abs (REAL 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC FUNCTION IMPLICIT-TYPE)
+          result: abs
+
+          symtree: err  Ambig 0
+          symbol err (INTEGER 4)(VARIABLE OUT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+          symtree: d  Ambig 0
+          symbol d (REAL 8)(VARIABLE IN UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+          symtree: recv_double  Ambig 0 from namespace receive
+
+      ASSIGN err 0
+      IF (> __abs_r8[[(((+ d 0.999999e3_8)))]] 0.1e-13_8)
+        WRITE UNIT=6 FMT=-1
+        TRANSFER 'ERROR, Receive::recv_double d /= -999.999 = '
+        TRANSFER d
+        DT_END
+        WRITE UNIT=6 FMT=-1
+        TRANSFER 'ERROR, Receive::recv_double diff = '
+        TRANSFER (+ d 0.999999e3_8)
+        DT_END
+        ASSIGN err 1
+      ENDIF
+
+
+        CONTAINS
+
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = recv_real
+          symtree: err  Ambig 0
+          symbol err (INTEGER 4)(VARIABLE OUT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+          symtree: recv_real  Ambig 0 from namespace receive
+          symtree: r  Ambig 0
+          symbol r (REAL 4)(VARIABLE IN UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+
+      ASSIGN err 0
+      IF (<> r 0.333e2)
+        WRITE UNIT=6 FMT=-1
+        TRANSFER 'ERROR, Receive::recv_real r /= 33.3 = '
+        TRANSFER r
+        DT_END
+        ASSIGN err 1
+      ENDIF
+
+
+        CONTAINS
+
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = recv_int
+          symtree: recv_int  Ambig 0 from namespace receive
+          symtree: i  Ambig 0
+          symbol i (INTEGER 4)(VARIABLE IN UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+          symtree: err  Ambig 0
+          symbol err (INTEGER 4)(VARIABLE OUT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+
+      ASSIGN err 0
+      IF (<> i 33)
+        WRITE UNIT=6 FMT=-1
+        TRANSFER 'ERROR, Receive::recv_int i /= 33 = '
+        TRANSFER i
+        DT_END
+        ASSIGN err 1
+      ENDIF
+
+
+        CONTAINS
+
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = recv_int1
+          symtree: recv_int1  Ambig 0 from namespace receive
+          symtree: i  Ambig 0
+          symbol i (INTEGER 1)(VARIABLE IN UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+          symtree: err  Ambig 0
+          symbol err (INTEGER 4)(VARIABLE OUT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+
+      ASSIGN err 0
+      IF (<> __convert_i1_i4[[((i))]] -99)
+        WRITE UNIT=6 FMT=-1
+        TRANSFER 'ERROR, Receive::recv_int1 i /= -99 = '
+        TRANSFER i
+        DT_END
+        ASSIGN err 1
+      ENDIF
+
+
+        CONTAINS
+
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = recv_logical
+          symtree: l_t  Ambig 0
+          symbol l_t (LOGICAL 4)(VARIABLE IN UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+          symtree: err  Ambig 0
+          symbol err (INTEGER 4)(VARIABLE OUT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+          symtree: l_f  Ambig 0
+          symbol l_f (LOGICAL 4)(VARIABLE IN UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+          symtree: recv_logical  Ambig 0 from namespace receive
+
+      ASSIGN err 0
+      IF (OR (NOT l_t) l_f)
+        WRITE UNIT=6 FMT=-1
+        TRANSFER 'ERROR, Receive::recv_logical l_T = '
+        TRANSFER l_t
+        TRANSFER ' l_F = '
+        TRANSFER l_f
+        DT_END
+        ASSIGN err 1
+      ENDIF
+
+
+        CONTAINS
+
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = recv_void
+          symtree: recv_void  Ambig 0 from namespace receive
+
+
+

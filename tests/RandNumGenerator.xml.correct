@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<library lang="fortran" version="2" name="UNKNOWN.f90">
+
+<!-- include files that the topmost file includes -->
+<!-- fortran module scopes -->
+
+  <!--
+    - MODULE: randnumgenerator
+    -->
+  <scope name="randnumgenerator" kind="module">
+
+    <!--
+      - METHOD: getrandomnumber
+      -->
+    <method name="getrandomnumber" kind="static">
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: randnumgenerator::getrandomnumber_rand
+      -->
+    <method name="getrandomnumber_rand" kind="static">
+
+      <!-- return value -->
+      <return>
+        <type kind="ffloat" fkind="dbl"/>
+      </return>
+    </method>
+
+  </scope>
+
+</library>

@@ -1,0 +1,200 @@
+<?xml version="1.0"?>
+
+<library lang="fortran" version="2" name="UNKNOWN.f90">
+
+<!-- include files that the topmost file includes -->
+<!-- fortran module scopes -->
+
+<!-- types and functions NOT contained in a scope -->
+
+  <!--
+    - MODULE: F90Global
+    -->
+  <scope name="F90Global" kind="module">
+
+    <!--
+      - METHOD: pdlaed3
+      -->
+    <method name="pdlaed3" kind="static">
+
+      <!-- ARGUMENT : ictxt -->
+      <arg name="ictxt" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- ARGUMENT : k -->
+      <arg name="k" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- ARGUMENT : n -->
+      <arg name="n" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- ARGUMENT : nb -->
+      <arg name="nb" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- ARGUMENT : d -->
+      <arg name="d" intent="inout">
+        <type kind="farray">
+          <array lang="fortran" rank="1">
+            <type kind="ffloat" fkind="dbl"/>
+            <dimension extent="*"/>
+          </array>
+        </type>
+      </arg>
+
+      <!-- ARGUMENT : drow -->
+      <arg name="drow" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- ARGUMENT : dcol -->
+      <arg name="dcol" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- ARGUMENT : rho -->
+      <arg name="rho" intent="inout">
+        <type kind="ffloat" fkind="dbl"/>
+      </arg>
+
+      <!-- ARGUMENT : dlamda -->
+      <arg name="dlamda" intent="inout">
+        <type kind="farray">
+          <array lang="fortran" rank="1">
+            <type kind="ffloat" fkind="dbl"/>
+            <dimension extent="*"/>
+          </array>
+        </type>
+      </arg>
+
+      <!-- ARGUMENT : w -->
+      <arg name="w" intent="inout">
+        <type kind="farray">
+          <array lang="fortran" rank="1">
+            <type kind="ffloat" fkind="dbl"/>
+            <dimension extent="*"/>
+          </array>
+        </type>
+      </arg>
+
+      <!-- ARGUMENT : z -->
+      <arg name="z" intent="inout">
+        <type kind="farray">
+          <array lang="fortran" rank="1">
+            <type kind="ffloat" fkind="dbl"/>
+            <dimension extent="*"/>
+          </array>
+        </type>
+      </arg>
+
+      <!-- ARGUMENT : u -->
+      <arg name="u" intent="inout">
+        <type kind="farray">
+          <array lang="fortran" rank="2">
+            <type kind="ffloat" fkind="dbl"/>
+            <dimension extent="*"/>
+            <dimension extent="*"/>
+          </array>
+        </type>
+      </arg>
+
+      <!-- ARGUMENT : ldu -->
+      <arg name="ldu" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- ARGUMENT : buf -->
+      <arg name="buf" intent="inout">
+        <type kind="farray">
+          <array lang="fortran" rank="1">
+            <type kind="ffloat" fkind="dbl"/>
+            <dimension extent="*"/>
+          </array>
+        </type>
+      </arg>
+
+      <!-- ARGUMENT : indx -->
+      <arg name="indx" intent="inout">
+        <type kind="farray">
+          <array lang="fortran" rank="1">
+            <type kind="fint" ikind="int"/>
+            <dimension extent="*"/>
+          </array>
+        </type>
+      </arg>
+
+      <!-- ARGUMENT : indcol -->
+      <arg name="indcol" intent="inout">
+        <type kind="farray">
+          <array lang="fortran" rank="1">
+            <type kind="fint" ikind="int"/>
+            <dimension extent="*"/>
+          </array>
+        </type>
+      </arg>
+
+      <!-- ARGUMENT : indrow -->
+      <arg name="indrow" intent="inout">
+        <type kind="farray">
+          <array lang="fortran" rank="1">
+            <type kind="fint" ikind="int"/>
+            <dimension extent="*"/>
+          </array>
+        </type>
+      </arg>
+
+      <!-- ARGUMENT : indxr -->
+      <arg name="indxr" intent="inout">
+        <type kind="farray">
+          <array lang="fortran" rank="1">
+            <type kind="fint" ikind="int"/>
+            <dimension extent="*"/>
+          </array>
+        </type>
+      </arg>
+
+      <!-- ARGUMENT : indxc -->
+      <arg name="indxc" intent="inout">
+        <type kind="farray">
+          <array lang="fortran" rank="1">
+            <type kind="fint" ikind="int"/>
+            <dimension extent="*"/>
+          </array>
+        </type>
+      </arg>
+
+      <!-- ARGUMENT : ctot -->
+      <arg name="ctot" intent="inout">
+        <type kind="farray">
+          <array lang="fortran" rank="2">
+            <type kind="fint" ikind="int"/>
+            <dimension extent="*"/>
+            <dimension extent="4"/>
+          </array>
+        </type>
+      </arg>
+
+      <!-- ARGUMENT : npcol -->
+      <arg name="npcol" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- ARGUMENT : info -->
+      <arg name="info" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+  </scope>
+
+</library>

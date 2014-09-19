@@ -1,0 +1,103 @@
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = interfacemod
+        symtree: zoobar  Ambig 0
+        symbol zoobar (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS MODULE-PROC SUBROUTINE)
+
+        symtree: boo  Ambig 0
+        symbol boo (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS MODULE-PROC SUBROUTINE)
+        Formal arglist: i n
+        Formal namespace
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = boo
+          symtree: n  Ambig 0
+          symbol n (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+          symtree: boo  Ambig 0 from namespace interfacemod
+          symtree: i  Ambig 0
+          symbol i (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+
+
+
+
+        symtree: foo  Ambig 0
+        symbol foo (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS MODULE-PROC SUBROUTINE)
+        Formal arglist: i n
+        Formal namespace
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = foo
+          symtree: n  Ambig 0
+          symbol n (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+          symtree: i  Ambig 0
+          symbol i (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+          symtree: foo  Ambig 0 from namespace interfacemod
+
+
+
+
+        symtree: interfacemod  Ambig 0
+        symbol interfacemod (UNKNOWN 0)(MODULE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: foo2  Ambig 0
+        symbol foo2 (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS MODULE-PROC SUBROUTINE)
+        Formal arglist: d
+        Formal namespace
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = foo2
+          symtree: d  Ambig 0
+          symbol d (REAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+          symtree: foo2  Ambig 0 from namespace interfacemod
+
+
+
+
+
+
+        CONTAINS
+
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = zoobar
+          symtree: zoo  Ambig 0
+          symbol zoo (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC SUBROUTINE)
+          Formal arglist: i
+          Formal namespace
+            Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+            procedure name = zoo
+            symtree: i  Ambig 0
+            symbol i (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+            symtree: zoo  Ambig 0 from namespace zoobar
+
+
+
+
+          symtree: i  Ambig 0
+          symbol i (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+          value: 3
+
+          symtree: zoobar  Ambig 0 from namespace interfacemod
+          symtree: zz  Ambig 0
+          symbol zz (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SUBROUTINE)
+          Formal arglist: j k
+          Formal namespace
+            Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+            procedure name = zz
+            symtree: zz  Ambig 0 from namespace zoobar
+            symtree: j  Ambig 0
+            symbol j (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+            symtree: k  Ambig 0
+            symbol k (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+
+
+
+
+
+      CALL zoo ((zoobar:i))
+
+

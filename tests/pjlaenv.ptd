@@ -1,0 +1,314 @@
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = pjlaenv
+        symtree: iz  Ambig 0
+        symbol iz (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: ispec  Ambig 0
+        symbol ispec (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: ictxt  Ambig 0
+        symbol ictxt (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: ichar  Ambig 0
+        symbol ichar (INTEGER 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC INTRINSIC FUNCTION IMPLICIT-TYPE)
+        result: ichar
+
+        symtree: c3  Ambig 0
+        symbol c3 (CHARACTER 3)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: c1  Ambig 0
+        symbol c1 (CHARACTER 1)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: block_cyclic_2d  Ambig 0
+        symbol block_cyclic_2d (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+        value: 1
+
+        symtree: c2  Ambig 0
+        symbol c2 (CHARACTER 2)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: dlen_  Ambig 0
+        symbol dlen_ (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+        value: 9
+
+        symtree: csrc_  Ambig 0
+        symbol csrc_ (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+        value: 8
+
+        symtree: char  Ambig 0
+        symbol char (REAL 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC INTRINSIC FUNCTION IMPLICIT-TYPE)
+        result: char
+
+        symtree: c4  Ambig 0
+        symbol c4 (CHARACTER 2)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: cname  Ambig 0
+        symbol cname (LOGICAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: ctxt_  Ambig 0
+        symbol ctxt_ (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+        value: 2
+
+        symtree: ic  Ambig 0
+        symbol ic (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: dtype_  Ambig 0
+        symbol dtype_ (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+        value: 1
+
+        symtree: i  Ambig 0
+        symbol i (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: global  Ambig 0
+        symbol global (LOGICAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: igamx2d  Ambig 0
+        symbol igamx2d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL SUBROUTINE)
+
+        symtree: idumm  Ambig 0
+        symbol idumm (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: opts  Ambig 0
+        symbol opts (CHARACTER ())(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: lld_  Ambig 0
+        symbol lld_ (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+        value: 9
+
+        symtree: n3  Ambig 0
+        symbol n3 (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: msz  Ambig 0
+        symbol msz (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: m_  Ambig 0
+        symbol m_ (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+        value: 3
+
+        symtree: mb_  Ambig 0
+        symbol mb_ (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+        value: 5
+
+        symtree: n2  Ambig 0
+        symbol n2 (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: n1  Ambig 0
+        symbol n1 (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: n4  Ambig 0
+        symbol n4 (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: n_  Ambig 0
+        symbol n_ (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+        value: 4
+
+        symtree: name  Ambig 0
+        symbol name (CHARACTER ())(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: nb_  Ambig 0
+        symbol nb_ (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+        value: 6
+
+        symtree: nb  Ambig 0
+        symbol nb (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: sname  Ambig 0
+        symbol sname (LOGICAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: rsrc_  Ambig 0
+        symbol rsrc_ (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+        value: 7
+
+        symtree: pjlaenv  Ambig 0
+        symbol pjlaenv (INTEGER 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC FUNCTION)
+        result: pjlaenv
+        Formal arglist: ictxt ispec name opts n1 n2 n3 n4
+
+        symtree: subnam  Ambig 0
+        symbol subnam (CHARACTER 8)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+
+      IF .false.
+        RETURN 
+      ENDIF
+      SELECT CASE ispec
+      CASE (1 1) 
+        GOTO 10
+      CASE (2 2) 
+        GOTO 10
+      CASE (3 3) 
+        GOTO 10
+      CASE (4 4) 
+        GOTO 10
+      CASE (5 5) 
+        GOTO 10
+      END SELECT
+      ASSIGN pjlaenv -1
+      RETURN 
+10    CONTINUE
+      ASSIGN pjlaenv 1
+      ASSIGN subnam name
+      ASSIGN ic __ichar_1[[((subnam(1:1)))]]
+      ASSIGN iz 90
+      IF (OR (= iz 100) (= iz 122))
+        IF (AND (>= ic 97) (<= ic 122))
+          ASSIGN subnam(1:1) __char_1_i4[[(((- ic 32)) ((arg not-present)))]]
+          DO i=2 6 1
+            ASSIGN ic __ichar_1[[((subnam(i:i)))]]
+            IF (AND (>= ic 97) (<= ic 122))
+              ASSIGN subnam(i:i) __char_1_i4[[(((- ic 32)) ((arg not-present)))]]
+            ENDIF
+20          CONTINUE
+          END DO
+        ENDIF
+      ELSE IF (OR (= iz 233) (= iz 169))
+        IF (OR (OR (AND (>= ic 129) (<= ic 137)) (AND (>= ic 145) (<= ic 153))) (AND (>= ic 162) (<= ic 169)))
+          ASSIGN subnam(1:1) __char_1_i4[[(((+ ic 64)) ((arg not-present)))]]
+          DO i=2 6 1
+            ASSIGN ic __ichar_1[[((subnam(i:i)))]]
+            IF (OR (OR (AND (>= ic 129) (<= ic 137)) (AND (>= ic 145) (<= ic 153))) (AND (>= ic 162) (<= ic 169)))
+              ASSIGN subnam(i:i) __char_1_i4[[(((+ ic 64)) ((arg not-present)))]]
+            ENDIF
+30          CONTINUE
+          END DO
+        ENDIF
+      ELSE IF (OR (= iz 218) (= iz 250))
+        IF (AND (>= ic 225) (<= ic 250))
+          ASSIGN subnam(1:1) __char_1_i4[[(((- ic 32)) ((arg not-present)))]]
+          DO i=2 6 1
+            ASSIGN ic __ichar_1[[((subnam(i:i)))]]
+            IF (AND (>= ic 225) (<= ic 250))
+              ASSIGN subnam(i:i) __char_1_i4[[(((- ic 32)) ((arg not-present)))]]
+            ENDIF
+40          CONTINUE
+          END DO
+        ENDIF
+      ENDIF
+      ASSIGN c1 subnam(2:2)
+      ASSIGN sname (OR (= c1 'S') (= c1 'D'))
+      ASSIGN cname (OR (= c1 'C') (= c1 'Z'))
+      IF (NOT (OR cname sname))
+        RETURN 
+      ENDIF
+      ASSIGN c2 subnam(3:4)
+      ASSIGN c3 subnam(5:7)
+      ASSIGN c4 c3(2:3)
+      IF (<> (* (+ (+ n2 n3) n4) 0) 0)
+        ASSIGN c4 opts
+        ASSIGN c3 c4
+      ENDIF
+      SELECT CASE ispec
+      CASE (1 1) 
+        GOTO 50
+      CASE (2 2) 
+        GOTO 60
+      CASE (3 3) 
+        GOTO 70
+      CASE (4 4) 
+        GOTO 80
+      CASE (5 5) 
+        GOTO 90
+      END SELECT
+50    CONTINUE
+      ASSIGN nb 1
+      IF (OR (= c2 'SY') (= c2 'HE'))
+        IF (= c3 'LLT')
+          IF sname
+            ASSIGN nb 64
+          ELSE
+            ASSIGN nb 64
+          ENDIF
+        ELSE IF (= c3 'TTR')
+          IF sname
+            ASSIGN nb 1
+          ELSE
+            ASSIGN nb 1
+          ENDIF
+        ELSE IF (= c3 'GST')
+          IF sname
+            ASSIGN nb 32
+          ELSE
+            ASSIGN nb 32
+          ENDIF
+        ELSE IF (= c3 'BCK')
+          IF sname
+            ASSIGN nb 32
+          ELSE
+            ASSIGN nb 32
+          ENDIF
+        ELSE IF (= c3 'TRS')
+          IF sname
+            ASSIGN nb 64
+          ELSE
+            ASSIGN nb 64
+          ENDIF
+        ENDIF
+      ENDIF
+      ASSIGN pjlaenv nb
+      ASSIGN global .true.
+      GOTO 100
+60    CONTINUE
+      ASSIGN nb 16
+      IF (OR (= c2 'SY') (= c2 'HE'))
+        IF (= c3 'TTR')
+          IF sname
+            ASSIGN nb 32
+          ELSE
+            ASSIGN nb 32
+          ENDIF
+        ENDIF
+      ENDIF
+      ASSIGN pjlaenv nb
+      ASSIGN global .false.
+      GOTO 100
+70    CONTINUE
+      ASSIGN nb 1
+      IF (OR (= c2 'SY') (= c2 'HE'))
+        IF (= c3 'TTR')
+          IF sname
+            ASSIGN nb 16
+          ELSE
+            ASSIGN nb 16
+          ENDIF
+        ENDIF
+      ENDIF
+      ASSIGN pjlaenv nb
+      ASSIGN global .true.
+      GOTO 100
+80    CONTINUE
+      ASSIGN pjlaenv -4
+      IF (OR (= c2 'SY') (= c2 'HE'))
+        IF (= c3 'TTR')
+          IF (= n1 1)
+            ASSIGN pjlaenv 1
+          ENDIF
+          IF (= n1 2)
+            ASSIGN pjlaenv 0
+          ENDIF
+          IF (= n1 3)
+            ASSIGN pjlaenv 0
+          ENDIF
+        ENDIF
+      ENDIF
+      ASSIGN global .true.
+      GOTO 100
+90    CONTINUE
+      ASSIGN msz 0
+      IF (OR (= c2 'SY') (= c2 'HE'))
+        IF (= c3 'TTR')
+          IF sname
+            ASSIGN msz 100
+          ELSE
+            ASSIGN msz 100
+          ENDIF
+        ENDIF
+      ENDIF
+      ASSIGN pjlaenv msz
+      ASSIGN global .true.
+      GOTO 100
+100   CONTINUE
+      IF global
+        CALL igamx2d ((ictxt) ('All') (' ') (1) (1) (pjlaenv) (1) (idumm) (idumm) (-1) (-1) (idumm))
+      ENDIF
+      RETURN 
+

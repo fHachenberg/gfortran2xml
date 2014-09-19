@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+
+<library lang="fortran" version="2" name="UNKNOWN.f90">
+
+<!-- include files that the topmost file includes -->
+<!-- fortran module scopes -->
+
+<!-- types and functions NOT contained in a scope -->
+
+  <!--
+    - MODULE: F90Global
+    -->
+  <scope name="F90Global" kind="module">
+
+    <!--
+      - METHOD: foo
+      -->
+    <method name="foo" kind="static">
+
+      <!-- return value -->
+      <return>
+        <type kind="fint" ikind="int"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: boo
+      -->
+    <method name="boo" kind="static">
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+  </scope>
+
+</library>

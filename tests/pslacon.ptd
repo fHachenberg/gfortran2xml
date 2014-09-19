@@ -1,0 +1,421 @@
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = pslacon
+        symtree: i  Ambig 0
+        symbol i (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SAVE)
+
+        symtree: block_cyclic_2d  Ambig 0
+        symbol block_cyclic_2d (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+        value: 1
+
+        symtree: abs  Ambig 0
+        symbol abs (REAL 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC INTRINSIC FUNCTION IMPLICIT-TYPE)
+        result: abs
+
+        symtree: blacs_gridinfo  Ambig 0
+        symbol blacs_gridinfo (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL SUBROUTINE)
+
+        symtree: altsgn  Ambig 0
+        symbol altsgn (REAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SAVE)
+
+        symtree: descx  Ambig 0
+        symbol descx (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION DUMMY)
+        Array spec:(1 AS_ASSUMED_SIZE 1 () )
+
+        symtree: csrc_  Ambig 0
+        symbol csrc_ (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+        value: 8
+
+        symtree: descv  Ambig 0
+        symbol descv (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION DUMMY)
+        Array spec:(1 AS_ASSUMED_SIZE 1 () )
+
+        symtree: ctxt_  Ambig 0
+        symbol ctxt_ (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+        value: 2
+
+        symtree: est  Ambig 0
+        symbol est (REAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: dtype_  Ambig 0
+        symbol dtype_ (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+        value: 1
+
+        symtree: dlen_  Ambig 0
+        symbol dlen_ (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+        value: 9
+
+        symtree: estold  Ambig 0
+        symbol estold (REAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SAVE)
+
+        symtree: indxl2g  Ambig 0
+        symbol indxl2g (INTEGER 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL FUNCTION)
+        result: indxl2g
+
+        symtree: ictxt  Ambig 0
+        symbol ictxt (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SAVE)
+
+        symtree: indxg2l  Ambig 0
+        symbol indxg2l (INTEGER 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL FUNCTION)
+        result: indxg2l
+
+        symtree: imaxrow  Ambig 0
+        symbol imaxrow (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SAVE)
+
+        symtree: iflag  Ambig 0
+        symbol iflag (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SAVE)
+
+        symtree: iivx  Ambig 0
+        symbol iivx (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SAVE)
+
+        symtree: igsum2d  Ambig 0
+        symbol igsum2d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL SUBROUTINE)
+
+        symtree: indxg2p  Ambig 0
+        symbol indxg2p (INTEGER 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL FUNCTION)
+        result: indxg2p
+
+        symtree: mb_  Ambig 0
+        symbol mb_ (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+        value: 5
+
+        symtree: iroff  Ambig 0
+        symbol iroff (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SAVE)
+
+        symtree: infog2l  Ambig 0
+        symbol infog2l (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL SUBROUTINE)
+
+        symtree: ioffvx  Ambig 0
+        symbol ioffvx (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SAVE)
+
+        symtree: ivxrow  Ambig 0
+        symbol ivxrow (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SAVE)
+
+        symtree: iter  Ambig 0
+        symbol iter (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SAVE)
+
+        symtree: isgn  Ambig 0
+        symbol isgn (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION DUMMY)
+        Array spec:(1 AS_ASSUMED_SIZE 1 () )
+
+        symtree: iv  Ambig 0
+        symbol iv (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: itmax  Ambig 0
+        symbol itmax (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+        value: 5
+
+        symtree: ivxcol  Ambig 0
+        symbol ivxcol (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SAVE)
+
+        symtree: j  Ambig 0
+        symbol j (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SAVE)
+
+        symtree: ix  Ambig 0
+        symbol ix (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: m_  Ambig 0
+        symbol m_ (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+        value: 3
+
+        symtree: k  Ambig 0
+        symbol k (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SAVE)
+
+        symtree: jx  Ambig 0
+        symbol jx (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: jlast  Ambig 0
+        symbol jlast (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SAVE)
+
+        symtree: jjvx  Ambig 0
+        symbol jjvx (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SAVE)
+
+        symtree: jlmax  Ambig 0
+        symbol jlmax (REAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SAVE)
+
+        symtree: jump  Ambig 0
+        symbol jump (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SAVE)
+
+        symtree: jv  Ambig 0
+        symbol jv (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: lld_  Ambig 0
+        symbol lld_ (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+        value: 9
+
+        symtree: kase  Ambig 0
+        symbol kase (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: xmax  Ambig 0
+        symbol xmax (REAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SAVE)
+
+        symtree: real  Ambig 0
+        symbol real (REAL 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC INTRINSIC FUNCTION IMPLICIT-TYPE)
+        result: real
+
+        symtree: np  Ambig 0
+        symbol np (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SAVE)
+
+        symtree: n  Ambig 0
+        symbol n (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: mod  Ambig 0
+        symbol mod (INTEGER 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC INTRINSIC FUNCTION IMPLICIT-TYPE)
+        result: mod
+
+        symtree: myrow  Ambig 0
+        symbol myrow (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SAVE)
+
+        symtree: mycol  Ambig 0
+        symbol mycol (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SAVE)
+
+        symtree: nb_  Ambig 0
+        symbol nb_ (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+        value: 6
+
+        symtree: n_  Ambig 0
+        symbol n_ (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+        value: 4
+
+        symtree: nint  Ambig 0
+        symbol nint (INTEGER 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC INTRINSIC FUNCTION IMPLICIT-TYPE)
+        result: nint
+
+        symtree: npcol  Ambig 0
+        symbol npcol (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SAVE)
+
+        symtree: one  Ambig 0
+        symbol one (REAL 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+        value: 0.1e1
+
+        symtree: numroc  Ambig 0
+        symbol numroc (INTEGER 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL FUNCTION)
+        result: numroc
+
+        symtree: nprow  Ambig 0
+        symbol nprow (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SAVE)
+
+        symtree: pselget  Ambig 0
+        symbol pselget (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL SUBROUTINE)
+
+        symtree: psasum  Ambig 0
+        symbol psasum (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL SUBROUTINE)
+
+        symtree: psamax  Ambig 0
+        symbol psamax (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL SUBROUTINE)
+
+        symtree: pslacon  Ambig 0
+        symbol pslacon (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SUBROUTINE)
+        Formal arglist: n v iv jv descv x ix jx descx isgn est kase
+
+        symtree: sign  Ambig 0
+        symbol sign (REAL 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC INTRINSIC FUNCTION IMPLICIT-TYPE)
+        result: sign
+
+        symtree: sgebr2d  Ambig 0
+        symbol sgebr2d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL SUBROUTINE)
+
+        symtree: rsrc_  Ambig 0
+        symbol rsrc_ (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+        value: 7
+
+        symtree: scopy  Ambig 0
+        symbol scopy (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL SUBROUTINE)
+
+        symtree: sgebs2d  Ambig 0
+        symbol sgebs2d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL SUBROUTINE)
+
+        symtree: work  Ambig 0
+        symbol work (REAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION SAVE)
+        Array spec:(1 AS_EXPLICIT 1 2 )
+
+        symtree: v  Ambig 0
+        symbol v (REAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION DUMMY)
+        Array spec:(1 AS_ASSUMED_SIZE 1 () )
+
+        symtree: two  Ambig 0
+        symbol two (REAL 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+        value: 0.2e1
+
+        symtree: temp  Ambig 0
+        symbol temp (REAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SAVE)
+
+        symtree: x  Ambig 0
+        symbol x (REAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION DUMMY)
+        Array spec:(1 AS_ASSUMED_SIZE 1 () )
+
+        symtree: zero  Ambig 0
+        symbol zero (REAL 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+        value: 0.e0
+
+
+      ASSIGN ictxt descx(2)
+      CALL blacs_gridinfo ((ictxt) (nprow) (npcol) (myrow) (mycol))
+      CALL infog2l ((ix) (jx) (descx(FULL)) (nprow) (npcol) (myrow) (mycol) (iivx) (jjvx) (ivxrow) (ivxcol))
+      IF (<> mycol ivxcol)
+        RETURN 
+      ENDIF
+      ASSIGN iroff __mod_i4[[(((- ix 1)) (descx(5)))]]
+      ASSIGN np numroc[[(((+ n iroff)) (descx(5)) (myrow) (ivxrow) (nprow))]]
+      IF (= myrow ivxrow)
+        ASSIGN np (- np iroff)
+      ENDIF
+      ASSIGN ioffvx (+ iivx (* (- jjvx 1) descx(9)))
+      IF (= kase 0)
+        DO i=ioffvx (- (+ ioffvx np) 1) 1
+          ASSIGN x(i) (/ 0.1e1 _gfortran_float[[((n))]])
+10        CONTINUE
+        END DO
+        ASSIGN kase 1
+        ASSIGN jump 1
+        RETURN 
+      ENDIF
+      SELECT CASE jump
+      CASE (1 1) 
+        GOTO 20
+      CASE (2 2) 
+        GOTO 40
+      CASE (3 3) 
+        GOTO 70
+      CASE (4 4) 
+        GOTO 110
+      CASE (5 5) 
+        GOTO 140
+      END SELECT
+20    CONTINUE
+      IF (= n 1)
+        IF (= myrow ivxrow)
+          ASSIGN v(ioffvx) x(ioffvx)
+          ASSIGN est __abs_r4[[((v(ioffvx)))]]
+          CALL sgebs2d ((ictxt) ('Columnwise') (' ') (1) (1) (est) (1))
+        ELSE
+          CALL sgebr2d ((ictxt) ('Columnwise') (' ') (1) (1) (est) (1) (ivxrow) (mycol))
+        ENDIF
+        GOTO 150
+      ENDIF
+      CALL psasum ((n) (est) (x(FULL)) (ix) (jx) (descx(FULL)) (1))
+      IF (AND (= descx(3) 1) (= n 1))
+        IF (= myrow ivxrow)
+          CALL sgebs2d ((ictxt) ('Columnwise') (' ') (1) (1) (est) (1))
+        ELSE
+          CALL sgebr2d ((ictxt) ('Columnwise') (' ') (1) (1) (est) (1) (ivxrow) (mycol))
+        ENDIF
+      ENDIF
+      DO i=ioffvx (- (+ ioffvx np) 1) 1
+        ASSIGN x(i) __sign_r4[[((0.1e1) (x(i)))]]
+        ASSIGN isgn(i) __nint_4_4[[((x(i)) ((arg not-present)))]]
+30      CONTINUE
+      END DO
+      ASSIGN kase 2
+      ASSIGN jump 2
+      RETURN 
+40    CONTINUE
+      CALL psamax ((n) (xmax) (j) (x(FULL)) (ix) (jx) (descx(FULL)) (1))
+      IF (AND (= descx(3) 1) (= n 1))
+        IF (= myrow ivxrow)
+          ASSIGN work(1) xmax
+          ASSIGN work(2) _gfortran_float[[((j))]]
+          CALL sgebs2d ((ictxt) ('Columnwise') (' ') (2) (1) (work(FULL)) (2))
+        ELSE
+          CALL sgebr2d ((ictxt) ('Columnwise') (' ') (2) (1) (work(FULL)) (2) (ivxrow) (mycol))
+          ASSIGN xmax work(1)
+          ASSIGN j __nint_4_4[[((work(2)) ((arg not-present)))]]
+        ENDIF
+      ENDIF
+      ASSIGN iter 2
+50    CONTINUE
+      DO i=ioffvx (- (+ ioffvx np) 1) 1
+        ASSIGN x(i) 0.e0
+60      CONTINUE
+      END DO
+      ASSIGN imaxrow indxg2p[[((j) (descx(5)) (myrow) (descx(7)) (nprow))]]
+      IF (= myrow imaxrow)
+        ASSIGN i indxg2l[[((j) (descx(5)) (myrow) (descx(7)) (nprow))]]
+        ASSIGN x(i) 0.1e1
+      ENDIF
+      ASSIGN kase 1
+      ASSIGN jump 3
+      RETURN 
+70    CONTINUE
+      CALL scopy ((np) (x(ioffvx)) (1) (v(ioffvx)) (1))
+      ASSIGN estold est
+      CALL psasum ((n) (est) (v(FULL)) (iv) (jv) (descv(FULL)) (1))
+      IF (AND (= descv(3) 1) (= n 1))
+        IF (= myrow ivxrow)
+          CALL sgebs2d ((ictxt) ('Columnwise') (' ') (1) (1) (est) (1))
+        ELSE
+          CALL sgebr2d ((ictxt) ('Columnwise') (' ') (1) (1) (est) (1) (ivxrow) (mycol))
+        ENDIF
+      ENDIF
+      ASSIGN iflag 0
+      DO i=ioffvx (- (+ ioffvx np) 1) 1
+        IF (<> __nint_4_4[[((__sign_r4[[((0.1e1) (x(i)))]]) ((arg not-present)))]] isgn(i))
+          ASSIGN iflag 1
+          GOTO 90
+        ENDIF
+80      CONTINUE
+      END DO
+90    CONTINUE
+      CALL igsum2d ((ictxt) ('C') (' ') (1) (1) (iflag) (1) (-1) (mycol))
+      IF (OR (= iflag 0) (<= est estold))
+        GOTO 120
+      ENDIF
+      DO i=ioffvx (- (+ ioffvx np) 1) 1
+        ASSIGN x(i) __sign_r4[[((0.1e1) (x(i)))]]
+        ASSIGN isgn(i) __nint_4_4[[((x(i)) ((arg not-present)))]]
+100     CONTINUE
+      END DO
+      ASSIGN kase 2
+      ASSIGN jump 4
+      RETURN 
+110   CONTINUE
+      ASSIGN jlast j
+      CALL psamax ((n) (xmax) (j) (x(FULL)) (ix) (jx) (descx(FULL)) (1))
+      IF (AND (= descx(3) 1) (= n 1))
+        IF (= myrow ivxrow)
+          ASSIGN work(1) xmax
+          ASSIGN work(2) _gfortran_float[[((j))]]
+          CALL sgebs2d ((ictxt) ('Columnwise') (' ') (2) (1) (work(FULL)) (2))
+        ELSE
+          CALL sgebr2d ((ictxt) ('Columnwise') (' ') (2) (1) (work(FULL)) (2) (ivxrow) (mycol))
+          ASSIGN xmax work(1)
+          ASSIGN j __nint_4_4[[((work(2)) ((arg not-present)))]]
+        ENDIF
+      ENDIF
+      CALL pselget (('Columnwise') (' ') (jlmax) (x(FULL)) (jlast) (jx) (descx(FULL)))
+      IF (AND (<> jlmax __abs_r4[[((xmax))]]) (< iter 5))
+        ASSIGN iter (+ iter 1)
+        GOTO 50
+      ENDIF
+120   CONTINUE
+      DO i=ioffvx (- (+ ioffvx np) 1) 1
+        ASSIGN k (+ (- indxl2g[[(((+ (- i ioffvx) iivx)) (descx(5)) (myrow) (descx(7)) (nprow))]] ix) 1)
+        IF (= __mod_i4[[((k) (2))]] 0)
+          ASSIGN altsgn -0.1e1
+        ELSE
+          ASSIGN altsgn 0.1e1
+        ENDIF
+        ASSIGN x(i) (* altsgn (+ 0.1e1 (/ _gfortran_float[[(((- k 1)))]] _gfortran_float[[(((- n 1)))]])))
+130     CONTINUE
+      END DO
+      ASSIGN kase 1
+      ASSIGN jump 5
+      RETURN 
+140   CONTINUE
+      CALL psasum ((n) (temp) (x(FULL)) (ix) (jx) (descx(FULL)) (1))
+      IF (AND (= descx(3) 1) (= n 1))
+        IF (= myrow ivxrow)
+          CALL sgebs2d ((ictxt) ('Columnwise') (' ') (1) (1) (temp) (1))
+        ELSE
+          CALL sgebr2d ((ictxt) ('Columnwise') (' ') (1) (1) (temp) (1) (ivxrow) (mycol))
+        ENDIF
+      ENDIF
+      ASSIGN temp (* 0.2e1 (/ temp _gfortran_float[[(((* 3 n)))]]))
+      IF (> temp est)
+        CALL scopy ((np) (x(ioffvx)) (1) (v(ioffvx)) (1))
+        ASSIGN est temp
+      ENDIF
+150   CONTINUE
+      ASSIGN kase 0
+      RETURN 
+

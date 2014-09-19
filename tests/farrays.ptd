@@ -1,0 +1,3944 @@
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = particlemod
+        symtree: kind  Ambig 0
+        symbol kind (INTEGER 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC FUNCTION IMPLICIT-TYPE)
+        result: kind
+
+        symtree: particle  Ambig 0
+        symbol particle (UNKNOWN 0)(DERIVED UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+        components: (position (REAL 8) DIMENSION (1 AS_EXPLICIT 1 3 )) (velocity (REAL 8) DIMENSION (1 AS_EXPLICIT 1 3 )) (mass (REAL 8) ()) (char_element (INTEGER 1) ())
+
+        symtree: particlemod  Ambig 0
+        symbol particlemod (UNKNOWN 0)(MODULE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+
+
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = m_arraytypes
+        symtree: ikind16  Ambig 0
+        symbol ikind16 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 16
+
+        symtree: f90_array1di_t  Ambig 0
+        symbol f90_array1di_t (UNKNOWN 0)(DERIVED UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+        components: (data (INTEGER 4) POINTER DIMENSION (1 AS_DEFERRED () () ))
+
+        symtree: ikind1  Ambig 0
+        symbol ikind1 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 1
+
+        symtree: f90_array3di_t  Ambig 0
+        symbol f90_array3di_t (UNKNOWN 0)(DERIVED UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+        components: (data (INTEGER 4) POINTER DIMENSION (3 AS_DEFERRED () () () () () () ))
+
+        symtree: f90_kinds  Ambig 0
+        symbol f90_kinds (UNKNOWN 0)(MODULE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+
+        symtree: ikind_long_long  Ambig 0
+        symbol ikind_long_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 8
+
+        symtree: ikind4  Ambig 0
+        symbol ikind4 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: ikind2  Ambig 0
+        symbol ikind2 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 2
+
+        symtree: ikind_int  Ambig 0
+        symbol ikind_int (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: ikind8  Ambig 0
+        symbol ikind8 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 8
+
+        symtree: ikind_long  Ambig 0
+        symbol ikind_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: ikind_short  Ambig 0
+        symbol ikind_short (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 2
+
+        symtree: m_arraytypes  Ambig 0
+        symbol m_arraytypes (UNKNOWN 0)(MODULE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+
+
+
+        Namespace: A-Z: (UNKNOWN 0)
+        procedure name = test_neg_lb
+        symtree: lb  Ambig 0
+        symbol lb (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION)
+        Array spec:(1 AS_EXPLICIT 1 2 )
+
+        symtree: a  Ambig 0
+        symbol a (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION DUMMY)
+        Array spec:(2 AS_ASSUMED_SHAPE 1 () 1 () )
+
+        symtree: lbound  Ambig 0
+        symbol lbound (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC FUNCTION)
+        result: lbound
+
+        symtree: test_neg_lb  Ambig 0
+        symbol test_neg_lb (INTEGER 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC FUNCTION)
+        result: test_neg_lb
+        Formal arglist: a
+
+
+      ASSIGN lb(FULL) __lbound[[((a(FULL)) ((arg not-present)))]]
+      WRITE UNIT=6 FMT=-1
+      TRANSFER lb(FULL)
+      DT_END
+      ASSIGN test_neg_lb 0
+
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = print_sizeofs
+        symtree: f90_kinds  Ambig 0
+        symbol f90_kinds (UNKNOWN 0)(MODULE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+
+        symtree: da  Ambig 0
+        symbol da (REAL 8)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION)
+        Array spec:(1 AS_EXPLICIT 1 3 )
+
+        symtree: l4a  Ambig 0
+        symbol l4a (LOGICAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION)
+        Array spec:(1 AS_EXPLICIT 1 3 )
+
+        symtree: ikind_int  Ambig 0
+        symbol ikind_int (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: i2a  Ambig 0
+        symbol i2a (INTEGER 2)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION)
+        Array spec:(1 AS_EXPLICIT 1 3 )
+
+        symtree: i1a  Ambig 0
+        symbol i1a (INTEGER 1)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION)
+        Array spec:(1 AS_EXPLICIT 1 3 )
+
+        symtree: ikind1  Ambig 0
+        symbol ikind1 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 1
+
+        symtree: i4a  Ambig 0
+        symbol i4a (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION)
+        Array spec:(1 AS_EXPLICIT 1 3 )
+
+        symtree: ia  Ambig 0
+        symbol ia (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION)
+        Array spec:(1 AS_EXPLICIT 1 3 )
+
+        symtree: i8a  Ambig 0
+        symbol i8a (INTEGER 8)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION)
+        Array spec:(1 AS_EXPLICIT 1 3 )
+
+        symtree: ikind2  Ambig 0
+        symbol ikind2 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 2
+
+        symtree: ikind16  Ambig 0
+        symbol ikind16 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 16
+
+        symtree: ikind4  Ambig 0
+        symbol ikind4 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: ikind8  Ambig 0
+        symbol ikind8 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 8
+
+        symtree: kind  Ambig 0
+        symbol kind (INTEGER 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC FUNCTION IMPLICIT-TYPE)
+        result: kind
+
+        symtree: ikind_long_long  Ambig 0
+        symbol ikind_long_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 8
+
+        symtree: ikind_long  Ambig 0
+        symbol ikind_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: ikind_short  Ambig 0
+        symbol ikind_short (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 2
+
+        symtree: l1a  Ambig 0
+        symbol l1a (LOGICAL 1)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION)
+        Array spec:(1 AS_EXPLICIT 1 3 )
+
+        symtree: l2a  Ambig 0
+        symbol l2a (LOGICAL 2)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION)
+        Array spec:(1 AS_EXPLICIT 1 3 )
+
+        symtree: print_sizeofs  Ambig 0
+        symbol print_sizeofs (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SUBROUTINE)
+
+        symtree: la  Ambig 0
+        symbol la (LOGICAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION)
+        Array spec:(1 AS_EXPLICIT 1 3 )
+
+        symtree: l8a  Ambig 0
+        symbol l8a (LOGICAL 8)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION)
+        Array spec:(1 AS_EXPLICIT 1 3 )
+
+        symtree: ra  Ambig 0
+        symbol ra (REAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION)
+        Array spec:(1 AS_EXPLICIT 1 3 )
+
+
+
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = send_iia1d_null
+        symtree: pa  Ambig 0
+        symbol pa (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION POINTER SAVE)
+        Array spec:(1 AS_DEFERRED () () )
+
+        symtree: a  Ambig 0
+        symbol a (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION SAVE TARGET)
+        Array spec:(1 AS_EXPLICIT 1 10 )
+
+        symtree: recv_iia1d_null  Ambig 0
+        symbol recv_iia1d_null (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC SUBROUTINE)
+        Formal arglist: a
+        Formal namespace
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = recv_iia1d_null
+          symtree: a  Ambig 0
+          symbol a (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION POINTER DUMMY)
+          Array spec:(1 AS_DEFERRED () () )
+
+          symtree: recv_iia1d_null  Ambig 0 from namespace send_iia1d_null
+
+
+
+
+        symtree: send_iia1d_null  Ambig 0
+        symbol send_iia1d_null (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SUBROUTINE)
+
+
+      POINTER ASSIGN pa(FULL) a(FULL)
+      POINTER ASSIGN pa(FULL) NULL()
+      CALL recv_iia1d_null ((pa(FULL)))
+
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = send_iia1d
+        symtree: a  Ambig 0
+        symbol a (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION SAVE TARGET)
+        Array spec:(1 AS_EXPLICIT 1 10 )
+
+        symtree: pa  Ambig 0
+        symbol pa (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION POINTER SAVE)
+        Array spec:(1 AS_DEFERRED () () )
+
+        symtree: send_iia1d  Ambig 0
+        symbol send_iia1d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SUBROUTINE)
+
+        symtree: recv_iia1d  Ambig 0
+        symbol recv_iia1d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC SUBROUTINE)
+        Formal arglist: a
+        Formal namespace
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = recv_iia1d
+          symtree: a  Ambig 0
+          symbol a (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION POINTER DUMMY)
+          Array spec:(1 AS_DEFERRED () () )
+
+          symtree: recv_iia1d  Ambig 0 from namespace send_iia1d
+
+
+
+
+
+      POINTER ASSIGN pa(FULL) a(FULL)
+      CALL recv_iia1d ((pa(FULL)))
+
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = send_iia2d
+        symtree: pa  Ambig 0
+        symbol pa (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION POINTER SAVE)
+        Array spec:(2 AS_DEFERRED () () () () )
+
+        symtree: a  Ambig 0
+        symbol a (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION SAVE TARGET)
+        Array spec:(2 AS_EXPLICIT 1 1 1 2 )
+
+        symtree: recv_iia2d  Ambig 0
+        symbol recv_iia2d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC SUBROUTINE)
+        Formal arglist: a
+        Formal namespace
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = recv_iia2d
+          symtree: a  Ambig 0
+          symbol a (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION POINTER DUMMY)
+          Array spec:(2 AS_DEFERRED () () () () )
+
+          symtree: recv_iia2d  Ambig 0 from namespace send_iia2d
+
+
+
+
+        symtree: send_iia2d  Ambig 0
+        symbol send_iia2d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SUBROUTINE)
+
+
+      POINTER ASSIGN pa(FULL) a(FULL)
+      CALL recv_iia2d ((pa(FULL)))
+
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = send_iia3d
+        symtree: recv_iia3d  Ambig 0
+        symbol recv_iia3d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC SUBROUTINE)
+        Formal arglist: a
+        Formal namespace
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = recv_iia3d
+          symtree: a  Ambig 0
+          symbol a (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION POINTER DUMMY)
+          Array spec:(3 AS_DEFERRED () () () () () () )
+
+          symtree: recv_iia3d  Ambig 0 from namespace send_iia3d
+
+
+
+
+        symtree: a  Ambig 0
+        symbol a (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION SAVE TARGET)
+        Array spec:(3 AS_EXPLICIT 1 1 1 2 1 3 )
+
+        symtree: pa  Ambig 0
+        symbol pa (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION POINTER SAVE)
+        Array spec:(3 AS_DEFERRED () () () () () () )
+
+        symtree: send_iia3d  Ambig 0
+        symbol send_iia3d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SUBROUTINE)
+
+
+      POINTER ASSIGN pa(FULL) a(FULL)
+      CALL recv_iia3d ((pa(FULL)))
+
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = send_iia4d
+        symtree: recv_iia4d  Ambig 0
+        symbol recv_iia4d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC SUBROUTINE)
+        Formal arglist: a
+        Formal namespace
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = recv_iia4d
+          symtree: a  Ambig 0
+          symbol a (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION POINTER DUMMY)
+          Array spec:(4 AS_DEFERRED () () () () () () () () )
+
+          symtree: recv_iia4d  Ambig 0 from namespace send_iia4d
+
+
+
+
+        symtree: a  Ambig 0
+        symbol a (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION SAVE TARGET)
+        Array spec:(4 AS_EXPLICIT 1 1 1 2 1 3 1 4 )
+
+        symtree: pa  Ambig 0
+        symbol pa (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION POINTER SAVE)
+        Array spec:(4 AS_DEFERRED () () () () () () () () )
+
+        symtree: send_iia4d  Ambig 0
+        symbol send_iia4d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SUBROUTINE)
+
+
+      POINTER ASSIGN pa(FULL) a(FULL)
+      CALL recv_iia4d ((pa(FULL)))
+
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = send_iia5d
+        symtree: pa  Ambig 0
+        symbol pa (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION POINTER SAVE)
+        Array spec:(5 AS_DEFERRED () () () () () () () () () () )
+
+        symtree: a  Ambig 0
+        symbol a (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION SAVE TARGET)
+        Array spec:(5 AS_EXPLICIT 1 1 1 2 1 3 1 4 1 5 )
+
+        symtree: send_iia5d  Ambig 0
+        symbol send_iia5d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SUBROUTINE)
+
+        symtree: recv_iia5d  Ambig 0
+        symbol recv_iia5d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC SUBROUTINE)
+        Formal arglist: a
+        Formal namespace
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = recv_iia5d
+          symtree: recv_iia5d  Ambig 0 from namespace send_iia5d
+          symtree: a  Ambig 0
+          symbol a (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION POINTER DUMMY)
+          Array spec:(5 AS_DEFERRED () () () () () () () () () () )
+
+
+
+
+
+
+      POINTER ASSIGN pa(FULL) a(FULL)
+      CALL recv_iia5d ((pa(FULL)))
+
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = send_iia6d
+        symtree: recv_iia6d  Ambig 0
+        symbol recv_iia6d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC SUBROUTINE)
+        Formal arglist: a
+        Formal namespace
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = recv_iia6d
+          symtree: a  Ambig 0
+          symbol a (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION POINTER DUMMY)
+          Array spec:(6 AS_DEFERRED () () () () () () () () () () () () )
+
+          symtree: recv_iia6d  Ambig 0 from namespace send_iia6d
+
+
+
+
+        symtree: a  Ambig 0
+        symbol a (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION SAVE TARGET)
+        Array spec:(6 AS_EXPLICIT 1 1 1 2 1 3 1 4 1 5 1 6 )
+
+        symtree: pa  Ambig 0
+        symbol pa (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION POINTER SAVE)
+        Array spec:(6 AS_DEFERRED () () () () () () () () () () () () )
+
+        symtree: send_iia6d  Ambig 0
+        symbol send_iia6d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SUBROUTINE)
+
+
+      POINTER ASSIGN pa(FULL) a(FULL)
+      CALL recv_iia6d ((pa(FULL)))
+
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = send_iia7d
+        symtree: pa  Ambig 0
+        symbol pa (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION POINTER SAVE)
+        Array spec:(7 AS_DEFERRED () () () () () () () () () () () () () () )
+
+        symtree: a  Ambig 0
+        symbol a (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION SAVE TARGET)
+        Array spec:(7 AS_EXPLICIT 1 1 1 2 1 3 1 4 1 5 1 6 1 7 )
+
+        symtree: send_iia7d  Ambig 0
+        symbol send_iia7d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SUBROUTINE)
+
+        symtree: recv_iia7d  Ambig 0
+        symbol recv_iia7d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC SUBROUTINE)
+        Formal arglist: a
+        Formal namespace
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = recv_iia7d
+          symtree: recv_iia7d  Ambig 0 from namespace send_iia7d
+          symtree: a  Ambig 0
+          symbol a (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION POINTER DUMMY)
+          Array spec:(7 AS_DEFERRED () () () () () () () () () () () () () () )
+
+
+
+
+
+
+      POINTER ASSIGN pa(FULL) a(FULL)
+      CALL recv_iia7d ((pa(FULL)))
+
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = send_lla0d
+        symtree: ikind_long  Ambig 0
+        symbol ikind_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: ikind16  Ambig 0
+        symbol ikind16 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 16
+
+        symtree: ikind1  Ambig 0
+        symbol ikind1 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 1
+
+        symtree: f90_kinds  Ambig 0
+        symbol f90_kinds (UNKNOWN 0)(MODULE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+
+        symtree: ikind4  Ambig 0
+        symbol ikind4 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: ikind2  Ambig 0
+        symbol ikind2 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 2
+
+        symtree: ikind8  Ambig 0
+        symbol ikind8 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 8
+
+        symtree: ikind_int  Ambig 0
+        symbol ikind_int (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: pl  Ambig 0
+        symbol pl (LOGICAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC POINTER SAVE)
+
+        symtree: ikind_short  Ambig 0
+        symbol ikind_short (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 2
+
+        symtree: ikind_long_long  Ambig 0
+        symbol ikind_long_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 8
+
+        symtree: l  Ambig 0
+        symbol l (LOGICAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SAVE TARGET)
+
+        symtree: recv_lla0d  Ambig 0
+        symbol recv_lla0d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC SUBROUTINE)
+        Formal arglist: l
+        Formal namespace
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = recv_lla0d
+          symtree: ikind_long  Ambig 0
+          symbol ikind_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 4
+
+          symtree: f90_kinds  Ambig 0
+          symbol f90_kinds (UNKNOWN 0)(MODULE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+
+          symtree: ikind8  Ambig 0
+          symbol ikind8 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 8
+
+          symtree: ikind1  Ambig 0
+          symbol ikind1 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 1
+
+          symtree: ikind2  Ambig 0
+          symbol ikind2 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 2
+
+          symtree: ikind16  Ambig 0
+          symbol ikind16 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 16
+
+          symtree: ikind4  Ambig 0
+          symbol ikind4 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 4
+
+          symtree: ikind_int  Ambig 0
+          symbol ikind_int (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 4
+
+          symtree: l  Ambig 0
+          symbol l (LOGICAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC POINTER DUMMY)
+
+          symtree: ikind_long_long  Ambig 0
+          symbol ikind_long_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 8
+
+          symtree: ikind_short  Ambig 0
+          symbol ikind_short (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 2
+
+          symtree: recv_lla0d  Ambig 0 from namespace send_lla0d
+
+
+
+
+        symtree: send_lla0d  Ambig 0
+        symbol send_lla0d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SUBROUTINE)
+
+
+      POINTER ASSIGN pl l
+      CALL recv_lla0d ((pl))
+
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = send_l1a0d
+        symtree: ikind4  Ambig 0
+        symbol ikind4 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: ikind1  Ambig 0
+        symbol ikind1 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 1
+
+        symtree: f90_kinds  Ambig 0
+        symbol f90_kinds (UNKNOWN 0)(MODULE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+
+        symtree: ikind16  Ambig 0
+        symbol ikind16 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 16
+
+        symtree: ikind2  Ambig 0
+        symbol ikind2 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 2
+
+        symtree: recv_l1a0d  Ambig 0
+        symbol recv_l1a0d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC SUBROUTINE)
+        Formal arglist: p
+        Formal namespace
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = recv_l1a0d
+          symtree: ikind_long  Ambig 0
+          symbol ikind_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 4
+
+          symtree: ikind8  Ambig 0
+          symbol ikind8 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 8
+
+          symtree: f90_kinds  Ambig 0
+          symbol f90_kinds (UNKNOWN 0)(MODULE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+
+          symtree: ikind1  Ambig 0
+          symbol ikind1 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 1
+
+          symtree: ikind16  Ambig 0
+          symbol ikind16 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 16
+
+          symtree: ikind2  Ambig 0
+          symbol ikind2 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 2
+
+          symtree: ikind4  Ambig 0
+          symbol ikind4 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 4
+
+          symtree: ikind_int  Ambig 0
+          symbol ikind_int (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 4
+
+          symtree: ikind_long_long  Ambig 0
+          symbol ikind_long_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 8
+
+          symtree: p  Ambig 0
+          symbol p (LOGICAL 1)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC POINTER DUMMY)
+
+          symtree: ikind_short  Ambig 0
+          symbol ikind_short (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 2
+
+          symtree: recv_l1a0d  Ambig 0 from namespace send_l1a0d
+
+
+
+
+        symtree: pl  Ambig 0
+        symbol pl (LOGICAL 1)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC POINTER SAVE)
+
+        symtree: ikind_short  Ambig 0
+        symbol ikind_short (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 2
+
+        symtree: ikind_long  Ambig 0
+        symbol ikind_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: ikind_int  Ambig 0
+        symbol ikind_int (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: ikind8  Ambig 0
+        symbol ikind8 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 8
+
+        symtree: ikind_long_long  Ambig 0
+        symbol ikind_long_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 8
+
+        symtree: l  Ambig 0
+        symbol l (LOGICAL 1)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SAVE TARGET)
+
+        symtree: send_l1a0d  Ambig 0
+        symbol send_l1a0d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SUBROUTINE)
+
+
+      POINTER ASSIGN pl l
+      CALL recv_l1a0d ((pl))
+
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = send_l2a0d
+        symtree: ikind_long_long  Ambig 0
+        symbol ikind_long_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 8
+
+        symtree: ikind2  Ambig 0
+        symbol ikind2 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 2
+
+        symtree: ikind16  Ambig 0
+        symbol ikind16 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 16
+
+        symtree: ikind1  Ambig 0
+        symbol ikind1 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 1
+
+        symtree: f90_kinds  Ambig 0
+        symbol f90_kinds (UNKNOWN 0)(MODULE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+
+        symtree: ikind8  Ambig 0
+        symbol ikind8 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 8
+
+        symtree: ikind4  Ambig 0
+        symbol ikind4 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: ikind_long  Ambig 0
+        symbol ikind_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: ikind_int  Ambig 0
+        symbol ikind_int (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: pl  Ambig 0
+        symbol pl (LOGICAL 2)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC POINTER SAVE)
+
+        symtree: l  Ambig 0
+        symbol l (LOGICAL 2)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SAVE TARGET)
+
+        symtree: ikind_short  Ambig 0
+        symbol ikind_short (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 2
+
+        symtree: send_l2a0d  Ambig 0
+        symbol send_l2a0d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SUBROUTINE)
+
+        symtree: recv_l2a0d  Ambig 0
+        symbol recv_l2a0d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC SUBROUTINE)
+        Formal arglist: p
+        Formal namespace
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = recv_l2a0d
+          symtree: recv_l2a0d  Ambig 0 from namespace send_l2a0d
+          symtree: ikind1  Ambig 0
+          symbol ikind1 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 1
+
+          symtree: f90_kinds  Ambig 0
+          symbol f90_kinds (UNKNOWN 0)(MODULE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+
+          symtree: ikind4  Ambig 0
+          symbol ikind4 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 4
+
+          symtree: ikind16  Ambig 0
+          symbol ikind16 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 16
+
+          symtree: ikind2  Ambig 0
+          symbol ikind2 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 2
+
+          symtree: ikind_int  Ambig 0
+          symbol ikind_int (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 4
+
+          symtree: ikind8  Ambig 0
+          symbol ikind8 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 8
+
+          symtree: ikind_short  Ambig 0
+          symbol ikind_short (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 2
+
+          symtree: ikind_long_long  Ambig 0
+          symbol ikind_long_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 8
+
+          symtree: ikind_long  Ambig 0
+          symbol ikind_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 4
+
+          symtree: p  Ambig 0
+          symbol p (LOGICAL 2)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC POINTER DUMMY)
+
+
+
+
+
+
+      POINTER ASSIGN pl l
+      CALL recv_l2a0d ((pl))
+
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = send_l4a0d
+        symtree: send_l4a0d  Ambig 0
+        symbol send_l4a0d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SUBROUTINE)
+
+        symtree: ikind8  Ambig 0
+        symbol ikind8 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 8
+
+        symtree: ikind1  Ambig 0
+        symbol ikind1 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 1
+
+        symtree: f90_kinds  Ambig 0
+        symbol f90_kinds (UNKNOWN 0)(MODULE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+
+        symtree: ikind2  Ambig 0
+        symbol ikind2 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 2
+
+        symtree: ikind16  Ambig 0
+        symbol ikind16 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 16
+
+        symtree: ikind4  Ambig 0
+        symbol ikind4 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: recv_l4a0d  Ambig 0
+        symbol recv_l4a0d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC SUBROUTINE)
+        Formal arglist: p
+        Formal namespace
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = recv_l4a0d
+          symtree: ikind_int  Ambig 0
+          symbol ikind_int (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 4
+
+          symtree: ikind2  Ambig 0
+          symbol ikind2 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 2
+
+          symtree: ikind16  Ambig 0
+          symbol ikind16 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 16
+
+          symtree: ikind1  Ambig 0
+          symbol ikind1 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 1
+
+          symtree: f90_kinds  Ambig 0
+          symbol f90_kinds (UNKNOWN 0)(MODULE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+
+          symtree: ikind4  Ambig 0
+          symbol ikind4 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 4
+
+          symtree: ikind8  Ambig 0
+          symbol ikind8 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 8
+
+          symtree: ikind_short  Ambig 0
+          symbol ikind_short (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 2
+
+          symtree: ikind_long  Ambig 0
+          symbol ikind_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 4
+
+          symtree: ikind_long_long  Ambig 0
+          symbol ikind_long_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 8
+
+          symtree: p  Ambig 0
+          symbol p (LOGICAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC POINTER DUMMY)
+
+          symtree: recv_l4a0d  Ambig 0 from namespace send_l4a0d
+
+
+
+
+        symtree: ikind_short  Ambig 0
+        symbol ikind_short (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 2
+
+        symtree: ikind_long_long  Ambig 0
+        symbol ikind_long_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 8
+
+        symtree: ikind_long  Ambig 0
+        symbol ikind_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: ikind_int  Ambig 0
+        symbol ikind_int (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: pl  Ambig 0
+        symbol pl (LOGICAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC POINTER SAVE)
+
+        symtree: l  Ambig 0
+        symbol l (LOGICAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SAVE TARGET)
+
+
+      POINTER ASSIGN pl l
+      CALL recv_l4a0d ((pl))
+
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = send_l8a0d
+        symtree: pl  Ambig 0
+        symbol pl (LOGICAL 8)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC POINTER SAVE)
+
+        symtree: ikind2  Ambig 0
+        symbol ikind2 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 2
+
+        symtree: ikind1  Ambig 0
+        symbol ikind1 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 1
+
+        symtree: f90_kinds  Ambig 0
+        symbol f90_kinds (UNKNOWN 0)(MODULE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+
+        symtree: ikind16  Ambig 0
+        symbol ikind16 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 16
+
+        symtree: l  Ambig 0
+        symbol l (LOGICAL 8)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SAVE TARGET)
+
+        symtree: ikind8  Ambig 0
+        symbol ikind8 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 8
+
+        symtree: ikind4  Ambig 0
+        symbol ikind4 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: ikind_long_long  Ambig 0
+        symbol ikind_long_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 8
+
+        symtree: ikind_int  Ambig 0
+        symbol ikind_int (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: ikind_long  Ambig 0
+        symbol ikind_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: ikind_short  Ambig 0
+        symbol ikind_short (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 2
+
+        symtree: send_l8a0d  Ambig 0
+        symbol send_l8a0d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SUBROUTINE)
+
+        symtree: recv_l8a0d  Ambig 0
+        symbol recv_l8a0d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC SUBROUTINE)
+        Formal arglist: p
+        Formal namespace
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = recv_l8a0d
+          symtree: ikind_int  Ambig 0
+          symbol ikind_int (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 4
+
+          symtree: ikind1  Ambig 0
+          symbol ikind1 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 1
+
+          symtree: f90_kinds  Ambig 0
+          symbol f90_kinds (UNKNOWN 0)(MODULE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+
+          symtree: ikind16  Ambig 0
+          symbol ikind16 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 16
+
+          symtree: ikind2  Ambig 0
+          symbol ikind2 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 2
+
+          symtree: ikind8  Ambig 0
+          symbol ikind8 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 8
+
+          symtree: ikind4  Ambig 0
+          symbol ikind4 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 4
+
+          symtree: ikind_long  Ambig 0
+          symbol ikind_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 4
+
+          symtree: recv_l8a0d  Ambig 0 from namespace send_l8a0d
+          symtree: ikind_short  Ambig 0
+          symbol ikind_short (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 2
+
+          symtree: ikind_long_long  Ambig 0
+          symbol ikind_long_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 8
+
+          symtree: p  Ambig 0
+          symbol p (LOGICAL 8)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC POINTER DUMMY)
+
+
+
+
+
+
+      POINTER ASSIGN pl l
+      CALL recv_l8a0d ((pl))
+
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = send_lla1d
+        symtree: ikind_long_long  Ambig 0
+        symbol ikind_long_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 8
+
+        symtree: ikind16  Ambig 0
+        symbol ikind16 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 16
+
+        symtree: a  Ambig 0
+        symbol a (LOGICAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION SAVE TARGET)
+        Array spec:(1 AS_EXPLICIT 1 10 )
+
+        symtree: f90_kinds  Ambig 0
+        symbol f90_kinds (UNKNOWN 0)(MODULE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+
+        symtree: ikind1  Ambig 0
+        symbol ikind1 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 1
+
+        symtree: ikind2  Ambig 0
+        symbol ikind2 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 2
+
+        symtree: ikind_int  Ambig 0
+        symbol ikind_int (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: ikind8  Ambig 0
+        symbol ikind8 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 8
+
+        symtree: ikind4  Ambig 0
+        symbol ikind4 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: ikind_long  Ambig 0
+        symbol ikind_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: ikind_short  Ambig 0
+        symbol ikind_short (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 2
+
+        symtree: pa  Ambig 0
+        symbol pa (LOGICAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION POINTER SAVE)
+        Array spec:(1 AS_DEFERRED () () )
+
+        symtree: recv_lla1d  Ambig 0
+        symbol recv_lla1d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC SUBROUTINE)
+        Formal arglist: a
+        Formal namespace
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = recv_lla1d
+          symtree: a  Ambig 0
+          symbol a (LOGICAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION POINTER DUMMY)
+          Array spec:(1 AS_DEFERRED () () )
+
+          symtree: f90_kinds  Ambig 0
+          symbol f90_kinds (UNKNOWN 0)(MODULE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+
+          symtree: ikind4  Ambig 0
+          symbol ikind4 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 4
+
+          symtree: ikind2  Ambig 0
+          symbol ikind2 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 2
+
+          symtree: ikind16  Ambig 0
+          symbol ikind16 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 16
+
+          symtree: ikind1  Ambig 0
+          symbol ikind1 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 1
+
+          symtree: ikind_int  Ambig 0
+          symbol ikind_int (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 4
+
+          symtree: ikind8  Ambig 0
+          symbol ikind8 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 8
+
+          symtree: recv_lla1d  Ambig 0 from namespace send_lla1d
+          symtree: ikind_long  Ambig 0
+          symbol ikind_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 4
+
+          symtree: ikind_long_long  Ambig 0
+          symbol ikind_long_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 8
+
+          symtree: ikind_short  Ambig 0
+          symbol ikind_short (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 2
+
+
+
+
+
+        symtree: send_lla1d  Ambig 0
+        symbol send_lla1d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SUBROUTINE)
+
+
+      POINTER ASSIGN pa(FULL) a(FULL)
+      CALL recv_lla1d ((pa(FULL)))
+
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = send_l1a1d
+        symtree: ikind4  Ambig 0
+        symbol ikind4 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: a  Ambig 0
+        symbol a (LOGICAL 1)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION SAVE TARGET)
+        Array spec:(1 AS_EXPLICIT 1 10 )
+
+        symtree: ikind2  Ambig 0
+        symbol ikind2 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 2
+
+        symtree: ikind1  Ambig 0
+        symbol ikind1 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 1
+
+        symtree: f90_kinds  Ambig 0
+        symbol f90_kinds (UNKNOWN 0)(MODULE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+
+        symtree: ikind16  Ambig 0
+        symbol ikind16 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 16
+
+        symtree: ikind_long  Ambig 0
+        symbol ikind_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: ikind_int  Ambig 0
+        symbol ikind_int (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: ikind8  Ambig 0
+        symbol ikind8 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 8
+
+        symtree: send_l1a1d  Ambig 0
+        symbol send_l1a1d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SUBROUTINE)
+
+        symtree: ikind_short  Ambig 0
+        symbol ikind_short (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 2
+
+        symtree: ikind_long_long  Ambig 0
+        symbol ikind_long_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 8
+
+        symtree: recv_l1a1d  Ambig 0
+        symbol recv_l1a1d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC SUBROUTINE)
+        Formal arglist: a
+        Formal namespace
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = recv_l1a1d
+          symtree: ikind2  Ambig 0
+          symbol ikind2 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 2
+
+          symtree: ikind1  Ambig 0
+          symbol ikind1 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 1
+
+          symtree: a  Ambig 0
+          symbol a (LOGICAL 1)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION POINTER DUMMY)
+          Array spec:(1 AS_DEFERRED () () )
+
+          symtree: f90_kinds  Ambig 0
+          symbol f90_kinds (UNKNOWN 0)(MODULE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+
+          symtree: ikind16  Ambig 0
+          symbol ikind16 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 16
+
+          symtree: ikind8  Ambig 0
+          symbol ikind8 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 8
+
+          symtree: ikind4  Ambig 0
+          symbol ikind4 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 4
+
+          symtree: ikind_long_long  Ambig 0
+          symbol ikind_long_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 8
+
+          symtree: ikind_int  Ambig 0
+          symbol ikind_int (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 4
+
+          symtree: ikind_long  Ambig 0
+          symbol ikind_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 4
+
+          symtree: recv_l1a1d  Ambig 0 from namespace send_l1a1d
+          symtree: ikind_short  Ambig 0
+          symbol ikind_short (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 2
+
+
+
+
+
+        symtree: pa  Ambig 0
+        symbol pa (LOGICAL 1)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION POINTER SAVE)
+        Array spec:(1 AS_DEFERRED () () )
+
+
+      POINTER ASSIGN pa(FULL) a(FULL)
+      CALL recv_l1a1d ((pa(FULL)))
+
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = send_l2a1d
+        symtree: pa  Ambig 0
+        symbol pa (LOGICAL 2)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION POINTER SAVE)
+        Array spec:(1 AS_DEFERRED () () )
+
+        symtree: a  Ambig 0
+        symbol a (LOGICAL 2)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION SAVE TARGET)
+        Array spec:(1 AS_EXPLICIT 1 10 )
+
+        symtree: ikind_int  Ambig 0
+        symbol ikind_int (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: f90_kinds  Ambig 0
+        symbol f90_kinds (UNKNOWN 0)(MODULE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+
+        symtree: ikind8  Ambig 0
+        symbol ikind8 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 8
+
+        symtree: ikind2  Ambig 0
+        symbol ikind2 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 2
+
+        symtree: ikind1  Ambig 0
+        symbol ikind1 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 1
+
+        symtree: ikind16  Ambig 0
+        symbol ikind16 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 16
+
+        symtree: ikind4  Ambig 0
+        symbol ikind4 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: ikind_long  Ambig 0
+        symbol ikind_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: ikind_short  Ambig 0
+        symbol ikind_short (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 2
+
+        symtree: ikind_long_long  Ambig 0
+        symbol ikind_long_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 8
+
+        symtree: recv_l2a1d  Ambig 0
+        symbol recv_l2a1d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC SUBROUTINE)
+        Formal arglist: a
+        Formal namespace
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = recv_l2a1d
+          symtree: ikind4  Ambig 0
+          symbol ikind4 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 4
+
+          symtree: a  Ambig 0
+          symbol a (LOGICAL 2)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION POINTER DUMMY)
+          Array spec:(1 AS_DEFERRED () () )
+
+          symtree: ikind16  Ambig 0
+          symbol ikind16 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 16
+
+          symtree: ikind1  Ambig 0
+          symbol ikind1 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 1
+
+          symtree: f90_kinds  Ambig 0
+          symbol f90_kinds (UNKNOWN 0)(MODULE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+
+          symtree: ikind2  Ambig 0
+          symbol ikind2 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 2
+
+          symtree: ikind_long  Ambig 0
+          symbol ikind_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 4
+
+          symtree: ikind8  Ambig 0
+          symbol ikind8 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 8
+
+          symtree: ikind_int  Ambig 0
+          symbol ikind_int (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 4
+
+          symtree: ikind_short  Ambig 0
+          symbol ikind_short (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 2
+
+          symtree: ikind_long_long  Ambig 0
+          symbol ikind_long_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 8
+
+          symtree: recv_l2a1d  Ambig 0 from namespace send_l2a1d
+
+
+
+
+        symtree: send_l2a1d  Ambig 0
+        symbol send_l2a1d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SUBROUTINE)
+
+
+      POINTER ASSIGN pa(FULL) a(FULL)
+      CALL recv_l2a1d ((pa(FULL)))
+
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = send_l4a1d
+        symtree: recv_l4a1d  Ambig 0
+        symbol recv_l4a1d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC SUBROUTINE)
+        Formal arglist: a
+        Formal namespace
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = recv_l4a1d
+          symtree: ikind_long_long  Ambig 0
+          symbol ikind_long_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 8
+
+          symtree: a  Ambig 0
+          symbol a (LOGICAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION POINTER DUMMY)
+          Array spec:(1 AS_DEFERRED () () )
+
+          symtree: ikind_long  Ambig 0
+          symbol ikind_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 4
+
+          symtree: ikind4  Ambig 0
+          symbol ikind4 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 4
+
+          symtree: ikind16  Ambig 0
+          symbol ikind16 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 16
+
+          symtree: ikind1  Ambig 0
+          symbol ikind1 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 1
+
+          symtree: f90_kinds  Ambig 0
+          symbol f90_kinds (UNKNOWN 0)(MODULE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+
+          symtree: ikind2  Ambig 0
+          symbol ikind2 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 2
+
+          symtree: ikind8  Ambig 0
+          symbol ikind8 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 8
+
+          symtree: ikind_int  Ambig 0
+          symbol ikind_int (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 4
+
+          symtree: recv_l4a1d  Ambig 0 from namespace send_l4a1d
+          symtree: ikind_short  Ambig 0
+          symbol ikind_short (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 2
+
+
+
+
+
+        symtree: pa  Ambig 0
+        symbol pa (LOGICAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION POINTER SAVE)
+        Array spec:(1 AS_DEFERRED () () )
+
+        symtree: ikind_long_long  Ambig 0
+        symbol ikind_long_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 8
+
+        symtree: f90_kinds  Ambig 0
+        symbol f90_kinds (UNKNOWN 0)(MODULE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+
+        symtree: a  Ambig 0
+        symbol a (LOGICAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION SAVE TARGET)
+        Array spec:(1 AS_EXPLICIT 1 10 )
+
+        symtree: ikind_int  Ambig 0
+        symbol ikind_int (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: ikind2  Ambig 0
+        symbol ikind2 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 2
+
+        symtree: ikind1  Ambig 0
+        symbol ikind1 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 1
+
+        symtree: ikind16  Ambig 0
+        symbol ikind16 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 16
+
+        symtree: ikind4  Ambig 0
+        symbol ikind4 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: ikind8  Ambig 0
+        symbol ikind8 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 8
+
+        symtree: ikind_long  Ambig 0
+        symbol ikind_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: ikind_short  Ambig 0
+        symbol ikind_short (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 2
+
+        symtree: send_l4a1d  Ambig 0
+        symbol send_l4a1d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SUBROUTINE)
+
+
+      POINTER ASSIGN pa(FULL) a(FULL)
+      CALL recv_l4a1d ((pa(FULL)))
+
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = send_l8a1d
+        symtree: send_l8a1d  Ambig 0
+        symbol send_l8a1d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SUBROUTINE)
+
+        symtree: recv_l8a1d  Ambig 0
+        symbol recv_l8a1d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC SUBROUTINE)
+        Formal arglist: a
+        Formal namespace
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = recv_l8a1d
+          symtree: ikind8  Ambig 0
+          symbol ikind8 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 8
+
+          symtree: f90_kinds  Ambig 0
+          symbol f90_kinds (UNKNOWN 0)(MODULE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+
+          symtree: a  Ambig 0
+          symbol a (LOGICAL 8)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION POINTER DUMMY)
+          Array spec:(1 AS_DEFERRED () () )
+
+          symtree: ikind4  Ambig 0
+          symbol ikind4 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 4
+
+          symtree: ikind16  Ambig 0
+          symbol ikind16 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 16
+
+          symtree: ikind1  Ambig 0
+          symbol ikind1 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 1
+
+          symtree: ikind2  Ambig 0
+          symbol ikind2 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 2
+
+          symtree: ikind_long_long  Ambig 0
+          symbol ikind_long_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 8
+
+          symtree: ikind_long  Ambig 0
+          symbol ikind_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 4
+
+          symtree: ikind_int  Ambig 0
+          symbol ikind_int (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 4
+
+          symtree: recv_l8a1d  Ambig 0 from namespace send_l8a1d
+          symtree: ikind_short  Ambig 0
+          symbol ikind_short (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 2
+
+
+
+
+
+        symtree: pa  Ambig 0
+        symbol pa (LOGICAL 8)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION POINTER SAVE)
+        Array spec:(1 AS_DEFERRED () () )
+
+        symtree: ikind_short  Ambig 0
+        symbol ikind_short (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 2
+
+        symtree: ikind_long_long  Ambig 0
+        symbol ikind_long_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 8
+
+        symtree: ikind1  Ambig 0
+        symbol ikind1 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 1
+
+        symtree: f90_kinds  Ambig 0
+        symbol f90_kinds (UNKNOWN 0)(MODULE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+
+        symtree: a  Ambig 0
+        symbol a (LOGICAL 8)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION SAVE TARGET)
+        Array spec:(1 AS_EXPLICIT 1 10 )
+
+        symtree: ikind2  Ambig 0
+        symbol ikind2 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 2
+
+        symtree: ikind16  Ambig 0
+        symbol ikind16 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 16
+
+        symtree: ikind_int  Ambig 0
+        symbol ikind_int (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: ikind8  Ambig 0
+        symbol ikind8 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 8
+
+        symtree: ikind4  Ambig 0
+        symbol ikind4 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: ikind_long  Ambig 0
+        symbol ikind_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+
+      POINTER ASSIGN pa(FULL) a(FULL)
+      CALL recv_l8a1d ((pa(FULL)))
+
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = send_i1a1d
+        symtree: ikind_short  Ambig 0
+        symbol ikind_short (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 2
+
+        symtree: ikind1  Ambig 0
+        symbol ikind1 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 1
+
+        symtree: a  Ambig 0
+        symbol a (INTEGER 1)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION SAVE TARGET)
+        value: (/ 1_1 , 2_1 , 3_1 , 4_1 , 5_1 , 6_1 , 7_1 , 8_1 , 9_1 , 10_1 /)
+        Array spec:(1 AS_EXPLICIT 1 10 )
+
+        symtree: f90_kinds  Ambig 0
+        symbol f90_kinds (UNKNOWN 0)(MODULE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+
+        symtree: ikind_long  Ambig 0
+        symbol ikind_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: ikind8  Ambig 0
+        symbol ikind8 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 8
+
+        symtree: ikind4  Ambig 0
+        symbol ikind4 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: ikind2  Ambig 0
+        symbol ikind2 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 2
+
+        symtree: ikind16  Ambig 0
+        symbol ikind16 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 16
+
+        symtree: ikind_int  Ambig 0
+        symbol ikind_int (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: ikind_long_long  Ambig 0
+        symbol ikind_long_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 8
+
+        symtree: send_i1a1d  Ambig 0
+        symbol send_i1a1d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SUBROUTINE)
+
+        symtree: recv_i1a1d  Ambig 0
+        symbol recv_i1a1d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC SUBROUTINE)
+        Formal arglist: a
+        Formal namespace
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = recv_i1a1d
+          symtree: ikind1  Ambig 0
+          symbol ikind1 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 1
+
+          symtree: f90_kinds  Ambig 0
+          symbol f90_kinds (UNKNOWN 0)(MODULE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+
+          symtree: a  Ambig 0
+          symbol a (INTEGER 1)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION POINTER DUMMY)
+          Array spec:(1 AS_DEFERRED () () )
+
+          symtree: ikind2  Ambig 0
+          symbol ikind2 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 2
+
+          symtree: ikind16  Ambig 0
+          symbol ikind16 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 16
+
+          symtree: ikind_short  Ambig 0
+          symbol ikind_short (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 2
+
+          symtree: ikind4  Ambig 0
+          symbol ikind4 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 4
+
+          symtree: ikind_long  Ambig 0
+          symbol ikind_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 4
+
+          symtree: ikind_int  Ambig 0
+          symbol ikind_int (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 4
+
+          symtree: ikind8  Ambig 0
+          symbol ikind8 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 8
+
+          symtree: ikind_long_long  Ambig 0
+          symbol ikind_long_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 8
+
+          symtree: recv_i1a1d  Ambig 0 from namespace send_i1a1d
+
+
+
+
+        symtree: pa  Ambig 0
+        symbol pa (INTEGER 1)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION POINTER SAVE)
+        Array spec:(1 AS_DEFERRED () () )
+
+
+      POINTER ASSIGN pa(FULL) a(FULL)
+      CALL recv_i1a1d ((pa(FULL)))
+
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = send_i2a1d
+        symtree: ikind16  Ambig 0
+        symbol ikind16 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 16
+
+        symtree: a  Ambig 0
+        symbol a (INTEGER 2)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION SAVE TARGET)
+        value: (/ 1_2 , 2_2 , 3_2 , 4_2 , 5_2 , 6_2 , 7_2 , 8_2 , 9_2 , 10_2 /)
+        Array spec:(1 AS_EXPLICIT 1 10 )
+
+        symtree: f90_kinds  Ambig 0
+        symbol f90_kinds (UNKNOWN 0)(MODULE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+
+        symtree: ikind1  Ambig 0
+        symbol ikind1 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 1
+
+        symtree: ikind_short  Ambig 0
+        symbol ikind_short (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 2
+
+        symtree: ikind_int  Ambig 0
+        symbol ikind_int (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: ikind8  Ambig 0
+        symbol ikind8 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 8
+
+        symtree: ikind4  Ambig 0
+        symbol ikind4 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: ikind2  Ambig 0
+        symbol ikind2 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 2
+
+        symtree: ikind_long  Ambig 0
+        symbol ikind_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: ikind_long_long  Ambig 0
+        symbol ikind_long_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 8
+
+        symtree: send_i2a1d  Ambig 0
+        symbol send_i2a1d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SUBROUTINE)
+
+        symtree: pa  Ambig 0
+        symbol pa (INTEGER 2)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION POINTER SAVE)
+        Array spec:(1 AS_DEFERRED () () )
+
+        symtree: recv_i2a1d  Ambig 0
+        symbol recv_i2a1d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC SUBROUTINE)
+        Formal arglist: a
+        Formal namespace
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = recv_i2a1d
+          symtree: ikind4  Ambig 0
+          symbol ikind4 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 4
+
+          symtree: f90_kinds  Ambig 0
+          symbol f90_kinds (UNKNOWN 0)(MODULE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+
+          symtree: a  Ambig 0
+          symbol a (INTEGER 2)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION POINTER DUMMY)
+          Array spec:(1 AS_DEFERRED () () )
+
+          symtree: ikind1  Ambig 0
+          symbol ikind1 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 1
+
+          symtree: ikind2  Ambig 0
+          symbol ikind2 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 2
+
+          symtree: ikind16  Ambig 0
+          symbol ikind16 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 16
+
+          symtree: ikind_int  Ambig 0
+          symbol ikind_int (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 4
+
+          symtree: ikind8  Ambig 0
+          symbol ikind8 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 8
+
+          symtree: ikind_long  Ambig 0
+          symbol ikind_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 4
+
+          symtree: recv_i2a1d  Ambig 0 from namespace send_i2a1d
+          symtree: ikind_long_long  Ambig 0
+          symbol ikind_long_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 8
+
+          symtree: ikind_short  Ambig 0
+          symbol ikind_short (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 2
+
+
+
+
+
+
+      POINTER ASSIGN pa(FULL) a(FULL)
+      CALL recv_i2a1d ((pa(FULL)))
+
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = send_i4a1d
+        symtree: ikind1  Ambig 0
+        symbol ikind1 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 1
+
+        symtree: a  Ambig 0
+        symbol a (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION SAVE TARGET)
+        value: (/ 1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 , 10 /)
+        Array spec:(1 AS_EXPLICIT 1 10 )
+
+        symtree: f90_kinds  Ambig 0
+        symbol f90_kinds (UNKNOWN 0)(MODULE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+
+        symtree: ikind4  Ambig 0
+        symbol ikind4 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: ikind16  Ambig 0
+        symbol ikind16 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 16
+
+        symtree: ikind2  Ambig 0
+        symbol ikind2 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 2
+
+        symtree: ikind_long_long  Ambig 0
+        symbol ikind_long_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 8
+
+        symtree: ikind_int  Ambig 0
+        symbol ikind_int (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: ikind8  Ambig 0
+        symbol ikind8 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 8
+
+        symtree: ikind_long  Ambig 0
+        symbol ikind_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: pa  Ambig 0
+        symbol pa (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION POINTER SAVE)
+        Array spec:(1 AS_DEFERRED () () )
+
+        symtree: ikind_short  Ambig 0
+        symbol ikind_short (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 2
+
+        symtree: recv_i4a1d  Ambig 0
+        symbol recv_i4a1d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC SUBROUTINE)
+        Formal arglist: a
+        Formal namespace
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = recv_i4a1d
+          symtree: ikind_int  Ambig 0
+          symbol ikind_int (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 4
+
+          symtree: ikind8  Ambig 0
+          symbol ikind8 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 8
+
+          symtree: ikind1  Ambig 0
+          symbol ikind1 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 1
+
+          symtree: f90_kinds  Ambig 0
+          symbol f90_kinds (UNKNOWN 0)(MODULE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+
+          symtree: a  Ambig 0
+          symbol a (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION POINTER DUMMY)
+          Array spec:(1 AS_DEFERRED () () )
+
+          symtree: ikind4  Ambig 0
+          symbol ikind4 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 4
+
+          symtree: ikind2  Ambig 0
+          symbol ikind2 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 2
+
+          symtree: ikind16  Ambig 0
+          symbol ikind16 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 16
+
+          symtree: ikind_short  Ambig 0
+          symbol ikind_short (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 2
+
+          symtree: ikind_long_long  Ambig 0
+          symbol ikind_long_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 8
+
+          symtree: ikind_long  Ambig 0
+          symbol ikind_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 4
+
+          symtree: recv_i4a1d  Ambig 0 from namespace send_i4a1d
+
+
+
+
+        symtree: send_i4a1d  Ambig 0
+        symbol send_i4a1d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SUBROUTINE)
+
+
+      POINTER ASSIGN pa(FULL) a(FULL)
+      CALL recv_i4a1d ((pa(FULL)))
+
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = send_i8a1d
+        symtree: recv_i8a1d  Ambig 0
+        symbol recv_i8a1d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC SUBROUTINE)
+        Formal arglist: a
+        Formal namespace
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = recv_i8a1d
+          symtree: ikind2  Ambig 0
+          symbol ikind2 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 2
+
+          symtree: f90_kinds  Ambig 0
+          symbol f90_kinds (UNKNOWN 0)(MODULE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+
+          symtree: a  Ambig 0
+          symbol a (INTEGER 8)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION POINTER DUMMY)
+          Array spec:(1 AS_DEFERRED () () )
+
+          symtree: ikind16  Ambig 0
+          symbol ikind16 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 16
+
+          symtree: ikind1  Ambig 0
+          symbol ikind1 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 1
+
+          symtree: ikind4  Ambig 0
+          symbol ikind4 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 4
+
+          symtree: ikind8  Ambig 0
+          symbol ikind8 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 8
+
+          symtree: recv_i8a1d  Ambig 0 from namespace send_i8a1d
+          symtree: ikind_int  Ambig 0
+          symbol ikind_int (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 4
+
+          symtree: ikind_short  Ambig 0
+          symbol ikind_short (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 2
+
+          symtree: ikind_long_long  Ambig 0
+          symbol ikind_long_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 8
+
+          symtree: ikind_long  Ambig 0
+          symbol ikind_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 4
+
+
+
+
+
+        symtree: ikind_short  Ambig 0
+        symbol ikind_short (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 2
+
+        symtree: ikind8  Ambig 0
+        symbol ikind8 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 8
+
+        symtree: f90_kinds  Ambig 0
+        symbol f90_kinds (UNKNOWN 0)(MODULE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+
+        symtree: a  Ambig 0
+        symbol a (INTEGER 8)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION SAVE TARGET)
+        value: (/ 1_8 , 2_8 , 3_8 , 4_8 , 5_8 , 6_8 , 7_8 , 8_8 , 9_8 , 10_8 /)
+        Array spec:(1 AS_EXPLICIT 1 10 )
+
+        symtree: ikind1  Ambig 0
+        symbol ikind1 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 1
+
+        symtree: ikind2  Ambig 0
+        symbol ikind2 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 2
+
+        symtree: ikind16  Ambig 0
+        symbol ikind16 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 16
+
+        symtree: ikind4  Ambig 0
+        symbol ikind4 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: ikind_int  Ambig 0
+        symbol ikind_int (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: ikind_long_long  Ambig 0
+        symbol ikind_long_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 8
+
+        symtree: ikind_long  Ambig 0
+        symbol ikind_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: pa  Ambig 0
+        symbol pa (INTEGER 8)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION POINTER SAVE)
+        Array spec:(1 AS_DEFERRED () () )
+
+        symtree: send_i8a1d  Ambig 0
+        symbol send_i8a1d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SUBROUTINE)
+
+
+      POINTER ASSIGN pa(FULL) a(FULL)
+      CALL recv_i8a1d ((pa(FULL)))
+
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = send_rra1d
+        symtree: send_rra1d  Ambig 0
+        symbol send_rra1d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SUBROUTINE)
+
+        symtree: a  Ambig 0
+        symbol a (REAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION SAVE TARGET)
+        Array spec:(1 AS_EXPLICIT 1 10 )
+
+        symtree: recv_rra1d  Ambig 0
+        symbol recv_rra1d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC SUBROUTINE)
+        Formal arglist: a
+        Formal namespace
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = recv_rra1d
+          symtree: a  Ambig 0
+          symbol a (REAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION POINTER DUMMY)
+          Array spec:(1 AS_DEFERRED () () )
+
+          symtree: recv_rra1d  Ambig 0 from namespace send_rra1d
+
+
+
+
+        symtree: pa  Ambig 0
+        symbol pa (REAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION POINTER SAVE)
+        Array spec:(1 AS_DEFERRED () () )
+
+
+      POINTER ASSIGN pa(FULL) a(FULL)
+      CALL recv_rra1d ((pa(FULL)))
+
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = send_dda1d
+        symtree: recv_dda1d  Ambig 0
+        symbol recv_dda1d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC SUBROUTINE)
+        Formal arglist: a
+        Formal namespace
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = recv_dda1d
+          symtree: kind  Ambig 0
+          symbol kind (INTEGER 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC FUNCTION IMPLICIT-TYPE)
+          result: kind
+
+          symtree: a  Ambig 0
+          symbol a (REAL 8)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION POINTER DUMMY)
+          Array spec:(1 AS_DEFERRED () () )
+
+          symtree: recv_dda1d  Ambig 0 from namespace send_dda1d
+
+
+
+
+        symtree: a  Ambig 0
+        symbol a (REAL 8)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION SAVE TARGET)
+        Array spec:(1 AS_EXPLICIT 1 10 )
+
+        symtree: kind  Ambig 0
+        symbol kind (INTEGER 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC FUNCTION IMPLICIT-TYPE)
+        result: kind
+
+        symtree: pa  Ambig 0
+        symbol pa (REAL 8)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION POINTER SAVE)
+        Array spec:(1 AS_DEFERRED () () )
+
+        symtree: send_dda1d  Ambig 0
+        symbol send_dda1d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SUBROUTINE)
+
+
+      POINTER ASSIGN pa(FULL) a(FULL)
+      CALL recv_dda1d ((pa(FULL)))
+
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = send_ca0d
+        symtree: recv_ca0d  Ambig 0
+        symbol recv_ca0d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC SUBROUTINE)
+        Formal arglist: pc
+        Formal namespace
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = recv_ca0d
+          symtree: recv_ca0d  Ambig 0 from namespace send_ca0d
+          symtree: pc  Ambig 0
+          symbol pc (COMPLEX 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC POINTER DUMMY)
+
+
+
+
+
+        symtree: c  Ambig 0
+        symbol c (COMPLEX 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SAVE TARGET)
+
+        symtree: pc  Ambig 0
+        symbol pc (COMPLEX 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC POINTER SAVE)
+
+        symtree: send_ca0d  Ambig 0
+        symbol send_ca0d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SUBROUTINE)
+
+
+      POINTER ASSIGN pc c
+      CALL recv_ca0d ((pc))
+
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = send_ca1d
+        symtree: recv_ca1d  Ambig 0
+        symbol recv_ca1d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC SUBROUTINE)
+        Formal arglist: a
+        Formal namespace
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = recv_ca1d
+          symtree: a  Ambig 0
+          symbol a (COMPLEX 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION POINTER DUMMY)
+          Array spec:(1 AS_DEFERRED () () )
+
+          symtree: recv_ca1d  Ambig 0 from namespace send_ca1d
+
+
+
+
+        symtree: pa  Ambig 0
+        symbol pa (COMPLEX 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION POINTER SAVE)
+        Array spec:(1 AS_DEFERRED () () )
+
+        symtree: a  Ambig 0
+        symbol a (COMPLEX 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION SAVE TARGET)
+        Array spec:(1 AS_EXPLICIT 1 10 )
+
+        symtree: send_ca1d  Ambig 0
+        symbol send_ca1d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SUBROUTINE)
+
+
+      POINTER ASSIGN pa(FULL) a(FULL)
+      CALL recv_ca1d ((pa(FULL)))
+
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = send_dca0d
+        symtree: c  Ambig 0
+        symbol c (COMPLEX 8)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SAVE TARGET)
+
+        symtree: pc  Ambig 0
+        symbol pc (COMPLEX 8)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC POINTER SAVE)
+
+        symtree: kind  Ambig 0
+        symbol kind (INTEGER 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC FUNCTION IMPLICIT-TYPE)
+        result: kind
+
+        symtree: send_dca0d  Ambig 0
+        symbol send_dca0d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SUBROUTINE)
+
+        symtree: recv_dca0d  Ambig 0
+        symbol recv_dca0d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC SUBROUTINE)
+        Formal arglist: pc
+        Formal namespace
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = recv_dca0d
+          symtree: kind  Ambig 0
+          symbol kind (INTEGER 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC FUNCTION IMPLICIT-TYPE)
+          result: kind
+
+          symtree: pc  Ambig 0
+          symbol pc (COMPLEX 8)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC POINTER DUMMY)
+
+          symtree: recv_dca0d  Ambig 0 from namespace send_dca0d
+
+
+
+
+
+      POINTER ASSIGN pc c
+      CALL recv_dca0d ((pc))
+
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = send_dca1d
+        symtree: a  Ambig 0
+        symbol a (COMPLEX 8)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION SAVE TARGET)
+        Array spec:(1 AS_EXPLICIT 1 10 )
+
+        symtree: send_dca1d  Ambig 0
+        symbol send_dca1d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SUBROUTINE)
+
+        symtree: recv_dca1d  Ambig 0
+        symbol recv_dca1d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC SUBROUTINE)
+        Formal arglist: a
+        Formal namespace
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = recv_dca1d
+          symtree: kind  Ambig 0
+          symbol kind (INTEGER 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC FUNCTION IMPLICIT-TYPE)
+          result: kind
+
+          symtree: a  Ambig 0
+          symbol a (COMPLEX 8)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION POINTER DUMMY)
+          Array spec:(1 AS_DEFERRED () () )
+
+          symtree: recv_dca1d  Ambig 0 from namespace send_dca1d
+
+
+
+
+        symtree: pa  Ambig 0
+        symbol pa (COMPLEX 8)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION POINTER SAVE)
+        Array spec:(1 AS_DEFERRED () () )
+
+        symtree: kind  Ambig 0
+        symbol kind (INTEGER 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC FUNCTION IMPLICIT-TYPE)
+        result: kind
+
+
+      POINTER ASSIGN pa(FULL) a(FULL)
+      CALL recv_dca1d ((pa(FULL)))
+
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = send_ua0d
+        symtree: particlemod  Ambig 0
+        symbol particlemod (UNKNOWN 0)(MODULE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+
+        symtree: particle  Ambig 0
+        symbol particle (UNKNOWN 0)(DERIVED UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        components: (position (REAL 8) DIMENSION (1 AS_EXPLICIT 1 3 )) (velocity (REAL 8) DIMENSION (1 AS_EXPLICIT 1 3 )) (mass (REAL 8) ()) (char_element (INTEGER 1) ())
+
+        symtree: d  Ambig 0
+        symbol d (DERIVED particle)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SAVE TARGET)
+
+        symtree: kind  Ambig 0
+        symbol kind (INTEGER 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC FUNCTION)
+        result: kind
+
+        symtree: pd  Ambig 0
+        symbol pd (DERIVED particle)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC POINTER SAVE)
+
+        symtree: send_ua0d  Ambig 0
+        symbol send_ua0d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SUBROUTINE)
+
+        symtree: recv_ua0d  Ambig 0
+        symbol recv_ua0d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC SUBROUTINE)
+        Formal arglist: pd
+        Formal namespace
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = recv_ua0d
+          symtree: particlemod  Ambig 0
+          symbol particlemod (UNKNOWN 0)(MODULE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+
+          symtree: particle  Ambig 0
+          symbol particle (UNKNOWN 0)(DERIVED UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          components: (position (REAL 8) DIMENSION (1 AS_EXPLICIT 1 3 )) (velocity (REAL 8) DIMENSION (1 AS_EXPLICIT 1 3 )) (mass (REAL 8) ()) (char_element (INTEGER 1) ())
+
+          symtree: kind  Ambig 0
+          symbol kind (INTEGER 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC FUNCTION)
+          result: kind
+
+          symtree: recv_ua0d  Ambig 0 from namespace send_ua0d
+          symtree: pd  Ambig 0
+          symbol pd (DERIVED particle)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC POINTER DUMMY)
+
+
+
+
+
+
+      POINTER ASSIGN pd d
+      CALL recv_ua0d ((pd))
+
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = send_ua1d
+        symtree: a  Ambig 0
+        symbol a (DERIVED particle)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION SAVE TARGET)
+        Array spec:(1 AS_EXPLICIT 3 99 )
+
+        symtree: send_ua1d  Ambig 0
+        symbol send_ua1d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SUBROUTINE)
+
+        symtree: particlemod  Ambig 0
+        symbol particlemod (UNKNOWN 0)(MODULE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+
+        symtree: kind  Ambig 0
+        symbol kind (INTEGER 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC FUNCTION)
+        result: kind
+
+        symtree: particle  Ambig 0
+        symbol particle (UNKNOWN 0)(DERIVED UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        components: (position (REAL 8) DIMENSION (1 AS_EXPLICIT 1 3 )) (velocity (REAL 8) DIMENSION (1 AS_EXPLICIT 1 3 )) (mass (REAL 8) ()) (char_element (INTEGER 1) ())
+
+        symtree: pa  Ambig 0
+        symbol pa (DERIVED particle)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION POINTER SAVE)
+        Array spec:(1 AS_DEFERRED () () )
+
+        symtree: recv_ua1d  Ambig 0
+        symbol recv_ua1d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC SUBROUTINE)
+        Formal arglist: a
+        Formal namespace
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = recv_ua1d
+          symtree: particle  Ambig 0
+          symbol particle (UNKNOWN 0)(DERIVED UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          components: (position (REAL 8) DIMENSION (1 AS_EXPLICIT 1 3 )) (velocity (REAL 8) DIMENSION (1 AS_EXPLICIT 1 3 )) (mass (REAL 8) ()) (char_element (INTEGER 1) ())
+
+          symtree: a  Ambig 0
+          symbol a (DERIVED particle)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION POINTER DUMMY)
+          Array spec:(1 AS_DEFERRED () () )
+
+          symtree: kind  Ambig 0
+          symbol kind (INTEGER 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC FUNCTION)
+          result: kind
+
+          symtree: recv_ua1d  Ambig 0 from namespace send_ua1d
+          symtree: particlemod  Ambig 0
+          symbol particlemod (UNKNOWN 0)(MODULE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+
+
+
+
+
+
+      POINTER ASSIGN pa(FULL) a(FULL)
+      CALL recv_ua1d ((pa(FULL)))
+
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = send_upa1d
+        symtree: ikind2  Ambig 0
+        symbol ikind2 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 2
+
+        symtree: ikind16  Ambig 0
+        symbol ikind16 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 16
+
+        symtree: f90_array1di_t  Ambig 0
+        symbol f90_array1di_t (UNKNOWN 0)(DERIVED UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        components: (data (INTEGER 4) POINTER DIMENSION (1 AS_DEFERRED () () ))
+
+        symtree: a  Ambig 0
+        symbol a (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION SAVE TARGET)
+        Array spec:(1 AS_EXPLICIT -1 9 )
+
+        symtree: a_t  Ambig 0
+        symbol a_t (DERIVED f90_array1di_t)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SAVE)
+
+        symtree: f90_array3di_t  Ambig 0
+        symbol f90_array3di_t (UNKNOWN 0)(DERIVED UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        components: (data (INTEGER 4) POINTER DIMENSION (3 AS_DEFERRED () () () () () () ))
+
+        symtree: f90_kinds  Ambig 0
+        symbol f90_kinds (UNKNOWN 0)(MODULE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+
+        symtree: ikind1  Ambig 0
+        symbol ikind1 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 1
+
+        symtree: ikind4  Ambig 0
+        symbol ikind4 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: m_arraytypes  Ambig 0
+        symbol m_arraytypes (UNKNOWN 0)(MODULE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+
+        symtree: ikind_short  Ambig 0
+        symbol ikind_short (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 2
+
+        symtree: ikind_long_long  Ambig 0
+        symbol ikind_long_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 8
+
+        symtree: ikind8  Ambig 0
+        symbol ikind8 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 8
+
+        symtree: ikind_long  Ambig 0
+        symbol ikind_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: ikind_int  Ambig 0
+        symbol ikind_int (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: send_upa1d  Ambig 0
+        symbol send_upa1d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SUBROUTINE)
+
+        symtree: recv_upa1d  Ambig 0
+        symbol recv_upa1d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC SUBROUTINE)
+        Formal arglist: a_t
+        Formal namespace
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = recv_upa1d
+          symtree: m_arraytypes  Ambig 0
+          symbol m_arraytypes (UNKNOWN 0)(MODULE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+
+          symtree: f90_array1di_t  Ambig 0
+          symbol f90_array1di_t (UNKNOWN 0)(DERIVED UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          components: (data (INTEGER 4) POINTER DIMENSION (1 AS_DEFERRED () () ))
+
+          symtree: a_t  Ambig 0
+          symbol a_t (DERIVED f90_array1di_t)(VARIABLE OUT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+          symtree: ikind4  Ambig 0
+          symbol ikind4 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 4
+
+          symtree: ikind16  Ambig 0
+          symbol ikind16 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 16
+
+          symtree: ikind1  Ambig 0
+          symbol ikind1 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 1
+
+          symtree: f90_array3di_t  Ambig 0
+          symbol f90_array3di_t (UNKNOWN 0)(DERIVED UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          components: (data (INTEGER 4) POINTER DIMENSION (3 AS_DEFERRED () () () () () () ))
+
+          symtree: f90_kinds  Ambig 0
+          symbol f90_kinds (UNKNOWN 0)(MODULE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+
+          symtree: ikind2  Ambig 0
+          symbol ikind2 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 2
+
+          symtree: ikind_long_long  Ambig 0
+          symbol ikind_long_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 8
+
+          symtree: ikind_int  Ambig 0
+          symbol ikind_int (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 4
+
+          symtree: ikind8  Ambig 0
+          symbol ikind8 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 8
+
+          symtree: ikind_long  Ambig 0
+          symbol ikind_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 4
+
+          symtree: ikind_short  Ambig 0
+          symbol ikind_short (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 2
+
+          symtree: recv_upa1d  Ambig 0 from namespace send_upa1d
+
+
+
+
+
+      POINTER ASSIGN a_t % data(FULL) a(FULL)
+      CALL recv_upa1d ((a_t))
+
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = send_iia0d
+        symtree: send_iia0d  Ambig 0
+        symbol send_iia0d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SUBROUTINE)
+
+        symtree: ip  Ambig 0
+        symbol ip (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC POINTER SAVE)
+
+        symtree: i  Ambig 0
+        symbol i (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SAVE TARGET)
+
+        symtree: recv_iia0d  Ambig 0
+        symbol recv_iia0d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC SUBROUTINE)
+        Formal arglist: ip
+        Formal namespace
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = recv_iia0d
+          symtree: recv_iia0d  Ambig 0 from namespace send_iia0d
+          symtree: ip  Ambig 0
+          symbol ip (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC POINTER DUMMY)
+
+
+
+
+
+
+      ASSIGN i 3
+      POINTER ASSIGN ip i
+      CALL recv_iia0d ((ip))
+
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = send_i1a0d
+        symtree: recv_i1a0d  Ambig 0
+        symbol recv_i1a0d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC SUBROUTINE)
+        Formal arglist: ip
+        Formal namespace
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = recv_i1a0d
+          symtree: recv_i1a0d  Ambig 0 from namespace send_i1a0d
+          symtree: ip  Ambig 0
+          symbol ip (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC POINTER DUMMY)
+
+
+
+
+
+        symtree: ip  Ambig 0
+        symbol ip (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC POINTER SAVE)
+
+        symtree: i  Ambig 0
+        symbol i (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SAVE TARGET)
+
+        symtree: send_i1a0d  Ambig 0
+        symbol send_i1a0d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SUBROUTINE)
+
+
+      POINTER ASSIGN ip i
+      CALL recv_i1a0d ((ip))
+
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = send_i2a0d
+        symtree: recv_i2a0d  Ambig 0
+        symbol recv_i2a0d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC SUBROUTINE)
+        Formal arglist: ip
+        Formal namespace
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = recv_i2a0d
+          symtree: recv_i2a0d  Ambig 0 from namespace send_i2a0d
+          symtree: ip  Ambig 0
+          symbol ip (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC POINTER DUMMY)
+
+
+
+
+
+        symtree: i  Ambig 0
+        symbol i (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SAVE TARGET)
+
+        symtree: ip  Ambig 0
+        symbol ip (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC POINTER SAVE)
+
+        symtree: send_i2a0d  Ambig 0
+        symbol send_i2a0d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SUBROUTINE)
+
+
+      POINTER ASSIGN ip i
+      CALL recv_i2a0d ((ip))
+
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = send_i4a0d
+        symtree: ip  Ambig 0
+        symbol ip (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC POINTER SAVE)
+
+        symtree: i  Ambig 0
+        symbol i (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SAVE TARGET)
+
+        symtree: recv_i4a0d  Ambig 0
+        symbol recv_i4a0d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC SUBROUTINE)
+        Formal arglist: ip
+        Formal namespace
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = recv_i4a0d
+          symtree: recv_i4a0d  Ambig 0 from namespace send_i4a0d
+          symtree: ip  Ambig 0
+          symbol ip (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC POINTER DUMMY)
+
+
+
+
+
+        symtree: send_i4a0d  Ambig 0
+        symbol send_i4a0d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SUBROUTINE)
+
+
+      POINTER ASSIGN ip i
+      CALL recv_i4a0d ((ip))
+
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = send_i8a0d
+        symtree: i  Ambig 0
+        symbol i (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SAVE TARGET)
+
+        symtree: recv_i8a0d  Ambig 0
+        symbol recv_i8a0d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC SUBROUTINE)
+        Formal arglist: ip
+        Formal namespace
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = recv_i8a0d
+          symtree: recv_i8a0d  Ambig 0 from namespace send_i8a0d
+          symtree: ip  Ambig 0
+          symbol ip (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC POINTER DUMMY)
+
+
+
+
+
+        symtree: ip  Ambig 0
+        symbol ip (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC POINTER SAVE)
+
+        symtree: send_i8a0d  Ambig 0
+        symbol send_i8a0d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SUBROUTINE)
+
+
+      POINTER ASSIGN ip i
+      CALL recv_i8a0d ((ip))
+
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = send_i1a1d_print
+        symtree: code  Ambig 0
+        symbol code (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: a  Ambig 0
+        symbol a (INTEGER 1)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION SAVE TARGET)
+        value: (/ 1_1 , 2_1 , 3_1 , 4_1 , 5_1 , 6_1 , 7_1 , 8_1 , 9_1 , 10_1 /)
+        Array spec:(1 AS_EXPLICIT 1 10 )
+
+        symtree: print_i1a  Ambig 0
+        symbol print_i1a (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL SUBROUTINE)
+
+        symtree: ii  Ambig 0
+        symbol ii (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: f90_kinds  Ambig 0
+        symbol f90_kinds (UNKNOWN 0)(MODULE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+
+        symtree: ikind_long_long  Ambig 0
+        symbol ikind_long_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 8
+
+        symtree: ikind4  Ambig 0
+        symbol ikind4 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: ikind2  Ambig 0
+        symbol ikind2 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 2
+
+        symtree: ikind16  Ambig 0
+        symbol ikind16 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 16
+
+        symtree: ikind1  Ambig 0
+        symbol ikind1 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 1
+
+        symtree: ikind8  Ambig 0
+        symbol ikind8 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 8
+
+        symtree: ikind_int  Ambig 0
+        symbol ikind_int (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: ikind_long  Ambig 0
+        symbol ikind_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: ikind_short  Ambig 0
+        symbol ikind_short (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 2
+
+        symtree: pa  Ambig 0
+        symbol pa (INTEGER 1)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION POINTER SAVE)
+        Array spec:(1 AS_DEFERRED () () )
+
+        symtree: recv_i1a1d  Ambig 0
+        symbol recv_i1a1d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC SUBROUTINE)
+        Formal arglist: a
+        Formal namespace
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = recv_i1a1d
+          symtree: ikind_long_long  Ambig 0
+          symbol ikind_long_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 8
+
+          symtree: ikind2  Ambig 0
+          symbol ikind2 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 2
+
+          symtree: ikind1  Ambig 0
+          symbol ikind1 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 1
+
+          symtree: a  Ambig 0
+          symbol a (INTEGER 1)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION POINTER DUMMY)
+          Array spec:(1 AS_DEFERRED () () )
+
+          symtree: f90_kinds  Ambig 0
+          symbol f90_kinds (UNKNOWN 0)(MODULE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+
+          symtree: ikind16  Ambig 0
+          symbol ikind16 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 16
+
+          symtree: ikind8  Ambig 0
+          symbol ikind8 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 8
+
+          symtree: ikind4  Ambig 0
+          symbol ikind4 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 4
+
+          symtree: ikind_int  Ambig 0
+          symbol ikind_int (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 4
+
+          symtree: ikind_long  Ambig 0
+          symbol ikind_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 4
+
+          symtree: recv_i1a1d  Ambig 0 from namespace send_i1a1d_print
+          symtree: ikind_short  Ambig 0
+          symbol ikind_short (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 2
+
+
+
+
+
+        symtree: print_iaddr  Ambig 0
+        symbol print_iaddr (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL SUBROUTINE)
+
+        symtree: send_i1a1d_print  Ambig 0
+        symbol send_i1a1d_print (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SUBROUTINE)
+        Formal arglist: code ii
+
+
+      POINTER ASSIGN pa(FULL) a(FULL)
+      CALL recv_i1a1d ((pa(FULL)))
+      ASSIGN ii 6
+      IF (= code 1)
+        CALL print_iaddr ((a(1)))
+        CALL print_iaddr ((a(2)))
+        CALL print_i1a ((a(FULL)) (ii))
+      ENDIF
+      CALL recv_i1a1d ((pa(FULL)))
+
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = send_i2a1d_print
+        symtree: ikind2  Ambig 0
+        symbol ikind2 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 2
+
+        symtree: ii  Ambig 0
+        symbol ii (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: code  Ambig 0
+        symbol code (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: a  Ambig 0
+        symbol a (INTEGER 2)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION SAVE TARGET)
+        value: (/ 1_2 , 2_2 , 3_2 , 4_2 , 5_2 , 6_2 , 7_2 , 8_2 , 9_2 , 10_2 /)
+        Array spec:(1 AS_EXPLICIT 1 10 )
+
+        symtree: f90_kinds  Ambig 0
+        symbol f90_kinds (UNKNOWN 0)(MODULE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+
+        symtree: ikind16  Ambig 0
+        symbol ikind16 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 16
+
+        symtree: ikind1  Ambig 0
+        symbol ikind1 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 1
+
+        symtree: recv_i2a1d  Ambig 0
+        symbol recv_i2a1d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC SUBROUTINE)
+        Formal arglist: a
+        Formal namespace
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = recv_i2a1d
+          symtree: ikind1  Ambig 0
+          symbol ikind1 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 1
+
+          symtree: f90_kinds  Ambig 0
+          symbol f90_kinds (UNKNOWN 0)(MODULE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+
+          symtree: a  Ambig 0
+          symbol a (INTEGER 2)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION POINTER DUMMY)
+          Array spec:(1 AS_DEFERRED () () )
+
+          symtree: ikind_long_long  Ambig 0
+          symbol ikind_long_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 8
+
+          symtree: ikind_long  Ambig 0
+          symbol ikind_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 4
+
+          symtree: ikind2  Ambig 0
+          symbol ikind2 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 2
+
+          symtree: ikind16  Ambig 0
+          symbol ikind16 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 16
+
+          symtree: ikind8  Ambig 0
+          symbol ikind8 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 8
+
+          symtree: ikind4  Ambig 0
+          symbol ikind4 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 4
+
+          symtree: ikind_int  Ambig 0
+          symbol ikind_int (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 4
+
+          symtree: ikind_short  Ambig 0
+          symbol ikind_short (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 2
+
+          symtree: recv_i2a1d  Ambig 0 from namespace send_i2a1d_print
+
+
+
+
+        symtree: print_iaddr  Ambig 0
+        symbol print_iaddr (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL SUBROUTINE)
+
+        symtree: ikind_int  Ambig 0
+        symbol ikind_int (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: ikind4  Ambig 0
+        symbol ikind4 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: ikind8  Ambig 0
+        symbol ikind8 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 8
+
+        symtree: ikind_long  Ambig 0
+        symbol ikind_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: ikind_short  Ambig 0
+        symbol ikind_short (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 2
+
+        symtree: ikind_long_long  Ambig 0
+        symbol ikind_long_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 8
+
+        symtree: pa  Ambig 0
+        symbol pa (INTEGER 2)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION POINTER SAVE)
+        Array spec:(1 AS_DEFERRED () () )
+
+        symtree: print_i2a  Ambig 0
+        symbol print_i2a (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL SUBROUTINE)
+
+        symtree: send_i2a1d_print  Ambig 0
+        symbol send_i2a1d_print (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SUBROUTINE)
+        Formal arglist: code ii
+
+
+      POINTER ASSIGN pa(FULL) a(FULL)
+      CALL recv_i2a1d ((pa(FULL)))
+      ASSIGN ii 6
+      IF (= code 1)
+        CALL print_iaddr ((a(1)))
+        CALL print_iaddr ((a(2)))
+        CALL print_i2a ((a(FULL)) (ii))
+      ENDIF
+      CALL recv_i2a1d ((pa(FULL)))
+
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = send_i4a1d_print
+        symtree: ikind16  Ambig 0
+        symbol ikind16 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 16
+
+        symtree: code  Ambig 0
+        symbol code (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: a  Ambig 0
+        symbol a (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION SAVE TARGET)
+        value: (/ 1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 , 10 /)
+        Array spec:(1 AS_EXPLICIT 1 10 )
+
+        symtree: f90_kinds  Ambig 0
+        symbol f90_kinds (UNKNOWN 0)(MODULE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+
+        symtree: ikind1  Ambig 0
+        symbol ikind1 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 1
+
+        symtree: ii  Ambig 0
+        symbol ii (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: ikind4  Ambig 0
+        symbol ikind4 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: ikind2  Ambig 0
+        symbol ikind2 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 2
+
+        symtree: recv_i4a1d  Ambig 0
+        symbol recv_i4a1d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC SUBROUTINE)
+        Formal arglist: a
+        Formal namespace
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = recv_i4a1d
+          symtree: f90_kinds  Ambig 0
+          symbol f90_kinds (UNKNOWN 0)(MODULE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+
+          symtree: a  Ambig 0
+          symbol a (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION POINTER DUMMY)
+          Array spec:(1 AS_DEFERRED () () )
+
+          symtree: ikind_long  Ambig 0
+          symbol ikind_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 4
+
+          symtree: ikind16  Ambig 0
+          symbol ikind16 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 16
+
+          symtree: ikind1  Ambig 0
+          symbol ikind1 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 1
+
+          symtree: ikind4  Ambig 0
+          symbol ikind4 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 4
+
+          symtree: ikind2  Ambig 0
+          symbol ikind2 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 2
+
+          symtree: ikind_int  Ambig 0
+          symbol ikind_int (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 4
+
+          symtree: ikind8  Ambig 0
+          symbol ikind8 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 8
+
+          symtree: ikind_short  Ambig 0
+          symbol ikind_short (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 2
+
+          symtree: ikind_long_long  Ambig 0
+          symbol ikind_long_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 8
+
+          symtree: recv_i4a1d  Ambig 0 from namespace send_i4a1d_print
+
+
+
+
+        symtree: print_ia  Ambig 0
+        symbol print_ia (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL SUBROUTINE)
+
+        symtree: ikind_short  Ambig 0
+        symbol ikind_short (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 2
+
+        symtree: ikind_int  Ambig 0
+        symbol ikind_int (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: ikind8  Ambig 0
+        symbol ikind8 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 8
+
+        symtree: ikind_long  Ambig 0
+        symbol ikind_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: ikind_long_long  Ambig 0
+        symbol ikind_long_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 8
+
+        symtree: pa  Ambig 0
+        symbol pa (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION POINTER SAVE)
+        Array spec:(1 AS_DEFERRED () () )
+
+        symtree: print_iaddr  Ambig 0
+        symbol print_iaddr (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL SUBROUTINE)
+
+        symtree: send_i4a1d_print  Ambig 0
+        symbol send_i4a1d_print (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SUBROUTINE)
+        Formal arglist: code ii
+
+
+      POINTER ASSIGN pa(FULL) a(FULL)
+      CALL recv_i4a1d ((pa(FULL)))
+      ASSIGN ii 6
+      IF (= code 1)
+        CALL print_iaddr ((a(1)))
+        CALL print_iaddr ((a(2)))
+        CALL print_ia ((a(FULL)) (ii))
+      ENDIF
+      CALL recv_i4a1d ((pa(FULL)))
+
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = send_i8a1d_print
+        symtree: print_iaddr  Ambig 0
+        symbol print_iaddr (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL SUBROUTINE)
+
+        symtree: ikind_long_long  Ambig 0
+        symbol ikind_long_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 8
+
+        symtree: ikind16  Ambig 0
+        symbol ikind16 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 16
+
+        symtree: f90_kinds  Ambig 0
+        symbol f90_kinds (UNKNOWN 0)(MODULE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+
+        symtree: a  Ambig 0
+        symbol a (INTEGER 8)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION SAVE TARGET)
+        value: (/ 1_8 , 2_8 , 3_8 , 4_8 , 5_8 , 6_8 , 7_8 , 8_8 , 9_8 , 10_8 /)
+        Array spec:(1 AS_EXPLICIT 1 10 )
+
+        symtree: code  Ambig 0
+        symbol code (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: ii  Ambig 0
+        symbol ii (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: ikind1  Ambig 0
+        symbol ikind1 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 1
+
+        symtree: ikind_int  Ambig 0
+        symbol ikind_int (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: ikind4  Ambig 0
+        symbol ikind4 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: ikind2  Ambig 0
+        symbol ikind2 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 2
+
+        symtree: ikind8  Ambig 0
+        symbol ikind8 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 8
+
+        symtree: ikind_long  Ambig 0
+        symbol ikind_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: print_i8a  Ambig 0
+        symbol print_i8a (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL SUBROUTINE)
+
+        symtree: pa  Ambig 0
+        symbol pa (INTEGER 8)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION POINTER SAVE)
+        Array spec:(1 AS_DEFERRED () () )
+
+        symtree: ikind_short  Ambig 0
+        symbol ikind_short (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 2
+
+        symtree: send_i8a1d_print  Ambig 0
+        symbol send_i8a1d_print (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SUBROUTINE)
+        Formal arglist: code ii
+
+        symtree: recv_i8a1d  Ambig 0
+        symbol recv_i8a1d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC SUBROUTINE)
+        Formal arglist: a
+        Formal namespace
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = recv_i8a1d
+          symtree: recv_i8a1d  Ambig 0 from namespace send_i8a1d_print
+          symtree: ikind8  Ambig 0
+          symbol ikind8 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 8
+
+          symtree: a  Ambig 0
+          symbol a (INTEGER 8)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION POINTER DUMMY)
+          Array spec:(1 AS_DEFERRED () () )
+
+          symtree: ikind2  Ambig 0
+          symbol ikind2 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 2
+
+          symtree: ikind1  Ambig 0
+          symbol ikind1 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 1
+
+          symtree: f90_kinds  Ambig 0
+          symbol f90_kinds (UNKNOWN 0)(MODULE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+
+          symtree: ikind16  Ambig 0
+          symbol ikind16 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 16
+
+          symtree: ikind4  Ambig 0
+          symbol ikind4 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 4
+
+          symtree: ikind_long  Ambig 0
+          symbol ikind_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 4
+
+          symtree: ikind_int  Ambig 0
+          symbol ikind_int (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 4
+
+          symtree: ikind_long_long  Ambig 0
+          symbol ikind_long_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 8
+
+          symtree: ikind_short  Ambig 0
+          symbol ikind_short (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 2
+
+
+
+
+
+
+      POINTER ASSIGN pa(FULL) a(FULL)
+      CALL recv_i8a1d ((pa(FULL)))
+      ASSIGN ii 6
+      IF (= code 1)
+        CALL print_iaddr ((a(1)))
+        CALL print_iaddr ((a(2)))
+        CALL print_i8a ((a(FULL)) (ii))
+      ENDIF
+      CALL recv_i8a1d ((pa(FULL)))
+
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = send_ia1d
+        symtree: recv_ia1d  Ambig 0
+        symbol recv_ia1d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC SUBROUTINE)
+        Formal arglist: a
+        Formal namespace
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = recv_ia1d
+          symtree: a  Ambig 0
+          symbol a (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION DUMMY)
+          Array spec:(1 AS_ASSUMED_SHAPE 1 () )
+
+          symtree: recv_ia1d  Ambig 0 from namespace send_ia1d
+
+
+
+
+        symtree: a  Ambig 0
+        symbol a (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC ALLOCATABLE DIMENSION SAVE)
+        Array spec:(1 AS_DEFERRED () () )
+
+        symtree: print_iaddr  Ambig 0
+        symbol print_iaddr (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL SUBROUTINE)
+
+        symtree: ii  Ambig 0
+        symbol ii (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: code  Ambig 0
+        symbol code (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: allocated  Ambig 0
+        symbol allocated (REAL 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC FUNCTION IMPLICIT-TYPE)
+        result: allocated
+
+        symtree: i  Ambig 0
+        symbol i (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: print_ia  Ambig 0
+        symbol print_ia (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL SUBROUTINE)
+
+        symtree: send_ia1d  Ambig 0
+        symbol send_ia1d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SUBROUTINE)
+        Formal arglist: code ii
+
+
+      IF _gfortran_allocated[[((a(FULL)))]]
+        DEALLOCATE  a(FULL)
+      ENDIF
+      IF (< ii 0)
+        ASSIGN ii 6
+      ENDIF
+      ALLOCATE  a(ii)
+      DO i=1 ii 1
+        ASSIGN a(i) i
+      END DO
+      IF (= code 1)
+        CALL print_iaddr ((a(1)))
+        CALL print_iaddr ((a(2)))
+        CALL print_ia ((a(FULL)) (ii))
+      ENDIF
+      CALL recv_ia1d ((a(FULL)))
+
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = send_ia2d
+        symtree: j  Ambig 0
+        symbol j (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: allocated  Ambig 0
+        symbol allocated (REAL 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC FUNCTION IMPLICIT-TYPE)
+        result: allocated
+
+        symtree: a  Ambig 0
+        symbol a (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC ALLOCATABLE DIMENSION SAVE)
+        Array spec:(2 AS_DEFERRED () () () () )
+
+        symtree: code  Ambig 0
+        symbol code (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: ii  Ambig 0
+        symbol ii (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: i  Ambig 0
+        symbol i (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: recv_ia2d  Ambig 0
+        symbol recv_ia2d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC SUBROUTINE)
+        Formal arglist: a
+        Formal namespace
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = recv_ia2d
+          symtree: a  Ambig 0
+          symbol a (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION DUMMY)
+          Array spec:(2 AS_ASSUMED_SHAPE 1 () 1 () )
+
+          symtree: recv_ia2d  Ambig 0 from namespace send_ia2d
+
+
+
+
+        symtree: print_iaddr  Ambig 0
+        symbol print_iaddr (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL SUBROUTINE)
+
+        symtree: jj  Ambig 0
+        symbol jj (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: print_ia  Ambig 0
+        symbol print_ia (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL SUBROUTINE)
+
+        symtree: send_ia2d  Ambig 0
+        symbol send_ia2d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SUBROUTINE)
+        Formal arglist: code ii jj
+
+
+      IF _gfortran_allocated[[((a(FULL)))]]
+        DEALLOCATE  a(FULL)
+      ENDIF
+      IF (< ii 0)
+        ASSIGN ii 3
+      ENDIF
+      IF (< jj 0)
+        ASSIGN jj 4
+      ENDIF
+      ALLOCATE  a(ii , jj)
+      DO i=1 ii 1
+        DO j=1 jj 1
+          ASSIGN a(i , j) (+ (* i 10) j)
+        END DO
+      END DO
+      IF (= code 1)
+        CALL print_iaddr ((a(FULL)))
+        CALL print_ia ((a(FULL)) (6))
+      ENDIF
+      CALL recv_ia2d ((a(FULL)))
+
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = send_ia3d
+        symtree: jj  Ambig 0
+        symbol jj (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: code  Ambig 0
+        symbol code (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: a  Ambig 0
+        symbol a (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC ALLOCATABLE DIMENSION SAVE)
+        Array spec:(3 AS_DEFERRED () () () () () () )
+
+        symtree: allocated  Ambig 0
+        symbol allocated (REAL 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC FUNCTION IMPLICIT-TYPE)
+        result: allocated
+
+        symtree: i  Ambig 0
+        symbol i (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: ii  Ambig 0
+        symbol ii (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: j  Ambig 0
+        symbol j (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: print_iaddr  Ambig 0
+        symbol print_iaddr (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL SUBROUTINE)
+
+        symtree: print_ia  Ambig 0
+        symbol print_ia (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL SUBROUTINE)
+
+        symtree: k  Ambig 0
+        symbol k (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: kk  Ambig 0
+        symbol kk (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: recv_ia3d  Ambig 0
+        symbol recv_ia3d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC SUBROUTINE)
+        Formal arglist: a
+        Formal namespace
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = recv_ia3d
+          symtree: recv_ia3d  Ambig 0 from namespace send_ia3d
+          symtree: a  Ambig 0
+          symbol a (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION DUMMY)
+          Array spec:(3 AS_ASSUMED_SHAPE 1 () 1 () 1 () )
+
+
+
+
+
+        symtree: send_ia3d  Ambig 0
+        symbol send_ia3d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SUBROUTINE)
+        Formal arglist: code ii jj kk
+
+
+      IF _gfortran_allocated[[((a(FULL)))]]
+        DEALLOCATE  a(FULL)
+      ENDIF
+      IF (< ii 0)
+        ASSIGN ii 3
+      ENDIF
+      IF (< jj 0)
+        ASSIGN jj 4
+      ENDIF
+      IF (< kk 0)
+        ASSIGN kk 4
+      ENDIF
+      ALLOCATE  a(ii , jj , kk)
+      DO i=1 ii 1
+        DO j=1 jj 1
+          DO k=1 kk 1
+            ASSIGN a(i , j , k) (+ (+ (* i 100) (* j 10)) k)
+          END DO
+        END DO
+      END DO
+      IF (= code 1)
+        CALL print_iaddr ((a(FULL)))
+        CALL print_ia ((a(FULL)) (6))
+      ENDIF
+      CALL recv_ia3d ((a(FULL)))
+
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = send_ia3d_s
+        symtree: a  Ambig 0
+        symbol a (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION SAVE)
+        Array spec:(3 AS_EXPLICIT 1 3 1 4 1 5 )
+
+        symtree: recv_ia3d_s  Ambig 0
+        symbol recv_ia3d_s (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC SUBROUTINE)
+        Formal arglist: a
+        Formal namespace
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = recv_ia3d_s
+          symtree: recv_ia3d_s  Ambig 0 from namespace send_ia3d_s
+          symtree: a  Ambig 0
+          symbol a (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION DUMMY)
+          Array spec:(3 AS_ASSUMED_SHAPE 1 () 1 () 1 () )
+
+
+
+
+
+        symtree: count  Ambig 0
+        symbol count (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: code  Ambig 0
+        symbol code (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: print_iaddr  Ambig 0
+        symbol print_iaddr (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL SUBROUTINE)
+
+        symtree: k  Ambig 0
+        symbol k (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: j  Ambig 0
+        symbol j (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: i  Ambig 0
+        symbol i (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: print_ia  Ambig 0
+        symbol print_ia (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL SUBROUTINE)
+
+        symtree: send_ia3d_s  Ambig 0
+        symbol send_ia3d_s (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SUBROUTINE)
+        Formal arglist: code count
+
+
+      DO i=1 3 1
+        DO j=1 4 1
+          DO k=1 5 1
+            ASSIGN a(i , j , k) (+ (+ (* i 100) (* j 10)) k)
+          END DO
+        END DO
+      END DO
+      ASSIGN count 345
+      IF (= code 1)
+        CALL print_iaddr ((a(FULL)))
+        CALL print_ia ((a(FULL)) (6))
+      ENDIF
+      CALL recv_ia3d_s ((a(2:3 , : , :)))
+
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = send_ia3d_p
+        symtree: recv_ia3d_p  Ambig 0
+        symbol recv_ia3d_p (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC SUBROUTINE)
+        Formal arglist: a
+        Formal namespace
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = recv_ia3d_p
+          symtree: a  Ambig 0
+          symbol a (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION POINTER DUMMY)
+          Array spec:(3 AS_DEFERRED () () () () () () )
+
+          symtree: recv_ia3d_p  Ambig 0 from namespace send_ia3d_p
+
+
+
+
+        symtree: j  Ambig 0
+        symbol j (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: count  Ambig 0
+        symbol count (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: code  Ambig 0
+        symbol code (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: a  Ambig 0
+        symbol a (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION SAVE TARGET)
+        Array spec:(3 AS_EXPLICIT 0 2 0 3 0 4 )
+
+        symtree: i  Ambig 0
+        symbol i (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: print_iaddr  Ambig 0
+        symbol print_iaddr (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL SUBROUTINE)
+
+        symtree: pa  Ambig 0
+        symbol pa (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION POINTER SAVE)
+        Array spec:(3 AS_DEFERRED () () () () () () )
+
+        symtree: k  Ambig 0
+        symbol k (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: print_ia  Ambig 0
+        symbol print_ia (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL SUBROUTINE)
+
+        symtree: send_ia3d_p  Ambig 0
+        symbol send_ia3d_p (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SUBROUTINE)
+        Formal arglist: code count
+
+
+      DO i=1 3 1
+        DO j=1 4 1
+          DO k=1 5 1
+            ASSIGN a((- i 1) , (- j 1) , (- k 1)) (+ (+ (* i 100) (* j 10)) k)
+          END DO
+        END DO
+      END DO
+      ASSIGN count 345
+      POINTER ASSIGN pa(FULL) a(FULL)
+      IF (= code 1)
+        CALL print_iaddr ((a(FULL)))
+        CALL print_ia ((pa(FULL)) (6))
+      ENDIF
+      CALL recv_ia3d_p ((pa(FULL)))
+
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = send_ia3d_dp
+        symtree: ikind_int  Ambig 0
+        symbol ikind_int (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: f90_array1di_t  Ambig 0
+        symbol f90_array1di_t (UNKNOWN 0)(DERIVED UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        components: (data (INTEGER 4) POINTER DIMENSION (1 AS_DEFERRED () () ))
+
+        symtree: a_t  Ambig 0
+        symbol a_t (DERIVED f90_array3di_t)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SAVE)
+
+        symtree: a  Ambig 0
+        symbol a (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION SAVE TARGET)
+        Array spec:(3 AS_EXPLICIT 0 2 0 3 -1 3 )
+
+        symtree: count  Ambig 0
+        symbol count (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: code  Ambig 0
+        symbol code (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: ikind2  Ambig 0
+        symbol ikind2 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 2
+
+        symtree: f90_kinds  Ambig 0
+        symbol f90_kinds (UNKNOWN 0)(MODULE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+
+        symtree: f90_array3di_t  Ambig 0
+        symbol f90_array3di_t (UNKNOWN 0)(DERIVED UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        components: (data (INTEGER 4) POINTER DIMENSION (3 AS_DEFERRED () () () () () () ))
+
+        symtree: ikind1  Ambig 0
+        symbol ikind1 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 1
+
+        symtree: i  Ambig 0
+        symbol i (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: ikind16  Ambig 0
+        symbol ikind16 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 16
+
+        symtree: ikind4  Ambig 0
+        symbol ikind4 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: ikind8  Ambig 0
+        symbol ikind8 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 8
+
+        symtree: m_arraytypes  Ambig 0
+        symbol m_arraytypes (UNKNOWN 0)(MODULE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+
+        symtree: j  Ambig 0
+        symbol j (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: ikind_short  Ambig 0
+        symbol ikind_short (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 2
+
+        symtree: ikind_long  Ambig 0
+        symbol ikind_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 4
+
+        symtree: ikind_long_long  Ambig 0
+        symbol ikind_long_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+        value: 8
+
+        symtree: k  Ambig 0
+        symbol k (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: send_ia3d_dp  Ambig 0
+        symbol send_ia3d_dp (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SUBROUTINE)
+        Formal arglist: code count
+
+        symtree: print_iaddr  Ambig 0
+        symbol print_iaddr (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL SUBROUTINE)
+
+        symtree: print_ia  Ambig 0
+        symbol print_ia (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL SUBROUTINE)
+
+        symtree: recv_ia3d_dp  Ambig 0
+        symbol recv_ia3d_dp (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC SUBROUTINE)
+        Formal arglist: a_t
+        Formal namespace
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = recv_ia3d_dp
+          symtree: recv_ia3d_dp  Ambig 0 from namespace send_ia3d_dp
+          symtree: a_t  Ambig 0
+          symbol a_t (DERIVED f90_array3di_t)(VARIABLE IN UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+          symtree: ikind_short  Ambig 0
+          symbol ikind_short (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 2
+
+          symtree: ikind_int  Ambig 0
+          symbol ikind_int (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 4
+
+          symtree: ikind2  Ambig 0
+          symbol ikind2 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 2
+
+          symtree: f90_array1di_t  Ambig 0
+          symbol f90_array1di_t (UNKNOWN 0)(DERIVED UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          components: (data (INTEGER 4) POINTER DIMENSION (1 AS_DEFERRED () () ))
+
+          symtree: ikind1  Ambig 0
+          symbol ikind1 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 1
+
+          symtree: f90_kinds  Ambig 0
+          symbol f90_kinds (UNKNOWN 0)(MODULE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+
+          symtree: f90_array3di_t  Ambig 0
+          symbol f90_array3di_t (UNKNOWN 0)(DERIVED UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          components: (data (INTEGER 4) POINTER DIMENSION (3 AS_DEFERRED () () () () () () ))
+
+          symtree: ikind16  Ambig 0
+          symbol ikind16 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 16
+
+          symtree: ikind8  Ambig 0
+          symbol ikind8 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 8
+
+          symtree: ikind4  Ambig 0
+          symbol ikind4 (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 4
+
+          symtree: ikind_long_long  Ambig 0
+          symbol ikind_long_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 8
+
+          symtree: ikind_long  Ambig 0
+          symbol ikind_long (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          value: 4
+
+          symtree: m_arraytypes  Ambig 0
+          symbol m_arraytypes (UNKNOWN 0)(MODULE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+
+
+
+
+
+
+      DO i=1 3 1
+        DO j=1 4 1
+          DO k=1 5 1
+            ASSIGN a((- i 1) , (- j 1) , (- k 2)) (+ (+ (* i 100) (* j 10)) k)
+          END DO
+        END DO
+      END DO
+      ASSIGN count 345
+      POINTER ASSIGN a_t % data(FULL) a(FULL)
+      IF (= code 1)
+        CALL print_iaddr ((a_t % data(FULL)))
+        CALL print_ia ((a_t % data(FULL)) (6))
+      ENDIF
+      CALL recv_ia3d_dp ((a_t))
+
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = send_ra0d
+        symtree: send_ra0d  Ambig 0
+        symbol send_ra0d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SUBROUTINE)
+
+        symtree: recv_ra0d  Ambig 0
+        symbol recv_ra0d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC SUBROUTINE)
+        Formal arglist: xp
+        Formal namespace
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = recv_ra0d
+          symtree: xp  Ambig 0
+          symbol xp (REAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC POINTER DUMMY)
+
+          symtree: recv_ra0d  Ambig 0 from namespace send_ra0d
+
+
+
+
+        symtree: x  Ambig 0
+        symbol x (REAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SAVE TARGET)
+
+        symtree: xp  Ambig 0
+        symbol xp (REAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC POINTER SAVE)
+
+
+      ASSIGN x 0.333e2
+      POINTER ASSIGN xp x
+      CALL recv_ra0d ((xp))
+
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = send_ra1d
+        symtree: code  Ambig 0
+        symbol code (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: a  Ambig 0
+        symbol a (REAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION SAVE DATA)
+        value: (/ 0.1e0 , 0.2e0 , 0.3e0 /)
+        Array spec:(1 AS_EXPLICIT 1 3 )
+
+        symtree: recv_ra1d  Ambig 0
+        symbol recv_ra1d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC SUBROUTINE)
+        Formal arglist: a
+        Formal namespace
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = recv_ra1d
+          symtree: recv_ra1d  Ambig 0 from namespace send_ra1d
+          symtree: a  Ambig 0
+          symbol a (REAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION DUMMY)
+          Array spec:(1 AS_ASSUMED_SHAPE 1 () )
+
+
+
+
+
+        symtree: print_ra  Ambig 0
+        symbol print_ra (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL SUBROUTINE)
+
+        symtree: count  Ambig 0
+        symbol count (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: print_raddr  Ambig 0
+        symbol print_raddr (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL SUBROUTINE)
+
+        symtree: send_ra1d  Ambig 0
+        symbol send_ra1d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SUBROUTINE)
+        Formal arglist: code count
+
+
+      ASSIGN count 3
+      IF (= code 1)
+        CALL print_raddr ((a(1)))
+        CALL print_raddr ((a(2)))
+        CALL print_ra ((a(FULL)) (3))
+      ENDIF
+      CALL recv_ra1d ((a(FULL)))
+
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = send_ra2d
+        symtree: print_ra  Ambig 0
+        symbol print_ra (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL SUBROUTINE)
+
+        symtree: j  Ambig 0
+        symbol j (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: count  Ambig 0
+        symbol count (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: a  Ambig 0
+        symbol a (REAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION SAVE)
+        Array spec:(2 AS_EXPLICIT 1 3 1 4 )
+
+        symtree: code  Ambig 0
+        symbol code (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: i  Ambig 0
+        symbol i (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: print_raddr  Ambig 0
+        symbol print_raddr (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL SUBROUTINE)
+
+        symtree: recv_ra2d  Ambig 0
+        symbol recv_ra2d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC SUBROUTINE)
+        Formal arglist: a
+        Formal namespace
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = recv_ra2d
+          symtree: a  Ambig 0
+          symbol a (REAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION DUMMY)
+          Array spec:(2 AS_ASSUMED_SHAPE 1 () 1 () )
+
+          symtree: recv_ra2d  Ambig 0 from namespace send_ra2d
+
+
+
+
+        symtree: send_ra2d  Ambig 0
+        symbol send_ra2d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SUBROUTINE)
+        Formal arglist: code count
+
+
+      DO i=1 3 1
+        DO j=1 4 1
+          ASSIGN a(i , j) (/ __convert_i4_r4[[(((+ (* i 10) j)))]] 0.1e2)
+        END DO
+      END DO
+      ASSIGN count 34
+      IF (= code 1)
+        CALL print_raddr ((a(FULL)))
+        CALL print_ra ((a(FULL)) (3))
+      ENDIF
+      CALL recv_ra2d ((a(FULL)))
+
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = send_ra3d
+        symtree: i  Ambig 0
+        symbol i (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC IMPLICIT-TYPE)
+
+        symtree: code  Ambig 0
+        symbol code (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: a  Ambig 0
+        symbol a (REAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION SAVE)
+        Array spec:(3 AS_EXPLICIT 1 3 1 4 1 5 )
+
+        symtree: count  Ambig 0
+        symbol count (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: print_raddr  Ambig 0
+        symbol print_raddr (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL SUBROUTINE)
+
+        symtree: k  Ambig 0
+        symbol k (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC IMPLICIT-TYPE)
+
+        symtree: j  Ambig 0
+        symbol j (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC IMPLICIT-TYPE)
+
+        symtree: print_ra  Ambig 0
+        symbol print_ra (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL SUBROUTINE)
+
+        symtree: send_ra3d  Ambig 0
+        symbol send_ra3d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SUBROUTINE)
+        Formal arglist: code count
+
+        symtree: recv_ra3d  Ambig 0
+        symbol recv_ra3d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC SUBROUTINE)
+        Formal arglist: a
+        Formal namespace
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = recv_ra3d
+          symtree: a  Ambig 0
+          symbol a (REAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION DUMMY)
+          Array spec:(3 AS_ASSUMED_SHAPE 1 () 1 () 1 () )
+
+          symtree: recv_ra3d  Ambig 0 from namespace send_ra3d
+
+
+
+
+
+      DO i=1 3 1
+        DO j=1 4 1
+          DO k=1 5 1
+            ASSIGN a(i , j , k) (/ __convert_i4_r4[[(((+ (+ (* i 100) (* j 10)) k)))]] 0.1e2)
+          END DO
+        END DO
+      END DO
+      ASSIGN count 345
+      IF (= code 1)
+        CALL print_raddr ((a(FULL)))
+        CALL print_ra ((a(FULL)) (3))
+      ENDIF
+      CALL recv_ra3d ((a(FULL)))
+
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = send_da0d
+        symtree: kind  Ambig 0
+        symbol kind (INTEGER 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC FUNCTION IMPLICIT-TYPE)
+        result: kind
+
+        symtree: d  Ambig 0
+        symbol d (REAL 8)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SAVE TARGET)
+
+        symtree: dp  Ambig 0
+        symbol dp (REAL 8)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC POINTER SAVE)
+
+        symtree: recv_da0d  Ambig 0
+        symbol recv_da0d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC SUBROUTINE)
+        Formal arglist: dp
+        Formal namespace
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = recv_da0d
+          symtree: recv_da0d  Ambig 0 from namespace send_da0d
+          symtree: kind  Ambig 0
+          symbol kind (INTEGER 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC FUNCTION IMPLICIT-TYPE)
+          result: kind
+
+          symtree: dp  Ambig 0
+          symbol dp (REAL 8)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC POINTER DUMMY)
+
+
+
+
+
+        symtree: send_da0d  Ambig 0
+        symbol send_da0d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SUBROUTINE)
+
+
+      POINTER ASSIGN dp d
+      CALL recv_da0d ((dp))
+
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = send_da1d
+        symtree: kind  Ambig 0
+        symbol kind (INTEGER 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC FUNCTION IMPLICIT-TYPE)
+        result: kind
+
+        symtree: code  Ambig 0
+        symbol code (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: a  Ambig 0
+        symbol a (REAL 8)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION SAVE DATA)
+        value: (/ 0.11e1_8 , 0.12e1_8 , 0.13e1_8 /)
+        Array spec:(1 AS_EXPLICIT 1 3 )
+
+        symtree: count  Ambig 0
+        symbol count (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: recv_da1d  Ambig 0
+        symbol recv_da1d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC SUBROUTINE)
+        Formal arglist: a
+        Formal namespace
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = recv_da1d
+          symtree: a  Ambig 0
+          symbol a (REAL 8)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION DUMMY)
+          Array spec:(1 AS_ASSUMED_SHAPE 1 () )
+
+          symtree: kind  Ambig 0
+          symbol kind (INTEGER 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC FUNCTION IMPLICIT-TYPE)
+          result: kind
+
+          symtree: recv_da1d  Ambig 0 from namespace send_da1d
+
+
+
+
+        symtree: print_daddr  Ambig 0
+        symbol print_daddr (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL SUBROUTINE)
+
+        symtree: print_da  Ambig 0
+        symbol print_da (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL SUBROUTINE)
+
+        symtree: send_da1d  Ambig 0
+        symbol send_da1d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SUBROUTINE)
+        Formal arglist: code count
+
+
+      ASSIGN count 3
+      IF (= code 1)
+        CALL print_daddr ((a(1)))
+        CALL print_daddr ((a(2)))
+        CALL print_da ((a(FULL)) (3))
+      ENDIF
+      CALL recv_da1d ((a(FULL)))
+

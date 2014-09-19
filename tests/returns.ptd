@@ -1,0 +1,116 @@
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = returns
+        symtree: rtn_real  Ambig 0
+        symbol rtn_real (REAL 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS MODULE-PROC FUNCTION)
+        result: rtn_real
+
+        symtree: rtn_false  Ambig 0
+        symbol rtn_false (LOGICAL 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS MODULE-PROC FUNCTION)
+        result: rtn_false
+
+        symtree: returns  Ambig 0
+        symbol returns (UNKNOWN 0)(MODULE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: rtn_int  Ambig 0
+        symbol rtn_int (INTEGER 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS MODULE-PROC FUNCTION)
+        result: rtn_int
+
+        symtree: rtn_string  Ambig 0
+        symbol rtn_string (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS MODULE-PROC SUBROUTINE)
+        Formal arglist: str
+
+        symtree: rtn_short  Ambig 0
+        symbol rtn_short (INTEGER 1)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS MODULE-PROC FUNCTION)
+        result: rtn_short
+
+        symtree: rtn_true  Ambig 0
+        symbol rtn_true (LOGICAL 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS MODULE-PROC FUNCTION)
+        result: rtn_true
+
+        symtree: rtn_string_13  Ambig 0
+        symbol rtn_string_13 (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS MODULE-PROC SUBROUTINE)
+        Formal arglist: str
+
+        symtree: rtn_void  Ambig 0
+        symbol rtn_void (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS MODULE-PROC SUBROUTINE)
+
+
+
+        CONTAINS
+
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = rtn_real
+          symtree: rtn_real  Ambig 0 from namespace returns
+
+      ASSIGN rtn_real 0.3456543e4
+
+
+        CONTAINS
+
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = rtn_int
+          symtree: rtn_int  Ambig 0 from namespace returns
+
+      ASSIGN rtn_int 3456543
+
+
+        CONTAINS
+
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = rtn_short
+          symtree: rtn_short  Ambig 0 from namespace returns
+
+      ASSIGN rtn_short 33_1
+
+
+        CONTAINS
+
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = rtn_string_13
+          symtree: str  Ambig 0
+          symbol str (CHARACTER 13)(VARIABLE OUT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+          symtree: rtn_string_13  Ambig 0 from namespace returns
+
+      ASSIGN str 'Hello, world!'
+
+
+        CONTAINS
+
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = rtn_string
+          symtree: rtn_string  Ambig 0 from namespace returns
+          symtree: str  Ambig 0
+          symbol str (CHARACTER ())(VARIABLE OUT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+
+      ASSIGN str 'Hello, world!'
+
+
+        CONTAINS
+
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = rtn_false
+          symtree: rtn_false  Ambig 0 from namespace returns
+
+      ASSIGN rtn_false .false.
+
+
+        CONTAINS
+
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = rtn_true
+          symtree: rtn_true  Ambig 0 from namespace returns
+
+      ASSIGN rtn_true .true.
+
+
+        CONTAINS
+
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = rtn_void
+          symtree: rtn_void  Ambig 0 from namespace returns
+
+
+

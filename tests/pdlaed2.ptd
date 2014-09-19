@@ -1,0 +1,525 @@
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = pdlaed2
+        symtree: c  Ambig 0
+        symbol c (REAL 8)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: abs  Ambig 0
+        symbol abs (REAL 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC INTRINSIC FUNCTION IMPLICIT-TYPE)
+        result: abs
+
+        symtree: blacs_gridinfo  Ambig 0
+        symbol blacs_gridinfo (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL SUBROUTINE)
+
+        symtree: blacs_pinfo  Ambig 0
+        symbol blacs_pinfo (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL SUBROUTINE)
+
+        symtree: tol  Ambig 0
+        symbol tol (REAL 8)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: rho  Ambig 0
+        symbol rho (REAL 8)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: qbuf  Ambig 0
+        symbol qbuf (REAL 8)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION DUMMY)
+        Array spec:(1 AS_ASSUMED_SIZE 1 () )
+
+        symtree: ib1  Ambig 0
+        symbol ib1 (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: eps  Ambig 0
+        symbol eps (REAL 8)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: dgesd2d  Ambig 0
+        symbol dgesd2d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL SUBROUTINE)
+
+        symtree: dgerv2d  Ambig 0
+        symbol dgerv2d (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL SUBROUTINE)
+
+        symtree: ctot  Ambig 0
+        symbol ctot (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION DUMMY)
+        Array spec:(2 AS_EXPLICIT 0 (- npcol 1) 1 4 )
+
+        symtree: col  Ambig 0
+        symbol col (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: coltyp  Ambig 0
+        symbol coltyp (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION DUMMY)
+        Array spec:(1 AS_ASSUMED_SIZE 1 () )
+
+        symtree: ct  Ambig 0
+        symbol ct (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: dcopy  Ambig 0
+        symbol dcopy (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL SUBROUTINE)
+
+        symtree: dcol  Ambig 0
+        symbol dcol (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: d  Ambig 0
+        symbol d (REAL 8)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION DUMMY)
+        Array spec:(1 AS_ASSUMED_SIZE 1 () )
+
+        symtree: drow  Ambig 0
+        symbol drow (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: dlapy2  Ambig 0
+        symbol dlapy2 (REAL 8)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL FUNCTION)
+        result: dlapy2
+
+        symtree: dlapst  Ambig 0
+        symbol dlapst (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL SUBROUTINE)
+
+        symtree: dlamda  Ambig 0
+        symbol dlamda (REAL 8)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION DUMMY)
+        Array spec:(1 AS_ASSUMED_SIZE 1 () )
+
+        symtree: drot  Ambig 0
+        symbol drot (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL SUBROUTINE)
+
+        symtree: dscal  Ambig 0
+        symbol dscal (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL SUBROUTINE)
+
+        symtree: eight  Ambig 0
+        symbol eight (REAL 8)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+        value: 0.8e1_8
+
+        symtree: iam  Ambig 0
+        symbol iam (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: i  Ambig 0
+        symbol i (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: k2  Ambig 0
+        symbol k2 (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: imax  Ambig 0
+        symbol imax (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: idamax  Ambig 0
+        symbol idamax (INTEGER 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL FUNCTION)
+        result: idamax
+
+        symtree: ib2  Ambig 0
+        symbol ib2 (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: ictxt  Ambig 0
+        symbol ictxt (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: ie1  Ambig 0
+        symbol ie1 (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: ie2  Ambig 0
+        symbol ie2 (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: indxl2g  Ambig 0
+        symbol indxl2g (INTEGER 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL FUNCTION)
+        result: indxl2g
+
+        symtree: indxc  Ambig 0
+        symbol indxc (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION DUMMY)
+        Array spec:(1 AS_ASSUMED_SIZE 1 () )
+
+        symtree: indcol  Ambig 0
+        symbol indcol (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION DUMMY)
+        Array spec:(1 AS_EXPLICIT 1 n )
+
+        symtree: indx  Ambig 0
+        symbol indx (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION DUMMY)
+        Array spec:(1 AS_ASSUMED_SIZE 1 () )
+
+        symtree: indxg2l  Ambig 0
+        symbol indxg2l (INTEGER 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL FUNCTION)
+        result: indxg2l
+
+        symtree: info  Ambig 0
+        symbol info (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: indxp  Ambig 0
+        symbol indxp (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION DUMMY)
+        Array spec:(1 AS_ASSUMED_SIZE 1 () )
+
+        symtree: k  Ambig 0
+        symbol k (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: infog1l  Ambig 0
+        symbol infog1l (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL SUBROUTINE)
+
+        symtree: jjs  Ambig 0
+        symbol jjs (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: jjq2  Ambig 0
+        symbol jjq2 (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: j  Ambig 0
+        symbol j (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: jmax  Ambig 0
+        symbol jmax (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: js  Ambig 0
+        symbol js (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: nb  Ambig 0
+        symbol nb (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: max  Ambig 0
+        symbol max (INTEGER 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC INTRINSIC FUNCTION IMPLICIT-TYPE)
+        result: max
+
+        symtree: ldq  Ambig 0
+        symbol ldq (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: ldq2  Ambig 0
+        symbol ldq2 (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: n1p1  Ambig 0
+        symbol n1p1 (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: min  Ambig 0
+        symbol min (INTEGER 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC INTRINSIC FUNCTION IMPLICIT-TYPE)
+        result: min
+
+        symtree: mycol  Ambig 0
+        symbol mycol (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: mone  Ambig 0
+        symbol mone (REAL 8)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+        value: -0.1e1_8
+
+        symtree: mod  Ambig 0
+        symbol mod (INTEGER 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC INTRINSIC FUNCTION IMPLICIT-TYPE)
+        result: mod
+
+        symtree: myrow  Ambig 0
+        symbol myrow (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: n1  Ambig 0
+        symbol n1 (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: n  Ambig 0
+        symbol n (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: n2  Ambig 0
+        symbol n2 (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: pdlamch  Ambig 0
+        symbol pdlamch (REAL 8)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL FUNCTION)
+        result: pdlamch
+
+        symtree: njcol  Ambig 0
+        symbol njcol (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: nj  Ambig 0
+        symbol nj (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: nprow  Ambig 0
+        symbol nprow (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: np  Ambig 0
+        symbol np (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: nn1  Ambig 0
+        symbol nn1 (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: nn  Ambig 0
+        symbol nn (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: njj  Ambig 0
+        symbol njj (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: nn2  Ambig 0
+        symbol nn2 (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: npcol  Ambig 0
+        symbol npcol (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: nprocs  Ambig 0
+        symbol nprocs (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: numroc  Ambig 0
+        symbol numroc (INTEGER 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL FUNCTION)
+        result: numroc
+
+        symtree: pdlaed2  Ambig 0
+        symbol pdlaed2 (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SUBROUTINE)
+        Formal arglist: ictxt k n n1 nb d drow dcol q ldq rho z w dlamda q2 ldq2 qbuf ctot psm npcol indx indxc indxp indcol coltyp nn nn1 nn2 ib1 ib2
+
+        symtree: one  Ambig 0
+        symbol one (REAL 8)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+        value: 0.1e1_8
+
+        symtree: psm  Ambig 0
+        symbol psm (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION DUMMY)
+        Array spec:(2 AS_EXPLICIT 0 (- npcol 1) 1 4 )
+
+        symtree: pjj  Ambig 0
+        symbol pjj (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: pjcol  Ambig 0
+        symbol pjcol (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: pj  Ambig 0
+        symbol pj (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: ptt  Ambig 0
+        symbol ptt (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION)
+        Array spec:(1 AS_EXPLICIT 1 4 )
+
+        symtree: q  Ambig 0
+        symbol q (REAL 8)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION DUMMY)
+        Array spec:(2 AS_ASSUMED_SIZE 1 ldq 1 () )
+
+        symtree: q2  Ambig 0
+        symbol q2 (REAL 8)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION DUMMY)
+        Array spec:(2 AS_ASSUMED_SIZE 1 ldq2 1 () )
+
+        symtree: s  Ambig 0
+        symbol s (REAL 8)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: t  Ambig 0
+        symbol t (REAL 8)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: sqrt  Ambig 0
+        symbol sqrt (REAL 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC INTRINSIC FUNCTION IMPLICIT-TYPE)
+        result: sqrt
+
+        symtree: tau  Ambig 0
+        symbol tau (REAL 8)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: two  Ambig 0
+        symbol two (REAL 8)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+        value: 0.2e1_8
+
+        symtree: z  Ambig 0
+        symbol z (REAL 8)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION DUMMY)
+        Array spec:(1 AS_ASSUMED_SIZE 1 () )
+
+        symtree: w  Ambig 0
+        symbol w (REAL 8)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION DUMMY)
+        Array spec:(1 AS_ASSUMED_SIZE 1 () )
+
+        symtree: zero  Ambig 0
+        symbol zero (REAL 8)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+        value: 0.e0_8
+
+
+      IF (= n 0)
+        RETURN 
+      ENDIF
+      CALL blacs_pinfo ((iam) (nprocs))
+      CALL blacs_gridinfo ((ictxt) (nprow) (npcol) (myrow) (mycol))
+      ASSIGN np numroc[[((n) (nb) (myrow) (drow) (nprow))]]
+      ASSIGN n2 (- n n1)
+      ASSIGN n1p1 (+ n1 1)
+      IF (< rho 0.e0_8)
+        CALL dscal ((n2) (-0.1e1_8) (z(n1p1)) (1))
+      ENDIF
+      ASSIGN t 0.7071067811865475244008443621048490392848359376885e0_8
+      CALL dscal ((n) (t) (z(FULL)) (1))
+      ASSIGN rho __abs_r8[[(((* 0.2e1_8 rho)))]]
+      ASSIGN imax idamax[[((n) (z(FULL)) (1))]]
+      ASSIGN jmax idamax[[((n) (d(FULL)) (1))]]
+      ASSIGN eps pdlamch[[((ictxt) ('Epsilon'))]]
+      ASSIGN tol (* (* 0.8e1_8 eps) __max_r8[[((__abs_r8[[((d(jmax)))]]) (__abs_r8[[((z(imax)))]]))]])
+      IF (<= (* rho __abs_r8[[((z(imax)))]]) tol)
+        ASSIGN k 0
+        GOTO 220
+      ENDIF
+      CALL dlapst (('I') (n) (d(FULL)) (indx(FULL)) (info))
+      DO i=1 n1 1
+        ASSIGN coltyp(i) 1
+10      CONTINUE
+      END DO
+      DO i=n1p1 n 1
+        ASSIGN coltyp(i) 3
+20      CONTINUE
+      END DO
+      ASSIGN col dcol
+      DO i=1 n nb
+        DO j=0 (- nb 1) 1
+          IF (<= (+ i j) n)
+            ASSIGN indcol((+ i j)) col
+          ENDIF
+30        CONTINUE
+        END DO
+        ASSIGN col __mod_i4[[(((+ col 1)) (npcol))]]
+40      CONTINUE
+      END DO
+      ASSIGN k 0
+      ASSIGN k2 (+ n 1)
+      DO j=1 n 1
+        ASSIGN nj indx(j)
+        IF (<= (* rho __abs_r8[[((z(nj)))]]) tol)
+          ASSIGN k2 (- k2 1)
+          ASSIGN coltyp(nj) 4
+          ASSIGN indxp(k2) nj
+          IF (= j n)
+            GOTO 80
+          ENDIF
+        ELSE
+          ASSIGN pj nj
+          GOTO 60
+        ENDIF
+50      CONTINUE
+      END DO
+60    CONTINUE
+      ASSIGN j (+ j 1)
+      ASSIGN nj indx(j)
+      IF (> j n)
+        GOTO 80
+      ENDIF
+      IF (<= (* rho __abs_r8[[((z(nj)))]]) tol)
+        ASSIGN k2 (- k2 1)
+        ASSIGN coltyp(nj) 4
+        ASSIGN indxp(k2) nj
+      ELSE
+        ASSIGN s z(pj)
+        ASSIGN c z(nj)
+        ASSIGN tau dlapy2[[((c) (s))]]
+        ASSIGN t (- d(nj) d(pj))
+        ASSIGN c (/ c tau)
+        ASSIGN s (U- (/ s tau))
+        IF (<= __abs_r8[[(((* (* t c) s)))]] tol)
+          ASSIGN z(nj) tau
+          ASSIGN z(pj) 0.e0_8
+          IF (<> coltyp(nj) coltyp(pj))
+            ASSIGN coltyp(nj) 2
+          ENDIF
+          ASSIGN coltyp(pj) 4
+          CALL infog1l ((nj) (nb) (npcol) (mycol) (dcol) (njj) (njcol))
+          CALL infog1l ((pj) (nb) (npcol) (mycol) (dcol) (pjj) (pjcol))
+          IF (AND (= indcol(pj) indcol(nj)) (= mycol njcol))
+            CALL drot ((np) (q(1 , pjj)) (1) (q(1 , njj)) (1) (c) (s))
+          ELSE IF (= mycol pjcol)
+            CALL dgesd2d ((ictxt) (np) (1) (q(1 , pjj)) (np) (myrow) (njcol))
+            CALL dgerv2d ((ictxt) (np) (1) (qbuf(FULL)) (np) (myrow) (njcol))
+            CALL drot ((np) (q(1 , pjj)) (1) (qbuf(FULL)) (1) (c) (s))
+          ELSE IF (= mycol njcol)
+            CALL dgesd2d ((ictxt) (np) (1) (q(1 , njj)) (np) (myrow) (pjcol))
+            CALL dgerv2d ((ictxt) (np) (1) (qbuf(FULL)) (np) (myrow) (pjcol))
+            CALL drot ((np) (qbuf(FULL)) (1) (q(1 , njj)) (1) (c) (s))
+          ENDIF
+          ASSIGN t (+ (* d(pj) (** c 2)) (* d(nj) (** s 2)))
+          ASSIGN d(nj) (+ (* d(pj) (** s 2)) (* d(nj) (** c 2)))
+          ASSIGN d(pj) t
+          ASSIGN k2 (- k2 1)
+          ASSIGN i 1
+70        CONTINUE
+          IF (<= (+ k2 i) n)
+            IF (< d(pj) d(indxp((+ k2 i))))
+              ASSIGN indxp((- (+ k2 i) 1)) indxp((+ k2 i))
+              ASSIGN indxp((+ k2 i)) pj
+              ASSIGN i (+ i 1)
+              GOTO 70
+            ELSE
+              ASSIGN indxp((- (+ k2 i) 1)) pj
+            ENDIF
+          ELSE
+            ASSIGN indxp((- (+ k2 i) 1)) pj
+          ENDIF
+          ASSIGN pj nj
+        ELSE
+          ASSIGN k (+ k 1)
+          ASSIGN dlamda(k) d(pj)
+          ASSIGN w(k) z(pj)
+          ASSIGN indxp(k) pj
+          ASSIGN pj nj
+        ENDIF
+      ENDIF
+      GOTO 60
+80    CONTINUE
+      ASSIGN k (+ k 1)
+      ASSIGN dlamda(k) d(pj)
+      ASSIGN w(k) z(pj)
+      ASSIGN indxp(k) pj
+      DO j=1 4 1
+        DO i=0 (- npcol 1) 1
+          ASSIGN ctot(i , j) 0
+90        CONTINUE
+        END DO
+        ASSIGN ptt(j) 0
+100     CONTINUE
+      END DO
+      DO j=1 n 1
+        ASSIGN ct coltyp(j)
+        ASSIGN col indcol(j)
+        ASSIGN ctot(col , ct) (+ ctot(col , ct) 1)
+110     CONTINUE
+      END DO
+      DO col=0 (- npcol 1) 1
+        ASSIGN psm(col , 1) 1
+        ASSIGN psm(col , 2) (+ 1 ctot(col , 1))
+        ASSIGN psm(col , 3) (+ psm(col , 2) ctot(col , 2))
+        ASSIGN psm(col , 4) (+ psm(col , 3) ctot(col , 3))
+120     CONTINUE
+      END DO
+      ASSIGN ptt(1) 1
+      DO i=2 4 1
+        ASSIGN ct 0
+        DO j=0 (- npcol 1) 1
+          ASSIGN ct (+ ct ctot(j , (- i 1)))
+130       CONTINUE
+        END DO
+        ASSIGN ptt(i) (+ ptt((- i 1)) ct)
+140     CONTINUE
+      END DO
+      DO j=1 n 1
+        ASSIGN js indxp(j)
+        ASSIGN col indcol(js)
+        ASSIGN ct coltyp(js)
+        ASSIGN i indxl2g[[((psm(col , ct)) (nb) (col) (dcol) (npcol))]]
+        ASSIGN indx(j) i
+        ASSIGN indxc(ptt(ct)) i
+        ASSIGN psm(col , ct) (+ psm(col , ct) 1)
+        ASSIGN ptt(ct) (+ ptt(ct) 1)
+150     CONTINUE
+      END DO
+      DO j=1 n 1
+        ASSIGN js indxp(j)
+        ASSIGN jjs indxg2l[[((js) (nb) (j) (j) (npcol))]]
+        ASSIGN col indcol(js)
+        IF (= col mycol)
+          ASSIGN i indx(j)
+          ASSIGN jjq2 indxg2l[[((i) (nb) (j) (j) (npcol))]]
+          CALL dcopy ((np) (q(1 , jjs)) (1) (q2(1 , jjq2)) (1))
+        ENDIF
+160     CONTINUE
+      END DO
+      CALL dcopy ((n) (d(FULL)) (1) (z(FULL)) (1))
+      DO j=(+ k 1) n 1
+        ASSIGN js indxp(j)
+        ASSIGN i indx(j)
+        ASSIGN d(i) z(js)
+170     CONTINUE
+      END DO
+      ASSIGN ptt(1) 1
+      DO i=2 4 1
+        ASSIGN ct 0
+        DO j=0 (- npcol 1) 1
+          ASSIGN ct (+ ct ctot(j , (- i 1)))
+180       CONTINUE
+        END DO
+        ASSIGN ptt(i) (+ ptt((- i 1)) ct)
+190     CONTINUE
+      END DO
+      ASSIGN ib1 indxc(1)
+      ASSIGN ie1 ib1
+      ASSIGN ib2 indxc(ptt(2))
+      ASSIGN ie2 ib2
+      DO i=2 (- ptt(3) 1) 1
+        ASSIGN ib1 __min_i4[[((ib1) (indxc(i)))]]
+        ASSIGN ie1 __max_i4[[((ie1) (indxc(i)))]]
+200     CONTINUE
+      END DO
+      DO i=ptt(2) (- ptt(4) 1) 1
+        ASSIGN ib2 __min_i4[[((ib2) (indxc(i)))]]
+        ASSIGN ie2 __max_i4[[((ie2) (indxc(i)))]]
+210     CONTINUE
+      END DO
+      ASSIGN nn1 (+ (- ie1 ib1) 1)
+      ASSIGN nn2 (+ (- ie2 ib2) 1)
+      ASSIGN nn (+ (- __max_i4[[((ie1) (ie2))]] __min_i4[[((ib1) (ib2))]]) 1)
+220   CONTINUE
+      RETURN 
+

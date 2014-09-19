@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+
+<library lang="fortran" version="2" name="UNKNOWN.f90">
+
+<!-- include files that the topmost file includes -->
+<!-- fortran module scopes -->
+
+<!-- types and functions NOT contained in a scope -->
+
+  <!--
+    - MODULE: F90Global
+    -->
+  <scope name="F90Global" kind="module">
+
+    <!--
+      - METHOD: pdpotri
+      -->
+    <method name="pdpotri" kind="static">
+
+      <!-- ARGUMENT : uplo -->
+      <arg name="uplo" intent="inout">
+        <type kind="fchar" ikind="char" clen="1"/>
+      </arg>
+
+      <!-- ARGUMENT : n -->
+      <arg name="n" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- ARGUMENT : a -->
+      <arg name="a" intent="inout">
+        <type kind="farray">
+          <array lang="fortran" rank="1">
+            <type kind="ffloat" fkind="dbl"/>
+            <dimension extent="*"/>
+          </array>
+        </type>
+      </arg>
+
+      <!-- ARGUMENT : ia -->
+      <arg name="ia" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- ARGUMENT : ja -->
+      <arg name="ja" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- ARGUMENT : desca -->
+      <arg name="desca" intent="inout">
+        <type kind="farray">
+          <array lang="fortran" rank="1">
+            <type kind="fint" ikind="int"/>
+            <dimension extent="*"/>
+          </array>
+        </type>
+      </arg>
+
+      <!-- ARGUMENT : info -->
+      <arg name="info" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+  </scope>
+
+</library>

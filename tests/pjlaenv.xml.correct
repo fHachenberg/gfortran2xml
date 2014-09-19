@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+
+<library lang="fortran" version="2" name="UNKNOWN.f90">
+
+<!-- include files that the topmost file includes -->
+<!-- fortran module scopes -->
+
+<!-- types and functions NOT contained in a scope -->
+
+  <!--
+    - MODULE: F90Global
+    -->
+  <scope name="F90Global" kind="module">
+
+    <!--
+      - METHOD: pjlaenv
+      -->
+    <method name="pjlaenv" kind="static">
+
+      <!-- ARGUMENT : ictxt -->
+      <arg name="ictxt" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- ARGUMENT : ispec -->
+      <arg name="ispec" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- ARGUMENT : name -->
+      <arg name="name" intent="inout">
+        <type kind="fchar" ikind="char" clen="*"/>
+      </arg>
+
+      <!-- ARGUMENT : opts -->
+      <arg name="opts" intent="inout">
+        <type kind="fchar" ikind="char" clen="*"/>
+      </arg>
+
+      <!-- ARGUMENT : n1 -->
+      <arg name="n1" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- ARGUMENT : n2 -->
+      <arg name="n2" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- ARGUMENT : n3 -->
+      <arg name="n3" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- ARGUMENT : n4 -->
+      <arg name="n4" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- return value -->
+      <return>
+        <type kind="fint" ikind="int"/>
+      </return>
+    </method>
+
+  </scope>
+
+</library>

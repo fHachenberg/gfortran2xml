@@ -1,0 +1,10 @@
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        symtree: main  Ambig 0
+        symbol main (UNKNOWN 0)(PROGRAM UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+
+      WRITE UNIT=6 FMT=-1
+      TRANSFER 'hello from fortran'
+      DT_END
+

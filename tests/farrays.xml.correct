@@ -1,0 +1,872 @@
+<?xml version="1.0"?>
+
+<library lang="fortran" version="2" name="UNKNOWN.f90">
+
+<!-- include files that the topmost file includes -->
+<!-- fortran module scopes -->
+
+  <!--
+    - MODULE: particlemod
+    -->
+  <scope name="particlemod" kind="module">
+
+    <!--
+      - User defined type : particle
+      -->
+    <structure name="particle" kind="ftype">
+
+      <!--FIELD: position -->
+      <field name="position">
+        <type kind="farray">
+          <array lang="fortran" rank="1">
+            <type kind="ffloat" fkind="dbl"/>
+            <dimension extent="3"/>
+          </array>
+        </type>
+      </field>
+
+      <!--FIELD: velocity -->
+      <field name="velocity">
+        <type kind="farray">
+          <array lang="fortran" rank="1">
+            <type kind="ffloat" fkind="dbl"/>
+            <dimension extent="3"/>
+          </array>
+        </type>
+      </field>
+
+      <!--FIELD: mass -->
+      <field name="mass">
+        <type kind="ffloat" fkind="dbl"/>
+      </field>
+
+      <!--FIELD: char_element -->
+      <field name="char_element">
+        <type kind="fint" ikind="char"/>
+      </field>
+
+    </structure>
+
+  </scope>
+
+  <!--
+    - MODULE: m_arraytypes
+    -->
+  <scope name="m_arraytypes" kind="module">
+
+    <!--
+      - User defined type : f90_array1di_t
+      -->
+    <structure name="f90_array1di_t" kind="ftype">
+
+      <!--FIELD: data -->
+      <field name="data">
+        <type kind="fptr">
+          <indirect depth="1" kind="pointer">
+            <type kind="farray">
+              <array lang="fortran" rank="1">
+                <type kind="fint" ikind="int"/>
+                <dimension extent="*"/>
+              </array>
+            </type>
+          </indirect>
+        </type>
+      </field>
+
+    </structure>
+
+    <!--
+      - User defined type : f90_array3di_t
+      -->
+    <structure name="f90_array3di_t" kind="ftype">
+
+      <!--FIELD: data -->
+      <field name="data">
+        <type kind="fptr">
+          <indirect depth="1" kind="pointer">
+            <type kind="farray">
+              <array lang="fortran" rank="3">
+                <type kind="fint" ikind="int"/>
+                <dimension extent="*"/>
+                <dimension extent="*"/>
+                <dimension extent="*"/>
+              </array>
+            </type>
+          </indirect>
+        </type>
+      </field>
+
+    </structure>
+
+  </scope>
+
+<!-- types and functions NOT contained in a scope -->
+
+  <!--
+    - MODULE: F90Global
+    -->
+  <scope name="F90Global" kind="module">
+
+    <!--
+      - METHOD: test_neg_lb
+      -->
+    <method name="test_neg_lb" kind="static">
+
+      <!-- ARGUMENT : a -->
+      <arg name="a" intent="inout">
+        <type kind="farray">
+          <array lang="fortran" rank="2">
+            <type kind="fint" ikind="int"/>
+            <dimension extent="*"/>
+            <dimension extent="*"/>
+          </array>
+        </type>
+      </arg>
+
+      <!-- return value -->
+      <return>
+        <type kind="fint" ikind="int"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: print_sizeofs
+      -->
+    <method name="print_sizeofs" kind="static">
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: send_iia1d_null
+      -->
+    <method name="send_iia1d_null" kind="static">
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: send_iia1d
+      -->
+    <method name="send_iia1d" kind="static">
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: send_iia2d
+      -->
+    <method name="send_iia2d" kind="static">
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: send_iia3d
+      -->
+    <method name="send_iia3d" kind="static">
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: send_iia4d
+      -->
+    <method name="send_iia4d" kind="static">
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: send_iia5d
+      -->
+    <method name="send_iia5d" kind="static">
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: send_iia6d
+      -->
+    <method name="send_iia6d" kind="static">
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: send_iia7d
+      -->
+    <method name="send_iia7d" kind="static">
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: send_lla0d
+      -->
+    <method name="send_lla0d" kind="static">
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: send_l1a0d
+      -->
+    <method name="send_l1a0d" kind="static">
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: send_l2a0d
+      -->
+    <method name="send_l2a0d" kind="static">
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: send_l4a0d
+      -->
+    <method name="send_l4a0d" kind="static">
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: send_l8a0d
+      -->
+    <method name="send_l8a0d" kind="static">
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: send_lla1d
+      -->
+    <method name="send_lla1d" kind="static">
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: send_l1a1d
+      -->
+    <method name="send_l1a1d" kind="static">
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: send_l2a1d
+      -->
+    <method name="send_l2a1d" kind="static">
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: send_l4a1d
+      -->
+    <method name="send_l4a1d" kind="static">
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: send_l8a1d
+      -->
+    <method name="send_l8a1d" kind="static">
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: send_i1a1d
+      -->
+    <method name="send_i1a1d" kind="static">
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: send_i2a1d
+      -->
+    <method name="send_i2a1d" kind="static">
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: send_i4a1d
+      -->
+    <method name="send_i4a1d" kind="static">
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: send_i8a1d
+      -->
+    <method name="send_i8a1d" kind="static">
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: send_rra1d
+      -->
+    <method name="send_rra1d" kind="static">
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: send_dda1d
+      -->
+    <method name="send_dda1d" kind="static">
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: send_ca0d
+      -->
+    <method name="send_ca0d" kind="static">
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: send_ca1d
+      -->
+    <method name="send_ca1d" kind="static">
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: send_dca0d
+      -->
+    <method name="send_dca0d" kind="static">
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: send_dca1d
+      -->
+    <method name="send_dca1d" kind="static">
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: send_ua0d
+      -->
+    <method name="send_ua0d" kind="static">
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: send_ua1d
+      -->
+    <method name="send_ua1d" kind="static">
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: send_upa1d
+      -->
+    <method name="send_upa1d" kind="static">
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: send_iia0d
+      -->
+    <method name="send_iia0d" kind="static">
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: send_i1a0d
+      -->
+    <method name="send_i1a0d" kind="static">
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: send_i2a0d
+      -->
+    <method name="send_i2a0d" kind="static">
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: send_i4a0d
+      -->
+    <method name="send_i4a0d" kind="static">
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: send_i8a0d
+      -->
+    <method name="send_i8a0d" kind="static">
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: send_i1a1d_print
+      -->
+    <method name="send_i1a1d_print" kind="static">
+
+      <!-- ARGUMENT : code -->
+      <arg name="code" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- ARGUMENT : ii -->
+      <arg name="ii" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: send_i2a1d_print
+      -->
+    <method name="send_i2a1d_print" kind="static">
+
+      <!-- ARGUMENT : code -->
+      <arg name="code" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- ARGUMENT : ii -->
+      <arg name="ii" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: send_i4a1d_print
+      -->
+    <method name="send_i4a1d_print" kind="static">
+
+      <!-- ARGUMENT : code -->
+      <arg name="code" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- ARGUMENT : ii -->
+      <arg name="ii" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: send_i8a1d_print
+      -->
+    <method name="send_i8a1d_print" kind="static">
+
+      <!-- ARGUMENT : code -->
+      <arg name="code" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- ARGUMENT : ii -->
+      <arg name="ii" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: send_ia1d
+      -->
+    <method name="send_ia1d" kind="static">
+
+      <!-- ARGUMENT : code -->
+      <arg name="code" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- ARGUMENT : ii -->
+      <arg name="ii" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: send_ia2d
+      -->
+    <method name="send_ia2d" kind="static">
+
+      <!-- ARGUMENT : code -->
+      <arg name="code" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- ARGUMENT : ii -->
+      <arg name="ii" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- ARGUMENT : jj -->
+      <arg name="jj" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: send_ia3d
+      -->
+    <method name="send_ia3d" kind="static">
+
+      <!-- ARGUMENT : code -->
+      <arg name="code" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- ARGUMENT : ii -->
+      <arg name="ii" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- ARGUMENT : jj -->
+      <arg name="jj" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- ARGUMENT : kk -->
+      <arg name="kk" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: send_ia3d_s
+      -->
+    <method name="send_ia3d_s" kind="static">
+
+      <!-- ARGUMENT : code -->
+      <arg name="code" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- ARGUMENT : count -->
+      <arg name="count" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: send_ia3d_p
+      -->
+    <method name="send_ia3d_p" kind="static">
+
+      <!-- ARGUMENT : code -->
+      <arg name="code" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- ARGUMENT : count -->
+      <arg name="count" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: send_ia3d_dp
+      -->
+    <method name="send_ia3d_dp" kind="static">
+
+      <!-- ARGUMENT : code -->
+      <arg name="code" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- ARGUMENT : count -->
+      <arg name="count" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: send_ra0d
+      -->
+    <method name="send_ra0d" kind="static">
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: send_ra1d
+      -->
+    <method name="send_ra1d" kind="static">
+
+      <!-- ARGUMENT : code -->
+      <arg name="code" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- ARGUMENT : count -->
+      <arg name="count" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: send_ra2d
+      -->
+    <method name="send_ra2d" kind="static">
+
+      <!-- ARGUMENT : code -->
+      <arg name="code" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- ARGUMENT : count -->
+      <arg name="count" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: send_ra3d
+      -->
+    <method name="send_ra3d" kind="static">
+
+      <!-- ARGUMENT : code -->
+      <arg name="code" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- ARGUMENT : count -->
+      <arg name="count" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: send_da0d
+      -->
+    <method name="send_da0d" kind="static">
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: send_da1d
+      -->
+    <method name="send_da1d" kind="static">
+
+      <!-- ARGUMENT : code -->
+      <arg name="code" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- ARGUMENT : count -->
+      <arg name="count" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+  </scope>
+
+</library>

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+
+<library lang="fortran" version="2" name="UNKNOWN.f90">
+
+<!-- include files that the topmost file includes -->
+<!-- fortran module scopes -->
+
+  <!--
+    - MODULE: subintbug
+    -->
+  <scope name="subintbug" kind="module">
+
+    <!--
+      - METHOD: subintbug::mysub
+      -->
+    <method name="mysub" kind="static">
+
+      <!-- ARGUMENT : k -->
+      <arg name="k" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+  </scope>
+
+</library>

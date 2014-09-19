@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+
+<library lang="fortran" version="2" name="UNKNOWN.f90">
+
+<!-- include files that the topmost file includes -->
+<!-- fortran module scopes -->
+
+<!-- types and functions NOT contained in a scope -->
+
+  <!--
+    - MODULE: F90Global
+    -->
+  <scope name="F90Global" kind="module">
+
+    <!--
+      - METHOD: ddbtf2
+      -->
+    <method name="ddbtf2" kind="static">
+
+      <!-- ARGUMENT : m -->
+      <arg name="m" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- ARGUMENT : n -->
+      <arg name="n" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- ARGUMENT : kl -->
+      <arg name="kl" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- ARGUMENT : ku -->
+      <arg name="ku" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- ARGUMENT : ab -->
+      <arg name="ab" intent="inout">
+        <type kind="farray">
+          <array lang="fortran" rank="2">
+            <type kind="ffloat" fkind="dbl"/>
+            <dimension extent="*"/>
+            <dimension extent="*"/>
+          </array>
+        </type>
+      </arg>
+
+      <!-- ARGUMENT : ldab -->
+      <arg name="ldab" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- ARGUMENT : info -->
+      <arg name="info" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+  </scope>
+
+</library>

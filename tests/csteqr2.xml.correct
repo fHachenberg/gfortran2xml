@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+
+<library lang="fortran" version="2" name="UNKNOWN.f90">
+
+<!-- include files that the topmost file includes -->
+<!-- fortran module scopes -->
+
+<!-- types and functions NOT contained in a scope -->
+
+  <!--
+    - MODULE: F90Global
+    -->
+  <scope name="F90Global" kind="module">
+
+    <!--
+      - METHOD: csteqr2
+      -->
+    <method name="csteqr2" kind="static">
+
+      <!-- ARGUMENT : compz -->
+      <arg name="compz" intent="inout">
+        <type kind="fchar" ikind="char" clen="1"/>
+      </arg>
+
+      <!-- ARGUMENT : n -->
+      <arg name="n" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- ARGUMENT : d -->
+      <arg name="d" intent="inout">
+        <type kind="farray">
+          <array lang="fortran" rank="1">
+            <type kind="ffloat" fkind="float"/>
+            <dimension extent="*"/>
+          </array>
+        </type>
+      </arg>
+
+      <!-- ARGUMENT : e -->
+      <arg name="e" intent="inout">
+        <type kind="farray">
+          <array lang="fortran" rank="1">
+            <type kind="ffloat" fkind="float"/>
+            <dimension extent="*"/>
+          </array>
+        </type>
+      </arg>
+
+      <!-- ARGUMENT : z -->
+      <arg name="z" intent="inout">
+        <type kind="farray">
+          <array lang="fortran" rank="2">
+            <type kind="fcmplx" fkind="float"/>
+            <dimension extent="*"/>
+            <dimension extent="*"/>
+          </array>
+        </type>
+      </arg>
+
+      <!-- ARGUMENT : ldz -->
+      <arg name="ldz" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- ARGUMENT : nr -->
+      <arg name="nr" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- ARGUMENT : work -->
+      <arg name="work" intent="inout">
+        <type kind="farray">
+          <array lang="fortran" rank="1">
+            <type kind="ffloat" fkind="float"/>
+            <dimension extent="*"/>
+          </array>
+        </type>
+      </arg>
+
+      <!-- ARGUMENT : info -->
+      <arg name="info" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+  </scope>
+
+</library>

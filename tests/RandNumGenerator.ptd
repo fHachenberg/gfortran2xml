@@ -1,0 +1,32 @@
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = randnumgenerator
+        symtree: getrandomnumber  Ambig 0
+        symbol getrandomnumber (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+        Generic interfaces: getrandomnumber_rand
+
+        symtree: randnumgenerator  Ambig 0
+        symbol randnumgenerator (UNKNOWN 0)(MODULE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: getrandomnumber_rand  Ambig 0
+        symbol getrandomnumber_rand (REAL 8)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS MODULE-PROC FUNCTION)
+        result: getrandomnumber_rand
+
+
+
+        CONTAINS
+
+          Namespace: A-Z: (UNKNOWN 0)
+          procedure name = getrandomnumber_rand
+          symtree: random_number  Ambig 0
+          symbol random_number (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SUBROUTINE)
+
+          symtree: kind  Ambig 0
+          symbol kind (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC FUNCTION)
+          result: kind
+
+          symtree: getrandomnumber_rand  Ambig 0 from namespace randnumgenerator
+
+      CALL _gfortran_random_r8 ((randnumgenerator:getrandomnumber_rand))
+
+

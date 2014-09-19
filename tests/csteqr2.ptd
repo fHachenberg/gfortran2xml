@@ -1,0 +1,664 @@
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = csteqr2
+        symtree: lendsv  Ambig 0
+        symbol lendsv (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: lendm1  Ambig 0
+        symbol lendm1 (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: l  Ambig 0
+        symbol l (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: ilast  Ambig 0
+        symbol ilast (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: abs  Ambig 0
+        symbol abs (REAL 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC INTRINSIC FUNCTION IMPLICIT-TYPE)
+        result: abs
+
+        symtree: cswap  Ambig 0
+        symbol cswap (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL SUBROUTINE)
+
+        symtree: compz  Ambig 0
+        symbol compz (CHARACTER 1)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: c  Ambig 0
+        symbol c (REAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: anorm  Ambig 0
+        symbol anorm (REAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: b  Ambig 0
+        symbol b (REAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: clasr  Ambig 0
+        symbol clasr (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL SUBROUTINE)
+
+        symtree: cone  Ambig 0
+        symbol cone (COMPLEX 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+        value: (complex 0.1e1 0.1e1)
+
+        symtree: csteqr2  Ambig 0
+        symbol csteqr2 (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SUBROUTINE)
+        Formal arglist: compz n d e z ldz nr work info
+
+        symtree: icompz  Ambig 0
+        symbol icompz (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: f  Ambig 0
+        symbol f (REAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: e  Ambig 0
+        symbol e (REAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION DUMMY)
+        Array spec:(1 AS_ASSUMED_SIZE 1 () )
+
+        symtree: d  Ambig 0
+        symbol d (REAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION DUMMY)
+        Array spec:(1 AS_ASSUMED_SIZE 1 () )
+
+        symtree: eps2  Ambig 0
+        symbol eps2 (REAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: eps  Ambig 0
+        symbol eps (REAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: g  Ambig 0
+        symbol g (REAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: half  Ambig 0
+        symbol half (REAL 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+        value: 0.5e0
+
+        symtree: gp  Ambig 0
+        symbol gp (REAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: i  Ambig 0
+        symbol i (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: ii  Ambig 0
+        symbol ii (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: j  Ambig 0
+        symbol j (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: info  Ambig 0
+        symbol info (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: iscale  Ambig 0
+        symbol iscale (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: k  Ambig 0
+        symbol k (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: jtot  Ambig 0
+        symbol jtot (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: lend  Ambig 0
+        symbol lend (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: l1  Ambig 0
+        symbol l1 (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: ldz  Ambig 0
+        symbol ldz (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: lendp1  Ambig 0
+        symbol lendp1 (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: slapy2  Ambig 0
+        symbol slapy2 (REAL 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL FUNCTION)
+        result: slapy2
+
+        symtree: rt2  Ambig 0
+        symbol rt2 (REAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: oldel  Ambig 0
+        symbol oldel (REAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: nlook  Ambig 0
+        symbol nlook (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: lm1  Ambig 0
+        symbol lm1 (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: n  Ambig 0
+        symbol n (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: mm  Ambig 0
+        symbol mm (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: max  Ambig 0
+        symbol max (INTEGER 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC INTRINSIC FUNCTION IMPLICIT-TYPE)
+        result: max
+
+        symtree: lsv  Ambig 0
+        symbol lsv (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: lsame  Ambig 0
+        symbol lsame (LOGICAL 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL FUNCTION)
+        result: lsame
+
+        symtree: m  Ambig 0
+        symbol m (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: maxit  Ambig 0
+        symbol maxit (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+        value: 30
+
+        symtree: mm1  Ambig 0
+        symbol mm1 (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: nm1  Ambig 0
+        symbol nm1 (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: nmaxlook  Ambig 0
+        symbol nmaxlook (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+        value: 15
+
+        symtree: nmaxit  Ambig 0
+        symbol nmaxit (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: nr  Ambig 0
+        symbol nr (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: oldgp  Ambig 0
+        symbol oldgp (REAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: r  Ambig 0
+        symbol r (REAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: p  Ambig 0
+        symbol p (REAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: oldrp  Ambig 0
+        symbol oldrp (REAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: one  Ambig 0
+        symbol one (REAL 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+        value: 0.1e1
+
+        symtree: rp  Ambig 0
+        symbol rp (REAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: rt1  Ambig 0
+        symbol rt1 (REAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: slaev2  Ambig 0
+        symbol slaev2 (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL SUBROUTINE)
+
+        symtree: safmin  Ambig 0
+        symbol safmin (REAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: s  Ambig 0
+        symbol s (REAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: safmax  Ambig 0
+        symbol safmax (REAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: sign  Ambig 0
+        symbol sign (REAL 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC INTRINSIC FUNCTION IMPLICIT-TYPE)
+        result: sign
+
+        symtree: slamch  Ambig 0
+        symbol slamch (REAL 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL FUNCTION)
+        result: slamch
+
+        symtree: slanst  Ambig 0
+        symbol slanst (REAL 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL FUNCTION)
+        result: slanst
+
+        symtree: two  Ambig 0
+        symbol two (REAL 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+        value: 0.2e1
+
+        symtree: slascl  Ambig 0
+        symbol slascl (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL SUBROUTINE)
+
+        symtree: slartg  Ambig 0
+        symbol slartg (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL SUBROUTINE)
+
+        symtree: tst  Ambig 0
+        symbol tst (REAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: ssterf  Ambig 0
+        symbol ssterf (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL SUBROUTINE)
+
+        symtree: sqrt  Ambig 0
+        symbol sqrt (REAL 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC INTRINSIC FUNCTION IMPLICIT-TYPE)
+        result: sqrt
+
+        symtree: ssfmax  Ambig 0
+        symbol ssfmax (REAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: ssfmin  Ambig 0
+        symbol ssfmin (REAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: three  Ambig 0
+        symbol three (REAL 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+        value: 0.3e1
+
+        symtree: tst1  Ambig 0
+        symbol tst1 (REAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: zero  Ambig 0
+        symbol zero (REAL 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+        value: 0.e0
+
+        symtree: xerbla  Ambig 0
+        symbol xerbla (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL SUBROUTINE)
+
+        symtree: work  Ambig 0
+        symbol work (REAL 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION DUMMY)
+        Array spec:(1 AS_ASSUMED_SIZE 1 () )
+
+        symtree: z  Ambig 0
+        symbol z (COMPLEX 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION DUMMY)
+        Array spec:(2 AS_ASSUMED_SIZE 1 ldz 1 () )
+
+
+      ASSIGN ilast 0
+      ASSIGN info 0
+      IF lsame[[((compz) ('N'))]]
+        ASSIGN icompz 0
+      ELSE IF lsame[[((compz) ('I'))]]
+        ASSIGN icompz 1
+      ELSE
+        ASSIGN icompz -1
+      ENDIF
+      IF (< icompz 0)
+        ASSIGN info -1
+      ELSE IF (< n 0)
+        ASSIGN info -2
+      ELSE IF (AND (> icompz 0) (< ldz __max_i4[[((1) (nr))]]))
+        ASSIGN info -6
+      ENDIF
+      IF (<> info 0)
+        CALL xerbla (('CSTEQR2') ((U- info)))
+        RETURN 
+      ENDIF
+      IF (= n 0)
+        RETURN 
+      ENDIF
+      IF (= icompz 0)
+        CALL ssterf ((n) (d(FULL)) (e(FULL)) (info))
+        RETURN 
+      ENDIF
+      IF (= n 1)
+        ASSIGN z(1 , 1) (complex 0.1e1 0.1e1)
+        RETURN 
+      ENDIF
+      ASSIGN eps slamch[[(('E'))]]
+      ASSIGN eps2 (** eps 2)
+      ASSIGN safmin slamch[[(('S'))]]
+      ASSIGN safmax (/ 0.1e1 safmin)
+      ASSIGN ssfmax (/ __sqrt_r4[[((safmax))]] 0.3e1)
+      ASSIGN ssfmin (/ __sqrt_r4[[((safmin))]] eps2)
+      ASSIGN nmaxit (* n 30)
+      ASSIGN jtot 0
+      ASSIGN l1 1
+      ASSIGN nm1 (- n 1)
+10    CONTINUE
+      IF (> l1 n)
+        GOTO 220
+      ENDIF
+      IF (> l1 1)
+        ASSIGN e((- l1 1)) 0.e0
+      ENDIF
+      IF (<= l1 nm1)
+        DO m=l1 nm1 1
+          ASSIGN tst __abs_r4[[((e(m)))]]
+          IF (= tst 0.e0)
+            GOTO 30
+          ENDIF
+          IF (<= tst (* (* __sqrt_r4[[((__abs_r4[[((d(m)))]]))]] __sqrt_r4[[((__abs_r4[[((d((+ m 1))))]]))]]) eps))
+            ASSIGN e(m) 0.e0
+            GOTO 30
+          ENDIF
+20        CONTINUE
+        END DO
+      ENDIF
+      ASSIGN m n
+30    CONTINUE
+      ASSIGN l l1
+      ASSIGN lsv l
+      ASSIGN lend m
+      ASSIGN lendsv lend
+      ASSIGN l1 (+ m 1)
+      IF (= lend l)
+        GOTO 10
+      ENDIF
+      ASSIGN anorm slanst[[(('I') ((+ (- lend l) 1)) (d(l)) (e(l)))]]
+      ASSIGN iscale 0
+      IF (= anorm 0.e0)
+        GOTO 10
+      ENDIF
+      IF (> anorm ssfmax)
+        ASSIGN iscale 1
+        CALL slascl (('G') (0) (0) (anorm) (ssfmax) ((+ (- lend l) 1)) (1) (d(l)) (n) (info))
+        CALL slascl (('G') (0) (0) (anorm) (ssfmax) ((- lend l)) (1) (e(l)) (n) (info))
+      ELSE IF (< anorm ssfmin)
+        ASSIGN iscale 2
+        CALL slascl (('G') (0) (0) (anorm) (ssfmin) ((+ (- lend l) 1)) (1) (d(l)) (n) (info))
+        CALL slascl (('G') (0) (0) (anorm) (ssfmin) ((- lend l)) (1) (e(l)) (n) (info))
+      ENDIF
+      IF (< __abs_r4[[((d(lend)))]] __abs_r4[[((d(l)))]])
+        ASSIGN lend lsv
+        ASSIGN l lendsv
+      ENDIF
+      IF (> lend l)
+40      CONTINUE
+        IF (<> l lend)
+          ASSIGN lendm1 (- lend 1)
+          DO m=l lendm1 1
+            ASSIGN tst (** __abs_r4[[((e(m)))]] 2)
+            IF (<= tst (+ (* (* eps2 __abs_r4[[((d(m)))]]) __abs_r4[[((d((+ m 1))))]]) safmin))
+              GOTO 60
+            ENDIF
+50          CONTINUE
+          END DO
+        ENDIF
+        ASSIGN m lend
+60      CONTINUE
+        IF (< m lend)
+          ASSIGN e(m) 0.e0
+        ENDIF
+        ASSIGN p d(l)
+        IF (= m l)
+          GOTO 110
+        ENDIF
+        IF (= m (+ l 1))
+          CALL slaev2 ((d(l)) (e(l)) (d((+ l 1))) (rt1) (rt2) (c) (s))
+          ASSIGN work(l) c
+          ASSIGN work((+ (- n 1) l)) s
+          CALL clasr (('R') ('V') ('B') (nr) (2) (work(l)) (work((+ (- n 1) l))) (z(1 , l)) (ldz))
+          ASSIGN d(l) rt1
+          ASSIGN d((+ l 1)) rt2
+          ASSIGN e(l) 0.e0
+          ASSIGN l (+ l 2)
+          IF (<= l lend)
+            GOTO 40
+          ENDIF
+          GOTO 200
+        ENDIF
+        IF (= jtot nmaxit)
+          GOTO 200
+        ENDIF
+        ASSIGN jtot (+ jtot 1)
+        ASSIGN g (/ (- d((+ l 1)) p) (* 0.2e1 e(l)))
+        ASSIGN r slapy2[[((g) (0.1e1))]]
+        ASSIGN g (+ (- d(m) p) (/ e(l) (+ g __sign_r4[[((r) (g))]])))
+        IF (= icompz 0)
+          GOTO 90
+        ENDIF
+        ASSIGN oldel __abs_r4[[((e(l)))]]
+        ASSIGN gp g
+        ASSIGN rp r
+        ASSIGN tst (** __abs_r4[[((e(l)))]] 2)
+        ASSIGN tst (/ tst (+ (* (* eps2 __abs_r4[[((d(l)))]]) __abs_r4[[((d((+ l 1))))]]) safmin))
+        ASSIGN nlook 1
+        IF (AND (> tst 0.1e1) (<= nlook 15))
+70        CONTINUE
+          ASSIGN s 0.1e1
+          ASSIGN c 0.1e1
+          ASSIGN p 0.e0
+          ASSIGN mm1 (- m 1)
+          DO i=mm1 l -1
+            ASSIGN f (* s e(i))
+            ASSIGN b (* c e(i))
+            CALL slartg ((gp) (f) (c) (s) (rp))
+            ASSIGN gp (- d((+ i 1)) p)
+            ASSIGN rp (+ (* (- d(i) gp) s) (* (* 0.2e1 c) b))
+            ASSIGN p (* s rp)
+            IF (<> i l)
+              ASSIGN gp (- (* c rp) b)
+            ENDIF
+80          CONTINUE
+          END DO
+          ASSIGN oldgp gp
+          ASSIGN oldrp rp
+          IF (> __abs_r4[[(((- (* c oldrp) b)))]] safmin)
+            ASSIGN gp (/ (- (+ oldgp p) (- d(l) p)) (* 0.2e1 (- (* c oldrp) b)))
+          ELSE
+            GOTO 90
+          ENDIF
+          ASSIGN rp slapy2[[((gp) (0.1e1))]]
+          ASSIGN gp (+ (- d(m) (- d(l) p)) (/ (- (* c oldrp) b) (+ gp __sign_r4[[((rp) (gp))]])))
+          ASSIGN tst1 tst
+          ASSIGN tst (** __abs_r4[[(((- (* c oldrp) b)))]] 2)
+          ASSIGN tst (/ tst (+ (* (* eps2 __abs_r4[[(((- d(l) p)))]]) __abs_r4[[(((+ oldgp p)))]]) safmin))
+          IF (> __abs_r4[[(((- (* c oldrp) b)))]] (* 0.9e0 oldel))
+            IF (> __abs_r4[[(((- (* c oldrp) b)))]] oldel)
+              ASSIGN gp g
+              ASSIGN rp r
+            ENDIF
+            ASSIGN tst 0.5e0
+          ELSE
+            ASSIGN oldel __abs_r4[[(((- (* c oldrp) b)))]]
+          ENDIF
+          ASSIGN nlook (+ nlook 1)
+          IF (AND (> tst 0.1e1) (<= nlook 15))
+            GOTO 70
+          ENDIF
+        ENDIF
+        IF (AND (AND (AND (AND (<= tst 0.1e1) (<> tst 0.5e0)) (< __abs_r4[[((p))]] (* eps __abs_r4[[((d(l)))]]))) (= ilast l)) (<= (** __abs_r4[[((e(l)))]] 2) (* 0.1e5 (+ (* (* eps2 __abs_r4[[((d(l)))]]) __abs_r4[[((d((+ l 1))))]]) safmin))))
+          ASSIGN m l
+          ASSIGN e(m) 0.e0
+          ASSIGN p d(l)
+          ASSIGN jtot (- jtot 1)
+          GOTO 110
+        ENDIF
+        ASSIGN g gp
+        ASSIGN r rp
+90      CONTINUE
+        ASSIGN s 0.1e1
+        ASSIGN c 0.1e1
+        ASSIGN p 0.e0
+        ASSIGN mm1 (- m 1)
+        DO i=mm1 l -1
+          ASSIGN f (* s e(i))
+          ASSIGN b (* c e(i))
+          CALL slartg ((g) (f) (c) (s) (r))
+          IF (<> i (- m 1))
+            ASSIGN e((+ i 1)) r
+          ENDIF
+          ASSIGN g (- d((+ i 1)) p)
+          ASSIGN r (+ (* (- d(i) g) s) (* (* 0.2e1 c) b))
+          ASSIGN p (* s r)
+          ASSIGN d((+ i 1)) (+ g p)
+          ASSIGN g (- (* c r) b)
+          ASSIGN work(i) c
+          ASSIGN work((+ (- n 1) i)) (U- s)
+100       CONTINUE
+        END DO
+        ASSIGN mm (+ (- m l) 1)
+        CALL clasr (('R') ('V') ('B') (nr) (mm) (work(l)) (work((+ (- n 1) l))) (z(1 , l)) (ldz))
+        ASSIGN d(l) (- d(l) p)
+        ASSIGN e(l) g
+        ASSIGN ilast l
+        GOTO 40
+110     CONTINUE
+        ASSIGN d(l) p
+        ASSIGN l (+ l 1)
+        IF (<= l lend)
+          GOTO 40
+        ENDIF
+        GOTO 200
+      ELSE
+120     CONTINUE
+        IF (<> l lend)
+          ASSIGN lendp1 (+ lend 1)
+          DO m=l lendp1 -1
+            ASSIGN tst (** __abs_r4[[((e((- m 1))))]] 2)
+            IF (<= tst (+ (* (* eps2 __abs_r4[[((d(m)))]]) __abs_r4[[((d((- m 1))))]]) safmin))
+              GOTO 140
+            ENDIF
+130         CONTINUE
+          END DO
+        ENDIF
+        ASSIGN m lend
+140     CONTINUE
+        IF (> m lend)
+          ASSIGN e((- m 1)) 0.e0
+        ENDIF
+        ASSIGN p d(l)
+        IF (= m l)
+          GOTO 190
+        ENDIF
+        IF (= m (- l 1))
+          CALL slaev2 ((d((- l 1))) (e((- l 1))) (d(l)) (rt1) (rt2) (c) (s))
+          ASSIGN work(m) c
+          ASSIGN work((+ (- n 1) m)) s
+          CALL clasr (('R') ('V') ('F') (nr) (2) (work(m)) (work((+ (- n 1) m))) (z(1 , (- l 1))) (ldz))
+          ASSIGN d((- l 1)) rt1
+          ASSIGN d(l) rt2
+          ASSIGN e((- l 1)) 0.e0
+          ASSIGN l (- l 2)
+          IF (>= l lend)
+            GOTO 120
+          ENDIF
+          GOTO 200
+        ENDIF
+        IF (= jtot nmaxit)
+          GOTO 200
+        ENDIF
+        ASSIGN jtot (+ jtot 1)
+        ASSIGN g (/ (- d((- l 1)) p) (* 0.2e1 e((- l 1))))
+        ASSIGN r slapy2[[((g) (0.1e1))]]
+        ASSIGN g (+ (- d(m) p) (/ e((- l 1)) (+ g __sign_r4[[((r) (g))]])))
+        IF (= icompz 0)
+          GOTO 170
+        ENDIF
+        ASSIGN oldel __abs_r4[[((e((- l 1))))]]
+        ASSIGN gp g
+        ASSIGN rp r
+        ASSIGN tst (** __abs_r4[[((e((- l 1))))]] 2)
+        ASSIGN tst (/ tst (+ (* (* eps2 __abs_r4[[((d(l)))]]) __abs_r4[[((d((- l 1))))]]) safmin))
+        ASSIGN nlook 1
+        IF (AND (> tst 0.1e1) (<= nlook 15))
+150       CONTINUE
+          ASSIGN s 0.1e1
+          ASSIGN c 0.1e1
+          ASSIGN p 0.e0
+          ASSIGN lm1 (- l 1)
+          DO i=m lm1 1
+            ASSIGN f (* s e(i))
+            ASSIGN b (* c e(i))
+            CALL slartg ((gp) (f) (c) (s) (rp))
+            ASSIGN gp (- d(i) p)
+            ASSIGN rp (+ (* (- d((+ i 1)) gp) s) (* (* 0.2e1 c) b))
+            ASSIGN p (* s rp)
+            IF (< i lm1)
+              ASSIGN gp (- (* c rp) b)
+            ENDIF
+160         CONTINUE
+          END DO
+          ASSIGN oldgp gp
+          ASSIGN oldrp rp
+          IF (> __abs_r4[[(((- (* c oldrp) b)))]] safmin)
+            ASSIGN gp (/ (- (+ oldgp p) (- d(l) p)) (* 0.2e1 (- (* c oldrp) b)))
+          ELSE
+            GOTO 170
+          ENDIF
+          ASSIGN rp slapy2[[((gp) (0.1e1))]]
+          ASSIGN gp (+ (- d(m) (- d(l) p)) (/ (- (* c oldrp) b) (+ gp __sign_r4[[((rp) (gp))]])))
+          ASSIGN tst1 tst
+          ASSIGN tst (** __abs_r4[[(((- (* c oldrp) b)))]] 2)
+          ASSIGN tst (/ tst (+ (* (* eps2 __abs_r4[[(((- d(l) p)))]]) __abs_r4[[(((+ oldgp p)))]]) safmin))
+          IF (> __abs_r4[[(((- (* c oldrp) b)))]] (* 0.9e0 oldel))
+            IF (> __abs_r4[[(((- (* c oldrp) b)))]] oldel)
+              ASSIGN gp g
+              ASSIGN rp r
+            ENDIF
+            ASSIGN tst 0.5e0
+          ELSE
+            ASSIGN oldel __abs_r4[[(((- (* c oldrp) b)))]]
+          ENDIF
+          ASSIGN nlook (+ nlook 1)
+          IF (AND (> tst 0.1e1) (<= nlook 15))
+            GOTO 150
+          ENDIF
+        ENDIF
+        IF (AND (AND (AND (AND (<= tst 0.1e1) (<> tst 0.5e0)) (< __abs_r4[[((p))]] (* eps __abs_r4[[((d(l)))]]))) (= ilast l)) (<= (** __abs_r4[[((e((- l 1))))]] 2) (* 0.1e5 (+ (* (* eps2 __abs_r4[[((d((- l 1))))]]) __abs_r4[[((d(l)))]]) safmin))))
+          ASSIGN m l
+          ASSIGN e((- m 1)) 0.e0
+          ASSIGN p d(l)
+          ASSIGN jtot (- jtot 1)
+          GOTO 190
+        ENDIF
+        ASSIGN g gp
+        ASSIGN r rp
+170     CONTINUE
+        ASSIGN s 0.1e1
+        ASSIGN c 0.1e1
+        ASSIGN p 0.e0
+        DO i=m lm1 1
+          ASSIGN f (* s e(i))
+          ASSIGN b (* c e(i))
+          CALL slartg ((g) (f) (c) (s) (r))
+          IF (<> i m)
+            ASSIGN e((- i 1)) r
+          ENDIF
+          ASSIGN g (- d(i) p)
+          ASSIGN r (+ (* (- d((+ i 1)) g) s) (* (* 0.2e1 c) b))
+          ASSIGN p (* s r)
+          ASSIGN d(i) (+ g p)
+          ASSIGN g (- (* c r) b)
+          ASSIGN work(i) c
+          ASSIGN work((+ (- n 1) i)) s
+180       CONTINUE
+        END DO
+        ASSIGN mm (+ (- l m) 1)
+        CALL clasr (('R') ('V') ('F') (nr) (mm) (work(m)) (work((+ (- n 1) m))) (z(1 , m)) (ldz))
+        ASSIGN d(l) (- d(l) p)
+        ASSIGN e(lm1) g
+        ASSIGN ilast l
+        GOTO 120
+190     CONTINUE
+        ASSIGN d(l) p
+        ASSIGN l (- l 1)
+        IF (>= l lend)
+          GOTO 120
+        ENDIF
+        GOTO 200
+      ENDIF
+200   CONTINUE
+      IF (= iscale 1)
+        CALL slascl (('G') (0) (0) (ssfmax) (anorm) ((+ (- lendsv lsv) 1)) (1) (d(lsv)) (n) (info))
+        CALL slascl (('G') (0) (0) (ssfmax) (anorm) ((- lendsv lsv)) (1) (e(lsv)) (n) (info))
+      ELSE IF (= iscale 2)
+        CALL slascl (('G') (0) (0) (ssfmin) (anorm) ((+ (- lendsv lsv) 1)) (1) (d(lsv)) (n) (info))
+        CALL slascl (('G') (0) (0) (ssfmin) (anorm) ((- lendsv lsv)) (1) (e(lsv)) (n) (info))
+      ENDIF
+      IF (< jtot nmaxit)
+        GOTO 10
+      ENDIF
+      DO i=1 (- n 1) 1
+        IF (<> e(i) 0.e0)
+          ASSIGN info (+ info 1)
+        ENDIF
+210     CONTINUE
+      END DO
+      GOTO 250
+220   CONTINUE
+      DO ii=2 n 1
+        ASSIGN i (- ii 1)
+        ASSIGN k i
+        ASSIGN p d(i)
+        DO j=ii n 1
+          IF (< d(j) p)
+            ASSIGN k j
+            ASSIGN p d(j)
+          ENDIF
+230       CONTINUE
+        END DO
+        IF (<> k i)
+          ASSIGN d(k) d(i)
+          ASSIGN d(i) p
+          CALL cswap ((nr) (z(1 , i)) (1) (z(1 , k)) (1))
+        ENDIF
+240     CONTINUE
+      END DO
+250   CONTINUE
+      RETURN 
+

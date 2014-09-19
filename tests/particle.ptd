@@ -1,0 +1,102 @@
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = particlemod
+        symtree: double  Ambig 0
+        symbol double (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+        value: 8
+
+        symtree: particlecreate  Ambig 0
+        symbol particlecreate (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS MODULE-PROC SUBROUTINE)
+        Formal arglist: this position velocity
+
+        symtree: kind  Ambig 0
+        symbol kind (INTEGER 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC FUNCTION IMPLICIT-TYPE)
+        result: kind
+
+        symtree: particle  Ambig 0
+        symbol particle (UNKNOWN 0)(DERIVED UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+        components: (position (REAL 8) DIMENSION (1 AS_EXPLICIT 1 3 )) (velocity (REAL 8) DIMENSION (1 AS_EXPLICIT 1 3 )) (mass (REAL 8) ())
+
+        symtree: particlemove  Ambig 0
+        symbol particlemove (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS MODULE-PROC SUBROUTINE)
+        Formal arglist: this timestep
+
+        symtree: particlemod  Ambig 0
+        symbol particlemod (UNKNOWN 0)(MODULE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: particleprint  Ambig 0
+        symbol particleprint (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS MODULE-PROC SUBROUTINE)
+        Formal arglist: this
+
+
+
+        CONTAINS
+
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = particleprint
+          symtree: i  Ambig 0
+          symbol i (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC IMPLICIT-TYPE)
+
+          symtree: particleprint  Ambig 0 from namespace particlemod
+          symtree: this  Ambig 0
+          symbol this (DERIVED particle)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+
+      DO i=1 3 1
+        WRITE UNIT=6 FMT=-1
+        TRANSFER '['
+        TRANSFER i
+        TRANSFER ']: position ='
+        TRANSFER this % position(i)
+        TRANSFER '  velocity ='
+        TRANSFER this % velocity(i)
+        DT_END
+      END DO
+
+
+        CONTAINS
+
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = particlemove
+          symtree: i  Ambig 0
+          symbol i (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+          symtree: this  Ambig 0
+          symbol this (DERIVED particle)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+          symtree: particlemove  Ambig 0 from namespace particlemod
+          symtree: timestep  Ambig 0
+          symbol timestep (REAL 8)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+
+      DO i=1 3 1
+        ASSIGN this % position(i) (+ this % position(i) (* this % velocity(i) timestep))
+      END DO
+
+
+        CONTAINS
+
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = particlecreate
+          symtree: velocity  Ambig 0
+          symbol velocity (REAL 8)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION POINTER DUMMY)
+          Array spec:(1 AS_DEFERRED () () )
+
+          symtree: this  Ambig 0
+          symbol this (DERIVED particle)(VARIABLE INOUT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+          symtree: particlecreate  Ambig 0 from namespace particlemod
+          symtree: i  Ambig 0
+          symbol i (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+          symtree: position  Ambig 0
+          symbol position (REAL 8)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION POINTER DUMMY)
+          Array spec:(1 AS_DEFERRED () () )
+
+
+      DO i=1 3 1
+        ASSIGN this % position(i) position(i)
+        ASSIGN this % velocity(i) velocity(i)
+      END DO
+
+

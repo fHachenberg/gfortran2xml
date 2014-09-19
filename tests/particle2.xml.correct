@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+
+<library lang="fortran" version="2" name="UNKNOWN.f90">
+
+<!-- include files that the topmost file includes -->
+<!-- fortran module scopes -->
+
+  <!--
+    - MODULE: particlemod
+    -->
+  <scope name="particlemod" kind="module">
+
+    <!--
+      - User defined type : particle
+      -->
+    <structure name="particle" kind="ftype">
+
+      <!--FIELD: position -->
+      <field name="position">
+        <type kind="farray">
+          <array lang="fortran" rank="1">
+            <type kind="ffloat" fkind="dbl"/>
+            <dimension extent="3"/>
+          </array>
+        </type>
+      </field>
+
+      <!--FIELD: velocity -->
+      <field name="velocity">
+        <type kind="farray">
+          <array lang="fortran" rank="1">
+            <type kind="ffloat" fkind="dbl"/>
+            <dimension extent="3"/>
+          </array>
+        </type>
+      </field>
+
+      <!--FIELD: mass -->
+      <field name="mass">
+        <type kind="ffloat" fkind="dbl"/>
+      </field>
+
+    </structure>
+
+    <!--
+      - METHOD: particlemod::particleprint
+      -->
+    <method name="particleprint" kind="static">
+
+      <!-- ARGUMENT : this -->
+      <arg name="this" intent="inout">
+        <type kind="usertype" usertype="particle" context="particlemod"/>
+      </arg>
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: particlemod::particlemove
+      -->
+    <method name="particlemove" kind="static">
+
+      <!-- ARGUMENT : this -->
+      <arg name="this" intent="inout">
+        <type kind="usertype" usertype="particle" context="particlemod"/>
+      </arg>
+
+      <!-- ARGUMENT : timestep -->
+      <arg name="timestep" intent="inout">
+        <type kind="ffloat" fkind="dbl"/>
+      </arg>
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: particlemod::particlecreate
+      -->
+    <method name="particlecreate" kind="static">
+
+      <!-- ARGUMENT : this -->
+      <arg name="this" intent="inout">
+        <type kind="usertype" usertype="particle" context="particlemod"/>
+      </arg>
+
+      <!-- ARGUMENT : position -->
+      <arg name="position" intent="inout">
+        <type kind="fptr">
+          <indirect depth="1" kind="pointer">
+            <type kind="farray">
+              <array lang="fortran" rank="1">
+                <type kind="ffloat" fkind="dbl"/>
+                <dimension extent="*"/>
+              </array>
+            </type>
+          </indirect>
+        </type>
+      </arg>
+
+      <!-- ARGUMENT : velocity -->
+      <arg name="velocity" intent="inout">
+        <type kind="fptr">
+          <indirect depth="1" kind="pointer">
+            <type kind="farray">
+              <array lang="fortran" rank="1">
+                <type kind="ffloat" fkind="dbl"/>
+                <dimension extent="*"/>
+              </array>
+            </type>
+          </indirect>
+        </type>
+      </arg>
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+  </scope>
+
+</library>

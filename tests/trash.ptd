@@ -1,0 +1,17 @@
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = foo
+        symtree: foo  Ambig 0
+        symbol foo (INTEGER 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC FUNCTION)
+        result: foo
+
+
+      ASSIGN foo 0
+
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = boo
+        symtree: boo  Ambig 0
+        symbol boo (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SUBROUTINE)
+
+
+

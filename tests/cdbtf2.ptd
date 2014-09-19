@@ -1,0 +1,107 @@
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = cdbtf2
+        symtree: j  Ambig 0
+        symbol j (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: czero  Ambig 0
+        symbol czero (COMPLEX 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+        value: (complex 0.e0 0.e0)
+
+        symtree: cswap  Ambig 0
+        symbol cswap (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC EXTERNAL)
+
+        symtree: cgeru  Ambig 0
+        symbol cgeru (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL SUBROUTINE)
+
+        symtree: cdbtf2  Ambig 0
+        symbol cdbtf2 (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SUBROUTINE)
+        Formal arglist: m n kl ku ab ldab info
+
+        symtree: ab  Ambig 0
+        symbol ab (COMPLEX 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION DUMMY)
+        Array spec:(2 AS_ASSUMED_SIZE 1 ldab 1 () )
+
+        symtree: cscal  Ambig 0
+        symbol cscal (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL SUBROUTINE)
+
+        symtree: cone  Ambig 0
+        symbol cone (COMPLEX 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+        value: (complex 0.1e1 0.e0)
+
+        symtree: info  Ambig 0
+        symbol info (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: isamax  Ambig 0
+        symbol isamax (INTEGER 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC EXTERNAL)
+
+        symtree: min  Ambig 0
+        symbol min (INTEGER 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC INTRINSIC FUNCTION IMPLICIT-TYPE)
+        result: min
+
+        symtree: ku  Ambig 0
+        symbol ku (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: kl  Ambig 0
+        symbol kl (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: jp  Ambig 0
+        symbol jp (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: ju  Ambig 0
+        symbol ju (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: km  Ambig 0
+        symbol km (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: ldab  Ambig 0
+        symbol ldab (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: kv  Ambig 0
+        symbol kv (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: m  Ambig 0
+        symbol m (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: max  Ambig 0
+        symbol max (INTEGER 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC INTRINSIC FUNCTION IMPLICIT-TYPE)
+        result: max
+
+        symtree: zero  Ambig 0
+        symbol zero (REAL 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+        value: 0.e0
+
+        symtree: one  Ambig 0
+        symbol one (REAL 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+        value: 0.1e1
+
+        symtree: n  Ambig 0
+        symbol n (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+
+      ASSIGN kv ku
+      ASSIGN info 0
+      IF (OR (= m 0) (= n 0))
+        RETURN 
+      ENDIF
+      ASSIGN ju 1
+      DO j=1 __min_i4[[((m) (n))]] 1
+        ASSIGN km __min_i4[[((kl) ((- m j)))]]
+        ASSIGN jp 1
+        IF (<> ab((+ kv 1) , j) (complex 0.e0 0.e0))
+          ASSIGN ju __max_i4[[((ju) (__min_i4[[(((+ j ku)) (n))]]))]]
+          IF (> km 0)
+            CALL cscal ((km) ((/ (complex 0.1e1 0.e0) ab((+ ku 1) , j))) (ab((+ ku 2) , j)) (1))
+            IF (> ju j)
+              CALL cgeru ((km) ((- ju j)) ((complex -0.1e1 0.e0)) (ab((+ ku 2) , j)) (1) (ab(ku , (+ j 1))) ((- ldab 1)) (ab((+ ku 1) , (+ j 1))) ((- ldab 1)))
+            ENDIF
+          ENDIF
+        ELSE
+          IF (= info 0)
+            ASSIGN info j
+          ENDIF
+        ENDIF
+40      CONTINUE
+      END DO
+      RETURN 
+

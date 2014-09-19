@@ -1,0 +1,148 @@
+<?xml version="1.0"?>
+
+<library lang="fortran" version="2" name="UNKNOWN.f90">
+
+<!-- include files that the topmost file includes -->
+<!-- fortran module scopes -->
+
+<!-- types and functions NOT contained in a scope -->
+
+  <!--
+    - MODULE: F90Global
+    -->
+  <scope name="F90Global" kind="module">
+
+    <!--
+      - METHOD: pcgbtrs
+      -->
+    <method name="pcgbtrs" kind="static">
+
+      <!-- ARGUMENT : trans -->
+      <arg name="trans" intent="inout">
+        <type kind="fchar" ikind="char" clen="1"/>
+      </arg>
+
+      <!-- ARGUMENT : n -->
+      <arg name="n" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- ARGUMENT : bwl -->
+      <arg name="bwl" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- ARGUMENT : bwu -->
+      <arg name="bwu" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- ARGUMENT : nrhs -->
+      <arg name="nrhs" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- ARGUMENT : a -->
+      <arg name="a" intent="inout">
+        <type kind="farray">
+          <array lang="fortran" rank="1">
+            <type kind="fcmplx" fkind="float"/>
+            <dimension extent="*"/>
+          </array>
+        </type>
+      </arg>
+
+      <!-- ARGUMENT : ja -->
+      <arg name="ja" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- ARGUMENT : desca -->
+      <arg name="desca" intent="inout">
+        <type kind="farray">
+          <array lang="fortran" rank="1">
+            <type kind="fint" ikind="int"/>
+            <dimension extent="*"/>
+          </array>
+        </type>
+      </arg>
+
+      <!-- ARGUMENT : ipiv -->
+      <arg name="ipiv" intent="inout">
+        <type kind="farray">
+          <array lang="fortran" rank="1">
+            <type kind="fint" ikind="int"/>
+            <dimension extent="*"/>
+          </array>
+        </type>
+      </arg>
+
+      <!-- ARGUMENT : b -->
+      <arg name="b" intent="inout">
+        <type kind="farray">
+          <array lang="fortran" rank="1">
+            <type kind="fcmplx" fkind="float"/>
+            <dimension extent="*"/>
+          </array>
+        </type>
+      </arg>
+
+      <!-- ARGUMENT : ib -->
+      <arg name="ib" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- ARGUMENT : descb -->
+      <arg name="descb" intent="inout">
+        <type kind="farray">
+          <array lang="fortran" rank="1">
+            <type kind="fint" ikind="int"/>
+            <dimension extent="*"/>
+          </array>
+        </type>
+      </arg>
+
+      <!-- ARGUMENT : af -->
+      <arg name="af" intent="inout">
+        <type kind="farray">
+          <array lang="fortran" rank="1">
+            <type kind="fcmplx" fkind="float"/>
+            <dimension extent="*"/>
+          </array>
+        </type>
+      </arg>
+
+      <!-- ARGUMENT : laf -->
+      <arg name="laf" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- ARGUMENT : work -->
+      <arg name="work" intent="inout">
+        <type kind="farray">
+          <array lang="fortran" rank="1">
+            <type kind="fcmplx" fkind="float"/>
+            <dimension extent="*"/>
+          </array>
+        </type>
+      </arg>
+
+      <!-- ARGUMENT : lwork -->
+      <arg name="lwork" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- ARGUMENT : info -->
+      <arg name="info" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+  </scope>
+
+</library>

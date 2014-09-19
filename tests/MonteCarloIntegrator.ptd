@@ -1,0 +1,93 @@
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = montecarlointegrator
+        symtree: integrate  Ambig 0
+        symbol integrate (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+        Generic interfaces: integrate_mc
+
+        symtree: montecarlointegrator  Ambig 0
+        symbol montecarlointegrator (UNKNOWN 0)(MODULE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: integrate_mc  Ambig 0
+        symbol integrate_mc (REAL 8)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS MODULE-PROC FUNCTION)
+        result: integrate_mc
+        Formal arglist: lowbound upbound count
+
+
+
+        CONTAINS
+
+          Namespace: A-Z: (UNKNOWN 0)
+          procedure name = integrate_mc
+          symtree: width  Ambig 0
+          symbol width (REAL 8)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+          symtree: j  Ambig 0
+          symbol j (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+          symtree: @1  Ambig 0
+          symbol evaluate_lf (REAL 8)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS MODULE-PROC USE-ASSOC FUNCTION)
+          result: evaluate_lf
+          Formal arglist: x
+          Formal namespace
+            Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+            procedure name = evaluate_lf
+            symtree: @0  Ambig 0
+            symbol x (REAL 8)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY USE-ASSOC)
+
+
+
+
+
+          symtree: count  Ambig 0
+          symbol count (INTEGER 4)(VARIABLE IN UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+          symtree: @2  Ambig 0
+          symbol getrandomnumber_rand (REAL 8)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS MODULE-PROC USE-ASSOC FUNCTION)
+          result: getrandomnumber_rand
+
+          symtree: evaluate  Ambig 0
+          symbol evaluate (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          Generic interfaces: evaluate_lf
+
+          symtree: getrandomnumber  Ambig 0
+          symbol getrandomnumber (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC USE-ASSOC)
+          Generic interfaces: getrandomnumber_rand
+
+          symtree: i  Ambig 0
+          symbol i (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+          symtree: integrate_mc  Ambig 0 from namespace montecarlointegrator
+          symtree: lowbound  Ambig 0
+          symbol lowbound (REAL 8)(VARIABLE IN UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+          symtree: kind  Ambig 0
+          symbol kind (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC FUNCTION)
+          result: kind
+
+          symtree: multiplier  Ambig 0
+          symbol multiplier (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION)
+          value: (/ 1 , 4 , 1 /)
+          Array spec:(1 AS_EXPLICIT 1 3 )
+
+          symtree: sum  Ambig 0
+          symbol sum (REAL 8)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+          value: 0_8
+
+          symtree: upbound  Ambig 0
+          symbol upbound (REAL 8)(VARIABLE IN UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+          symtree: x  Ambig 0
+          symbol x (REAL 8)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+
+      ASSIGN montecarlointegrator:integrate_mc 0_8
+      ASSIGN integrate_mc:width (- integrate_mc:upbound integrate_mc:lowbound)
+      DO integrate_mc:i=1 integrate_mc:count 1
+        ASSIGN integrate_mc:x getrandomnumber_rand[[()]]
+        ASSIGN integrate_mc:x (+ integrate_mc:lowbound (* integrate_mc:width integrate_mc:x))
+        ASSIGN integrate_mc:sum (+ integrate_mc:sum evaluate_lf[[((integrate_mc:x))]])
+      END DO
+      ASSIGN montecarlointegrator:integrate_mc (/ (* integrate_mc:width integrate_mc:sum) __convert_i4_r8[[((integrate_mc:count))]])
+
+

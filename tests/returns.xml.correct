@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+
+<library lang="fortran" version="2" name="UNKNOWN.f90">
+
+<!-- include files that the topmost file includes -->
+<!-- fortran module scopes -->
+
+  <!--
+    - MODULE: returns
+    -->
+  <scope name="returns" kind="module">
+
+    <!--
+      - METHOD: returns::rtn_real
+      -->
+    <method name="rtn_real" kind="static">
+
+      <!-- return value -->
+      <return>
+        <type kind="ffloat" fkind="float"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: returns::rtn_false
+      -->
+    <method name="rtn_false" kind="static">
+
+      <!-- return value -->
+      <return>
+        <type kind="flogic" ikind="int"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: returns::rtn_int
+      -->
+    <method name="rtn_int" kind="static">
+
+      <!-- return value -->
+      <return>
+        <type kind="fint" ikind="int"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: returns::rtn_string
+      -->
+    <method name="rtn_string" kind="static">
+
+      <!-- ARGUMENT : str -->
+      <arg name="str" intent="out">
+        <type kind="fchar" ikind="char" clen="*"/>
+      </arg>
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: returns::rtn_short
+      -->
+    <method name="rtn_short" kind="static">
+
+      <!-- return value -->
+      <return>
+        <type kind="fint" ikind="char"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: returns::rtn_true
+      -->
+    <method name="rtn_true" kind="static">
+
+      <!-- return value -->
+      <return>
+        <type kind="flogic" ikind="int"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: returns::rtn_string_13
+      -->
+    <method name="rtn_string_13" kind="static">
+
+      <!-- ARGUMENT : str -->
+      <arg name="str" intent="out">
+        <type kind="fchar" ikind="char" clen="13"/>
+      </arg>
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: returns::rtn_void
+      -->
+    <method name="rtn_void" kind="static">
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+  </scope>
+
+</library>

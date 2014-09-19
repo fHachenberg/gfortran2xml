@@ -1,0 +1,33 @@
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = linearfunction
+        symtree: evaluate  Ambig 0
+        symbol evaluate (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+        Generic interfaces: evaluate_lf
+
+        symtree: linearfunction  Ambig 0
+        symbol linearfunction (UNKNOWN 0)(MODULE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: evaluate_lf  Ambig 0
+        symbol evaluate_lf (REAL 8)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS MODULE-PROC FUNCTION)
+        result: evaluate_lf
+        Formal arglist: x
+
+
+
+        CONTAINS
+
+          Namespace: A-Z: (UNKNOWN 0)
+          procedure name = evaluate_lf
+          symtree: x  Ambig 0
+          symbol x (REAL 8)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+          symtree: kind  Ambig 0
+          symbol kind (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC FUNCTION)
+          result: kind
+
+          symtree: evaluate_lf  Ambig 0 from namespace linearfunction
+
+      ASSIGN linearfunction:evaluate_lf (+ (* 1.20000000000000e1_8 evaluate_lf:x) 3.20000004768372_8)
+
+

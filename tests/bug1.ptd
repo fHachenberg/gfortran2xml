@@ -1,0 +1,49 @@
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = subintbug
+        symtree: mysub  Ambig 0
+        symbol mysub (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS MODULE-PROC SUBROUTINE)
+        Formal arglist: k
+
+        symtree: subintbug  Ambig 0
+        symbol subintbug (UNKNOWN 0)(MODULE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+
+
+        CONTAINS
+
+          Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+          procedure name = mysub
+          symtree: k  Ambig 0
+          symbol k (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+          symtree: j  Ambig 0
+          symbol j (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+          value: 1
+
+          symtree: myprint  Ambig 0
+          symbol myprint (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC SUBROUTINE)
+          Formal arglist: i
+          Formal namespace
+            Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+            procedure name = myprint
+            symtree: i  Ambig 0
+            symbol i (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+            symtree: myprint  Ambig 0 from namespace mysub
+
+
+
+
+          symtree: mysub  Ambig 0 from namespace subintbug
+
+      WRITE UNIT=6 FMT=-1
+      TRANSFER 'hello from mySub'
+      DT_END
+      WRITE UNIT=6 FMT=-1
+      TRANSFER 'j is: '
+      TRANSFER mysub:j
+      DT_END
+      CALL myprint ((mysub:j))
+
+

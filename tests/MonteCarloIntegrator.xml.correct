@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+
+<library lang="fortran" version="2" name="UNKNOWN.f90">
+
+<!-- include files that the topmost file includes -->
+<!-- fortran module scopes -->
+
+  <!--
+    - MODULE: montecarlointegrator
+    -->
+  <scope name="montecarlointegrator" kind="module">
+
+    <!--
+      - METHOD: integrate
+      -->
+    <method name="integrate" kind="static">
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: montecarlointegrator::integrate_mc
+      -->
+    <method name="integrate_mc" kind="static">
+
+      <!-- ARGUMENT : lowbound -->
+      <arg name="lowbound" intent="in">
+        <type kind="ffloat" fkind="dbl"/>
+      </arg>
+
+      <!-- ARGUMENT : upbound -->
+      <arg name="upbound" intent="in">
+        <type kind="ffloat" fkind="dbl"/>
+      </arg>
+
+      <!-- ARGUMENT : count -->
+      <arg name="count" intent="in">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- return value -->
+      <return>
+        <type kind="ffloat" fkind="dbl"/>
+      </return>
+    </method>
+
+  </scope>
+
+</library>

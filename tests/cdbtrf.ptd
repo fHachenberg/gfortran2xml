@@ -1,0 +1,259 @@
+
+        Namespace: A-H: (REAL 4) I-N: (INTEGER 4) O-Z: (REAL 4)
+        procedure name = cdbtrf
+        symtree: work13  Ambig 0
+        symbol work13 (COMPLEX 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION)
+        Array spec:(2 AS_EXPLICIT 1 65 1 64 )
+
+        symtree: nbmax  Ambig 0
+        symbol nbmax (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+        value: 64
+
+        symtree: j  Ambig 0
+        symbol j (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: czero  Ambig 0
+        symbol czero (COMPLEX 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+        value: (complex 0.e0 0.e0)
+
+        symtree: cscal  Ambig 0
+        symbol cscal (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL SUBROUTINE)
+
+        symtree: cdbtf2  Ambig 0
+        symbol cdbtf2 (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL SUBROUTINE)
+
+        symtree: ab  Ambig 0
+        symbol ab (COMPLEX 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION DUMMY)
+        Array spec:(2 AS_ASSUMED_SIZE 1 ldab 1 () )
+
+        symtree: ccopy  Ambig 0
+        symbol ccopy (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL SUBROUTINE)
+
+        symtree: cdbtrf  Ambig 0
+        symbol cdbtrf (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC SUBROUTINE)
+        Formal arglist: m n kl ku ab ldab info
+
+        symtree: cgeru  Ambig 0
+        symbol cgeru (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL SUBROUTINE)
+
+        symtree: cgemm  Ambig 0
+        symbol cgemm (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL SUBROUTINE)
+
+        symtree: cone  Ambig 0
+        symbol cone (COMPLEX 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+        value: (complex 0.1e1 0.e0)
+
+        symtree: cswap  Ambig 0
+        symbol cswap (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC EXTERNAL)
+
+        symtree: ctrsm  Ambig 0
+        symbol ctrsm (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL SUBROUTINE)
+
+        symtree: isamax  Ambig 0
+        symbol isamax (INTEGER 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC EXTERNAL)
+
+        symtree: i3  Ambig 0
+        symbol i3 (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: i  Ambig 0
+        symbol i (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: i2  Ambig 0
+        symbol i2 (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: info  Ambig 0
+        symbol info (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: ilaenv  Ambig 0
+        symbol ilaenv (INTEGER 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL FUNCTION)
+        result: ilaenv
+
+        symtree: ii  Ambig 0
+        symbol ii (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: nb  Ambig 0
+        symbol nb (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: jm  Ambig 0
+        symbol jm (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: jb  Ambig 0
+        symbol jb (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: j2  Ambig 0
+        symbol j2 (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: j3  Ambig 0
+        symbol j3 (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: jj  Ambig 0
+        symbol jj (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: ku  Ambig 0
+        symbol ku (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: kl  Ambig 0
+        symbol kl (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: ju  Ambig 0
+        symbol ju (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: jp  Ambig 0
+        symbol jp (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: km  Ambig 0
+        symbol km (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: ldwork  Ambig 0
+        symbol ldwork (INTEGER 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+        value: 65
+
+        symtree: ldab  Ambig 0
+        symbol ldab (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: kv  Ambig 0
+        symbol kv (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: m  Ambig 0
+        symbol m (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: max  Ambig 0
+        symbol max (INTEGER 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC INTRINSIC FUNCTION IMPLICIT-TYPE)
+        result: max
+
+        symtree: min  Ambig 0
+        symbol min (INTEGER 4)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC INTRINSIC FUNCTION IMPLICIT-TYPE)
+        result: min
+
+        symtree: n  Ambig 0
+        symbol n (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DUMMY)
+
+        symtree: nw  Ambig 0
+        symbol nw (INTEGER 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+
+        symtree: one  Ambig 0
+        symbol one (REAL 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+        value: 0.1e1
+
+        symtree: xerbla  Ambig 0
+        symbol xerbla (UNKNOWN 0)(PROCEDURE UNKNOWN-INTENT UNKNOWN-ACCESS EXTERNAL-PROC EXTERNAL SUBROUTINE)
+
+        symtree: work31  Ambig 0
+        symbol work31 (COMPLEX 4)(VARIABLE UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC DIMENSION)
+        Array spec:(2 AS_EXPLICIT 1 65 1 64 )
+
+        symtree: zero  Ambig 0
+        symbol zero (REAL 4)(PARAMETER UNKNOWN-INTENT UNKNOWN-ACCESS UNKNOWN-PROC)
+        value: 0.e0
+
+
+      ASSIGN kv ku
+      ASSIGN info 0
+      IF (< m 0)
+        ASSIGN info -1
+      ELSE IF (< n 0)
+        ASSIGN info -2
+      ELSE IF (< kl 0)
+        ASSIGN info -3
+      ELSE IF (< ku 0)
+        ASSIGN info -4
+      ELSE IF (< ldab __min_i4[[((__min_i4[[(((+ (+ kl kv) 1)) (m))]]) (n))]])
+        ASSIGN info -6
+      ENDIF
+      IF (<> info 0)
+        CALL xerbla (('CDBTRF') ((U- info)))
+        RETURN 
+      ENDIF
+      IF (OR (= m 0) (= n 0))
+        RETURN 
+      ENDIF
+      ASSIGN nb ilaenv[[((1) ('CDBTRF') (' ') (m) (n) (kl) (ku))]]
+      ASSIGN nb __min_i4[[((nb) (64))]]
+      IF (OR (<= nb 1) (> nb kl))
+        CALL cdbtf2 ((m) (n) (kl) (ku) (ab(FULL)) (ldab) (info))
+      ELSE
+        DO j=1 nb 1
+          DO i=1 (- j 1) 1
+            ASSIGN work13(i , j) (complex 0.e0 0.e0)
+10          CONTINUE
+          END DO
+20        CONTINUE
+        END DO
+        DO j=1 nb 1
+          DO i=(+ j 1) nb 1
+            ASSIGN work31(i , j) (complex 0.e0 0.e0)
+30          CONTINUE
+          END DO
+40        CONTINUE
+        END DO
+        ASSIGN ju 1
+        DO j=1 __min_i4[[((m) (n))]] nb
+          ASSIGN jb __min_i4[[((nb) ((+ (- __min_i4[[((m) (n))]] j) 1)))]]
+          ASSIGN i2 __min_i4[[(((- kl jb)) ((+ (- (- m j) jb) 1)))]]
+          ASSIGN i3 __min_i4[[((jb) ((+ (- (- m j) kl) 1)))]]
+          DO jj=j (- (+ j jb) 1) 1
+            ASSIGN km __min_i4[[((kl) ((- m jj)))]]
+            ASSIGN jp 1
+            IF (<> ab((+ kv jp) , jj) (complex 0.e0 0.e0))
+              ASSIGN ju __max_i4[[((ju) (__min_i4[[(((- (+ (+ jj ku) jp) 1)) (n))]]))]]
+              CALL cscal ((km) ((/ (complex 0.1e1 0.e0) ab((+ kv 1) , jj))) (ab((+ kv 2) , jj)) (1))
+              ASSIGN jm __min_i4[[((ju) ((- (+ j jb) 1)))]]
+              IF (> jm jj)
+                CALL cgeru ((km) ((- jm jj)) ((complex -0.1e1 0.e0)) (ab((+ kv 2) , jj)) (1) (ab(kv , (+ jj 1))) ((- ldab 1)) (ab((+ kv 1) , (+ jj 1))) ((- ldab 1)))
+              ENDIF
+            ENDIF
+            ASSIGN nw __min_i4[[(((+ (- jj j) 1)) (i3))]]
+            IF (> nw 0)
+              CALL ccopy ((nw) (ab((+ (- (+ (+ kv kl) 1) jj) j) , jj)) (1) (work31(1 , (+ (- jj j) 1))) (1))
+            ENDIF
+80          CONTINUE
+          END DO
+          IF (<= (+ j jb) n)
+            ASSIGN j2 (- __min_i4[[(((+ (- ju j) 1)) (kv))]] jb)
+            ASSIGN j3 __max_i4[[((0) ((+ (- (- ju j) kv) 1)))]]
+            IF (> j2 0)
+              CALL ctrsm (('Left') ('Lower') ('No transpose') ('Unit') (jb) (j2) ((complex 0.1e1 0.e0)) (ab((+ kv 1) , j)) ((- ldab 1)) (ab((- (+ kv 1) jb) , (+ j jb))) ((- ldab 1)))
+              IF (> i2 0)
+                CALL cgemm (('No transpose') ('No transpose') (i2) (j2) (jb) ((complex -0.1e1 0.e0)) (ab((+ (+ kv 1) jb) , j)) ((- ldab 1)) (ab((- (+ kv 1) jb) , (+ j jb))) ((- ldab 1)) ((complex 0.1e1 0.e0)) (ab((+ kv 1) , (+ j jb))) ((- ldab 1)))
+              ENDIF
+              IF (> i3 0)
+                CALL cgemm (('No transpose') ('No transpose') (i3) (j2) (jb) ((complex -0.1e1 0.e0)) (work31(FULL)) (65) (ab((- (+ kv 1) jb) , (+ j jb))) ((- ldab 1)) ((complex 0.1e1 0.e0)) (ab((- (+ (+ kv kl) 1) jb) , (+ j jb))) ((- ldab 1)))
+              ENDIF
+            ENDIF
+            IF (> j3 0)
+              DO jj=1 j3 1
+                DO ii=jj jb 1
+                  ASSIGN work13(ii , jj) ab((+ (- ii jj) 1) , (- (+ (+ jj j) kv) 1))
+120               CONTINUE
+                END DO
+130             CONTINUE
+              END DO
+              CALL ctrsm (('Left') ('Lower') ('No transpose') ('Unit') (jb) (j3) ((complex 0.1e1 0.e0)) (ab((+ kv 1) , j)) ((- ldab 1)) (work13(FULL)) (65))
+              IF (> i2 0)
+                CALL cgemm (('No transpose') ('No transpose') (i2) (j3) (jb) ((complex -0.1e1 0.e0)) (ab((+ (+ kv 1) jb) , j)) ((- ldab 1)) (work13(FULL)) (65) ((complex 0.1e1 0.e0)) (ab((+ 1 jb) , (+ j kv))) ((- ldab 1)))
+              ENDIF
+              IF (> i3 0)
+                CALL cgemm (('No transpose') ('No transpose') (i3) (j3) (jb) ((complex -0.1e1 0.e0)) (work31(FULL)) (65) (work13(FULL)) (65) ((complex 0.1e1 0.e0)) (ab((+ 1 kl) , (+ j kv))) ((- ldab 1)))
+              ENDIF
+              DO jj=1 j3 1
+                DO ii=jj jb 1
+                  ASSIGN ab((+ (- ii jj) 1) , (- (+ (+ jj j) kv) 1)) work13(ii , jj)
+140               CONTINUE
+                END DO
+150             CONTINUE
+              END DO
+            ENDIF
+          ELSE
+          ENDIF
+          DO jj=(- (+ j jb) 1) j -1
+            ASSIGN nw __min_i4[[((i3) ((+ (- jj j) 1)))]]
+            IF (> nw 0)
+              CALL ccopy ((nw) (work31(1 , (+ (- jj j) 1))) (1) (ab((+ (- (+ (+ kv kl) 1) jj) j) , jj)) (1))
+            ENDIF
+170         CONTINUE
+          END DO
+180       CONTINUE
+        END DO
+      ENDIF
+      RETURN 
+

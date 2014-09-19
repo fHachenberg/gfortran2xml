@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+
+<library lang="fortran" version="2" name="UNKNOWN.f90">
+
+<!-- include files that the topmost file includes -->
+<!-- fortran module scopes -->
+
+<!-- types and functions NOT contained in a scope -->
+
+  <!--
+    - MODULE: F90Global
+    -->
+  <scope name="F90Global" kind="module">
+
+    <!--
+      - METHOD: pzlacon
+      -->
+    <method name="pzlacon" kind="static">
+
+      <!-- ARGUMENT : n -->
+      <arg name="n" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- ARGUMENT : v -->
+      <arg name="v" intent="inout">
+        <type kind="farray">
+          <array lang="fortran" rank="1">
+            <type kind="fcmplx" fkind="dbl"/>
+            <dimension extent="*"/>
+          </array>
+        </type>
+      </arg>
+
+      <!-- ARGUMENT : iv -->
+      <arg name="iv" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- ARGUMENT : jv -->
+      <arg name="jv" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- ARGUMENT : descv -->
+      <arg name="descv" intent="inout">
+        <type kind="farray">
+          <array lang="fortran" rank="1">
+            <type kind="fint" ikind="int"/>
+            <dimension extent="*"/>
+          </array>
+        </type>
+      </arg>
+
+      <!-- ARGUMENT : x -->
+      <arg name="x" intent="inout">
+        <type kind="farray">
+          <array lang="fortran" rank="1">
+            <type kind="fcmplx" fkind="dbl"/>
+            <dimension extent="*"/>
+          </array>
+        </type>
+      </arg>
+
+      <!-- ARGUMENT : ix -->
+      <arg name="ix" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- ARGUMENT : jx -->
+      <arg name="jx" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- ARGUMENT : descx -->
+      <arg name="descx" intent="inout">
+        <type kind="farray">
+          <array lang="fortran" rank="1">
+            <type kind="fint" ikind="int"/>
+            <dimension extent="*"/>
+          </array>
+        </type>
+      </arg>
+
+      <!-- ARGUMENT : est -->
+      <arg name="est" intent="inout">
+        <type kind="ffloat" fkind="dbl"/>
+      </arg>
+
+      <!-- ARGUMENT : kase -->
+      <arg name="kase" intent="inout">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+  </scope>
+
+</library>

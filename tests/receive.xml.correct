@@ -1,0 +1,271 @@
+<?xml version="1.0"?>
+
+<library lang="fortran" version="2" name="UNKNOWN.f90">
+
+<!-- include files that the topmost file includes -->
+<!-- fortran module scopes -->
+
+  <!--
+    - MODULE: receive
+    -->
+  <scope name="receive" kind="module">
+
+    <!--
+      - METHOD: receive::recv_double
+      -->
+    <method name="recv_double" kind="static">
+
+      <!-- ARGUMENT : d -->
+      <arg name="d" intent="in">
+        <type kind="ffloat" fkind="dbl"/>
+      </arg>
+
+      <!-- ARGUMENT : err -->
+      <arg name="err" intent="out">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: receive::recv_complex
+      -->
+    <method name="recv_complex" kind="static">
+
+      <!-- ARGUMENT : c -->
+      <arg name="c" intent="in">
+        <type kind="fcmplx" fkind="float"/>
+      </arg>
+
+      <!-- ARGUMENT : err -->
+      <arg name="err" intent="out">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: receive::recv_complex_dbl
+      -->
+    <method name="recv_complex_dbl" kind="static">
+
+      <!-- ARGUMENT : c -->
+      <arg name="c" intent="in">
+        <type kind="fcmplx" fkind="dbl"/>
+      </arg>
+
+      <!-- ARGUMENT : err -->
+      <arg name="err" intent="out">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: receive::recv_int1
+      -->
+    <method name="recv_int1" kind="static">
+
+      <!-- ARGUMENT : i -->
+      <arg name="i" intent="in">
+        <type kind="fint" ikind="char"/>
+      </arg>
+
+      <!-- ARGUMENT : err -->
+      <arg name="err" intent="out">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: receive::recv_int
+      -->
+    <method name="recv_int" kind="static">
+
+      <!-- ARGUMENT : i -->
+      <arg name="i" intent="in">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- ARGUMENT : err -->
+      <arg name="err" intent="out">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: receive::recv_logical
+      -->
+    <method name="recv_logical" kind="static">
+
+      <!-- ARGUMENT : l_t -->
+      <arg name="l_t" intent="in">
+        <type kind="flogic" ikind="int"/>
+      </arg>
+
+      <!-- ARGUMENT : l_f -->
+      <arg name="l_f" intent="in">
+        <type kind="flogic" ikind="int"/>
+      </arg>
+
+      <!-- ARGUMENT : err -->
+      <arg name="err" intent="out">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: receive::recv_int_array_1d
+      -->
+    <method name="recv_int_array_1d" kind="static">
+
+      <!-- ARGUMENT : a -->
+      <arg name="a" intent="in">
+        <type kind="farray">
+          <array lang="fortran" rank="1">
+            <type kind="fint" ikind="int"/>
+            <dimension extent="*"/>
+          </array>
+        </type>
+      </arg>
+
+      <!-- ARGUMENT : err -->
+      <arg name="err" intent="out">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: receive::recv_void
+      -->
+    <method name="recv_void" kind="static">
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: receive::recv_mixed
+      -->
+    <method name="recv_mixed" kind="static">
+
+      <!-- ARGUMENT : i -->
+      <arg name="i" intent="in">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- ARGUMENT : str -->
+      <arg name="str" intent="in">
+        <type kind="fchar" ikind="char" clen="*"/>
+      </arg>
+
+      <!-- ARGUMENT : r -->
+      <arg name="r" intent="in">
+        <type kind="ffloat" fkind="float"/>
+      </arg>
+
+      <!-- ARGUMENT : a -->
+      <arg name="a" intent="in">
+        <type kind="farray">
+          <array lang="fortran" rank="1">
+            <type kind="fint" ikind="int"/>
+            <dimension extent="*"/>
+          </array>
+        </type>
+      </arg>
+
+      <!-- ARGUMENT : c -->
+      <arg name="c" intent="in">
+        <type kind="fcmplx" fkind="float"/>
+      </arg>
+
+      <!-- ARGUMENT : err -->
+      <arg name="err" intent="out">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: receive::recv_real
+      -->
+    <method name="recv_real" kind="static">
+
+      <!-- ARGUMENT : r -->
+      <arg name="r" intent="in">
+        <type kind="ffloat" fkind="float"/>
+      </arg>
+
+      <!-- ARGUMENT : err -->
+      <arg name="err" intent="out">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+    <!--
+      - METHOD: receive::recv_string
+      -->
+    <method name="recv_string" kind="static">
+
+      <!-- ARGUMENT : str -->
+      <arg name="str" intent="in">
+        <type kind="fchar" ikind="char" clen="*"/>
+      </arg>
+
+      <!-- ARGUMENT : err -->
+      <arg name="err" intent="out">
+        <type kind="fint" ikind="int"/>
+      </arg>
+
+      <!-- return value -->
+      <return>
+        <type kind="fvoid"/>
+      </return>
+    </method>
+
+  </scope>
+
+</library>
